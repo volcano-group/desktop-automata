@@ -7,72 +7,126 @@ import sleep from 'sleep'
 robot.setKeyboardDelay(200)
 robot.setMouseDelay(100)
 
-// Open Calc
+// Open FC8
 
 
-robot.moveMouse(50,50)
-robot.mouseClick('left')
+robot.keyTap('command')
 
-robot.keyTap('backspace')
-robot.typeString('libreoffice calc')
-robot.keyTap('enter')
-
-// Wait for calc to open
-
-
-sleep.msleep(5000)
-
-
-// Write something
-
-
-
-robot.moveMouse(500,1200)
-robot.mouseClick('left')
-
-sleep.msleep(500)
-
-
-
-robot.typeStringDelayed('=round( 3.14' ,180)
-
-robot.keyTap('8','shift')
-
-robot.typeStringDelayed('1.4414 , 2)', 180)
-
-robot.keyTap('enter')
-
-// Export as pdf
-
-sleep.msleep(1000)
-
-
-robot.keyTap('f','alt')
-
-robot.keyTap('e')
-
-robot.keyTap('enter')
+robot.typeString('C:\\FlowConsultant8\\FC8.exe')
 
 robot.keyTap('enter')
 
 sleep.msleep(500)
 
-
-robot.typeStringDelayed('Prova Automatica',180)
-
-sleep.msleep(500)
-
+// Insert Data
 
 robot.keyTap('enter')
 
-console.log('Automation task completed')
+robot.keyTap('enter')
+
+robot.keyTap('tab')
+
+robot.keyTap('enter')
+
+robot.keyTap('enter')
+
+robot.keyTap('tab')
+
+robot.keyTap('enter')
+
+for(let i = 8; i; i--)
+  robot.keyTap('down')
+
+robot.keyTap('tab')
+
+robot.keyTap('enter')
+
+for(let i = 8; i; i--)
+  robot.keyTap('down')
+
+robot.keyTap('tab')
+
+robot.keyTap('enter')
+
+for(let i = 3; i; i--)
+  robot.keyTap('down')
+
+robot.keyTap('space')
+
+for(let i = 2; i; i--)
+  robot.keyTap('tab')
+
+robot.keyTap('space')
+
+for(let i = 2; i; i--)
+  robot.keyTap('tab')
+
+robot.keyTap('enter')
+
+robot.keyTap('tab')
+
+robot.keyTap('enter')
+
+//
+
+for(let i = 3; i; i--)
+  robot.keyTap('left')
+
+robot.keyTap('right')
+
+robot.keyTap('enter')
+
+robot.keyTap('enter')
+
+robot.keyTap('tab')
+
+robot.keyTap('enter')
+
+for(let i = 6; i; i--)
+  robot.keyTap('tab')
+
+robot.keyTap('enter')
+
+robot.keyTap('enter')
+
+robot.keyTap('enter')
+
+for(let i = 2; i; i--)
+  robot.keyTap('tab')
+
+robot.keyTap('enter')
+
+robot.typeString('Prova Automatica')
+
+robot.keyTap('enter')
 
 
 
-// robot.keyTap('s','control')
 
-//robot.keyTap('down')
-// r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
