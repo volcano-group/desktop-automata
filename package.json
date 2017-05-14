@@ -7,6 +7,7 @@
     "start": "babel-node index.js"
   },
   "dependencies": {
+    "node-gyp": "^3.6.1",
     "robotjs": "^0.4.7",
     "sleep": "^5.1.1"
   },
