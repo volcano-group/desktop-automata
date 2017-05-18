@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node index.js",
+    "test": "babel-node machinedinlet.js",
     "windows": "yarn add windows-build-tools"
   },
   "dependencies": {
