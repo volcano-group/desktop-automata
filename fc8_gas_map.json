@@ -18,7 +18,7 @@
                  "kgf/cm^2,abs",
                  "kgf/cm^2,gage",
                 ],
-    "Diffetial": ["Inches of Water @ 68F (ASME, Miller, Spink)",
+    "Differential": ["Inches of Water @ 68F (ASME, Miller, Spink)",
                   "Inches of Water @ 60F (AGA/API)",
                   "Inches of Water @ 39.2F",
                   "Inches of Mercury @ 39.2F",
@@ -44,6 +44,33 @@
                     "TdegC",
                     "TK"
                    ],
-    "Flow"
+    "Flow": {
+        "Units":{
+            "Mass":["Mass lbm",
+                    "Mass kg",
+                    "Mass g",
+                    "Mass Metric Ton"
+                   ],
+            
+        }
+            
+            [,
+                 "Flowing ft^3",
+                 "Flowing mft^3",
+                 "Flowing mmft^3",
+                 "Flowing gallon",
+                 "Flowing barrel 31 (gal,beer)",
+                 "Flowing barrel 31.5 (gal,wine)",
+                 "Flowing m^3",
+                 "Flowing barrel 42 (gal, petroleum)",
+                 "Flowing litre (cubic decimetres)",
+                 "Flowing millitres (cubis centimentres)",
+                 "Base Ft^3 Cubic Feet: SCF",
+                 "Base Ft^3 Cubic Feet: MSCF",
+                 "Base Ft^3 Cubic Feet: MMSCF",
+                 "US Gallon",
+                 "Barrel 31 Gal,beer"
+                ]
+    }
     
 }
