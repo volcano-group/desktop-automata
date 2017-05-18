@@ -1,5 +1,5 @@
 {
-    "Pressure": ["psia",
+    Pressure: ["psia",
                  "psig",
                  "hw,68F,abs",
                  "hw,68F,gage",
@@ -18,7 +18,7 @@
                  "kgf/cm^2,abs",
                  "kgf/cm^2,gage",
                 ],
-    "Differential": ["Inches of Water @ 68F (ASME, Miller, Spink)",
+    Differential: ["Inches of Water @ 68F (ASME, Miller, Spink)",
                   "Inches of Water @ 60F (AGA/API)",
                   "Inches of Water @ 39.2F",
                   "Inches of Mercury @ 39.2F",
@@ -39,38 +39,182 @@
                   "mm of Mercury @ 0 degC",
                   "mm of Mercury @ 15.56 degC (60f)"
                  ],
-    "Temperature": ["TdegF",
+    Temperature: ["TdegF",
                     "TdegR",
                     "TdegC",
                     "TK"
                    ],
-    "Flow": {
-        "Units":{
-            "Mass":["Mass lbm",
+    Flow: {
+        Units:{
+            Mass:["Mass lbm",
                     "Mass kg",
                     "Mass g",
                     "Mass Metric Ton"
                    ],
+            Flowing:["Flowing ft^3",
+                       "Flowing mft^3",
+                       "Flowing mmft^3",
+                       "Flowing gallon",
+                       "Flowing barrel 31 (gal,beer)",
+                       "Flowing barrel 31.5 (gal,wine)",
+                       "Flowing m^3",
+                       "Flowing barrel 42 (gal, petroleum)",
+                       "Flowing litre (cubic decimetres)",
+                       "Flowing millitres (cubis centimentres)"
+                      ],
+            Base:["Base Ft^3 Cubic Feet: SCF",
+                    "Base Ft^3 Cubic Feet: MSCF",
+                    "Base Ft^3 Cubic Feet: MMSCF",
+                    "US Gallon",
+                    "Barrel 31 Gal,beer",
+                    "Barrel 31.5 Gal,wine",
+                    "Barrel 42 Gal,petroleum",
+                    "Cubic Metres: for NCMH, etc.",
+                    "1000 Cubic Metres: for kM3",
+                    "Litre (Cubic Decimetres)",
+                    "Millilitre (ML Cubic Centimetres)"
+                   ]
+        },
+        Time:["Second",
+                "Minute",
+                "Hour",
+                "24 Hour",
+                "Week",
+                "Year"
+               ]
+    },
+    Density: {
+        Mass: ["Pound Mass lbm (US Flow Std)",
+               "Pound Apothecary lb,ap",
+               "Ounce Avoirdupois oz,m",
+               "Ounce Troy lb,ap",
+               "Grain",
+               "Pennyweight PWe",
+               "Slug",
+               "Kilogram (ISO Standards)",
+               "Gram",
+               "Milligram",
+               "Ton (Metric)",
+               "Tonne",
+               "kgf.s^2/m",
+               "Carat"
+              ],
+        Volume: ["Cubic Feet",
+                 "Cubic Inches",
+                 "Gallon US liquid",
+                 "Gallon UK liquid",
+                 "Ounce US Fluid",
+                 "Ounce UK Fluid",
+                 "Cubic Metre",
+                 "Cubic Decimetre",
+                 "mille-litre",
+                 "Cubic Centimetre",
+                 "Cubic Millimetre",
+                 "Stere"
+                ]
+    },
+    DensityMethod: ["pvT pf, Tf, Zf, G (Specific Gravity)",
+                    "pvT pf, Tf, Zf, Mw (Molecular Weight)",
+                    "Density"
+                   ],
+    Viscosity:["lbf.s/ft^2",
+               "lbf.s/in^2",
+               "lbm/(ft.s)",
+               "lbm/(ft.h)",
+               "slug/(ft.s)",
+               "Pascal.sec (Pa.s)",
+               "Micro Pascal.sec (MicroPa.s)",
+               "Milli Pascal.sec (milliPa.s)",
+               "Poise P",
+               "Centipoise cP",
+               "Millipoise mP",
+               "Micropoise microP",
+               "Stoke vSt",
+               "Centistoke vcSt",
+               "ft^2/s
+              ],
+    Dimensional: ["Inches",
+                  "Feet",
+                  "Metre",
+                  "Decimetre",
+                  "Centimetre",
+                  "Millimetre"
+                 ],
+    BasePressure: "",
+    BasePressureUnit: ["psia",
+                       "MPa, abs",
+                       "Pa,abs"
+                       "kPa,abs",
+                       "Bar,abs",
+                       "kgf/m^,abs"
+                       "kgf/cm^,abs"
+                      ],
+    BaseTemp: "",
+    BaseTempUnit: ["TdegF (degrees Farenheit)",
+                   "TdegR (Absolute Temperature degR)",
+                   "TdegC (degrees Celsius)",
+                   "TK (Absolute Temperature K)"
+                  ],
+    HeatingTemp: "",
+    EnergyCost: "",
+    GasType: ["Enter Fluid Properties",
+              "Gas Mixture",
+              "AlChE 250+ Fluids (NOT WORKING RIGHT NOW)",
+              "ASME 1967",
+              "IAPWS 1995",
+              "NX-19",
+              "S-GERG Heating Value, Gr, and CO2 inputs",
+              "AGA-8 Heating Value, Gr, and CO2",
+              "AGA-8 Gr, N2 and CO2",
+              "AGA-8 Detailed Methos, Input Mole Fractions",
+              "Air",
+              "Ammonia",
+              "Argon",
+              "Butane",
+              "I-Butane",
+              "Carbon Dioxide",
+              "Ethane",
+              "Ethylene",
+              "Heptane",
+              "Hexane",
+              "Hydrogen",
+              "Methane",
+              "Nitrogen",
+              "Octane",
+              "Oxygen",
+              "Pentane",
+              "I-Pentane",
+              "Propane",
+              "Propylene"
+             ],
+    State: {
+        Pressure: "",
+        BarometricPressure: "",
+        Temperature: ""
+    },
+    Base: {
+        DP:{
+            NormalFlow: "",
+            FlowrateMAX: "",
+            Flowrate: "",
+            PipeInternalDiameter: "", //da sistemare con le opzioni
+            BorePrimaryElement: "",
+            BetaRatio: ""
+        },
+        Flow:{
+            DifferentialPressure: "",
+            PipeInternalDiameter: "", //da sistemare con opzioni
+            BorePrimaryElement: "",
+            BetaRatio
+        },
+        Size:{
+            NormalFlowPercMax: "", //%max flow
+            FlowRateMax: "",
+            FlowRate: "",
+            DifferentialMaxFlow: "",
+            PipeDiameter: "" //da sistemare con varie opzioni standard
             
         }
-            
-            [,
-                 "Flowing ft^3",
-                 "Flowing mft^3",
-                 "Flowing mmft^3",
-                 "Flowing gallon",
-                 "Flowing barrel 31 (gal,beer)",
-                 "Flowing barrel 31.5 (gal,wine)",
-                 "Flowing m^3",
-                 "Flowing barrel 42 (gal, petroleum)",
-                 "Flowing litre (cubic decimetres)",
-                 "Flowing millitres (cubis centimentres)",
-                 "Base Ft^3 Cubic Feet: SCF",
-                 "Base Ft^3 Cubic Feet: MSCF",
-                 "Base Ft^3 Cubic Feet: MMSCF",
-                 "US Gallon",
-                 "Barrel 31 Gal,beer"
-                ]
     }
     
 }

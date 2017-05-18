@@ -1,8 +1,8 @@
 {
-    "Enter Discharge Coefficients" : {
-        "Pressure Tap":["Upstream", 
+    MachinedInled : {
+        PressureTap:["Upstream", 
                         "Downstream"],
-        "Pipe Material":["Carbon Steel",
+        PipeMaterial:["Carbon Steel",
                         "5-9% Chrome-Moly Steel",
                         "Chrome-Moly Steel Grade 11",
                         "Chrome-Moly Steel Grade 22",
@@ -24,7 +24,7 @@
                         "Tantalum",
                         "PVC",
                         "User Defined (Enter Coefficient Below)"],
-        "Venturi Cylindrical Throat":["Carbon Steel",
+        VenturiCylindricalThroat:["Carbon Steel",
                                      "5-9% Chrome-Moly Steel",
                                      "Chrome-Moly Steel Grade 11",
                                      "Chrome-Moly Steel Grade 22",
@@ -46,7 +46,7 @@
                                      "Tantalum",
                                      "PVC",
                                      "User Defined (Enter Coefficient Below)"],
-        "Special Factors":["Manometer Correction Factor",
+        SpecialFactors:["Manometer Correction Factor",
                           "Water Vapor Correction"]
     }
 }
