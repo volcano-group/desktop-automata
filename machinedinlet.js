@@ -23,7 +23,7 @@ exports.machindeinlet = function(pressuretap) {
     robot.keyTap('enter')
     //select pressuretap
     let i = 0;
-    for(i<mi.PressureTap.indexOf(pressuretap); i++){
+    for(i=0; i<mi.PressureTap.indexOf(pressuretap); i++){
         robot.keyTap('up')
         sleep.msleep(1000)
     }
