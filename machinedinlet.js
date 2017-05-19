@@ -1,5 +1,7 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
+import venturi from './fc8_venturi_map.json'
+const mi = venturi.MachinedInled    
 
 //set speed
 robot.setKeyboardDelay(200)
@@ -11,8 +13,18 @@ robot.setMouseDelay(100)
 //robot.keyTap('enter')
 //sleep.msleep(500)
 
-//insert data
-robot.keyTap('tab')
-robot.keyTap('down')
-robot.keyTap('tab')
-robot.keyTap('enter')
+exports.machindeinlet = function() {
+    //select venturi
+    robot.keyTap('tab')
+    robot.keyTap('down')
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    //select machinedinlet
+    robot.keyTap('enter')
+    //select pressuretap
+    for(i=0; i<mi.PressureTap.indexOf(pressuretap); i++){
+        robot.keyTap('up')
+    }
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+}
