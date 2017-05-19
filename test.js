@@ -1,3 +1,2 @@
-import venturi from './fc8_venturi_map.json'
-let index = venturi.MachinedInled.PressureTap.indexOf("Upstream")
-console.log(index);
+import test from './machinedinlet'
+test.machindeinlet("upstream")
