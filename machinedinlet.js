@@ -34,7 +34,7 @@ exports.machindeinlet = function(pressuretap, pipematerial) {
     robot.keyTap('tab')
     robot.keyTap('tab')
     for(i=0; i<mi.PipeMaterial.indexOf(pipematerial); i++){
-        robot.keyTap('up')
+        robot.keyTap('down')
         sleep.msleep(1000)
     }
     robot.keyTap('tab')
