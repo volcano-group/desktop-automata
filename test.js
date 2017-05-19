@@ -1,2 +1,2 @@
 import test from './machinedinlet'
-test.machindeinlet("upstream")
+test.machindeinlet("Upstream")
