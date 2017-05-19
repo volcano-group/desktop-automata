@@ -26,8 +26,8 @@ exports.machindeinlet = function(pressuretap, pipematerial) {
     console.log(mi.PressureTap.indexOf(pressuretap));
     for(i=0; i<mi.PressureTap.indexOf(pressuretap); i++){
         robot.keyTap('up')
-        sleep.msleep(1000)
     }
+    sleep.msleep(1000)
     robot.keyTap('tab')
     robot.keyTap('enter')
     //select pipe material
@@ -35,8 +35,8 @@ exports.machindeinlet = function(pressuretap, pipematerial) {
     robot.keyTap('tab')
     for(i=0; i<mi.PipeMaterial.indexOf(pipematerial); i++){
         robot.keyTap('down')
-        sleep.msleep(1000)
     }
+    sleep.msleep(1000)
     robot.keyTap('tab')
     robot.keyTap('enter')
 }
