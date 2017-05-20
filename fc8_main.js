@@ -13,7 +13,7 @@ robot.setMouseDelay(100)
 //robot.keyTap('enter')
 //sleep.msleep(500)
 
-exports.machindeinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, vctUserDefined, special) {
+exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, vctUserDefined, special) {
     //select venturi
     robot.keyTap('tab')
     robot.keyTap('down')
