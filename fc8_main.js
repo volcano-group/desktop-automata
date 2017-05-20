@@ -41,9 +41,6 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
         robot.keyTap('tab')
         robot.keyTap('enter')
         for(i=0; i<10; i++){
-            robot.keyTap('right')
-        }
-        for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
         robot.typeString(pmUserDefined.coeffThermalExpansion)
@@ -65,9 +62,6 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
         robot.typeString(vctUserDefined.name)
         robot.keyTap('tab')
         robot.keyTap('enter')
-        for(i=0; i<10; i++){
-            robot.keyTap('right')
-        }
         for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
