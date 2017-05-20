@@ -1,2 +1,2 @@
 import test from './machinedinlet'
-test.machindeinlet("Upstream", "Duplex", "Carbon Steel", "McOn")
+test.fc8_main("Upstream", "Duplex", "Carbon Steel", "McOn")
