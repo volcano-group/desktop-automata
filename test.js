@@ -1,7 +1,7 @@
 import test from './fc8_main'
 test.machinedinlet("Upstream", 
+                   "Duplex",
+                   {name: "", coeffThermalExpansion: ""} , 
                    "userdefined",
-                   {name: "PVC", coeffThermalExpansion: "0.0000000910"} , 
-                   "userdefined",
-                   {name: "Carbon Steel", coeffThermalExpansion: "0.0000000608"},
+                   {name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
                    "McOn")
