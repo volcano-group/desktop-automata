@@ -13,7 +13,7 @@ robot.setMouseDelay(100)
 //robot.keyTap('enter')
 //sleep.msleep(500)
 
-exports.machindeinlet = function(pressuretap, pipematerial) {
+exports.machindeinlet = function(pressuretap, pipematerial, VCT) {
     //select venturi
     robot.keyTap('tab')
     robot.keyTap('down')
@@ -37,6 +37,21 @@ exports.machindeinlet = function(pressuretap, pipematerial) {
         robot.keyTap('down')
     }
     sleep.msleep(1000)
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    //select venturi cylindrical throat
+    robot.keyTap('tab')
+    robot.keyTap('tab')
+    let ind = mi.VenturiCylindricalThroat.indexOf(VCT)
+    if(ind<6){
+        for (i=0; i<6-ind; i++){
+            robot.keyTap('up')
+        }
+    } else {
+        for (i=0; i<=ind-6; i++){
+            robot.keyTap('down')
+        }
+    }
     robot.keyTap('tab')
     robot.keyTap('enter')
 }
