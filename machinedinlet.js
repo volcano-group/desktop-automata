@@ -83,6 +83,6 @@ exports.machindeinlet = function(pressuretap, pipematerial, VCT, special) {
         robot.keyTap('tab')
         robot.keyTap('enter')
     }
-    
-    
+    robot.keyTap('tab')
+    robot.keyTap('enter')
 }
