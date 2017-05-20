@@ -13,7 +13,7 @@ robot.setMouseDelay(100)
 //robot.keyTap('enter')
 //sleep.msleep(500)
 
-exports.machindeinlet = function(pressuretap, pipematerial, VCT, special) {
+exports.machindeinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, vctUserDefined, special) {
     //select venturi
     robot.keyTap('tab')
     robot.keyTap('down')
@@ -33,24 +33,52 @@ exports.machindeinlet = function(pressuretap, pipematerial, VCT, special) {
     //select pipe material
     robot.keyTap('tab')
     robot.keyTap('tab')
-    for(i=0; i<mi.PipeMaterial.indexOf(pipematerial); i++){
-        robot.keyTap('down')
+    if(pipematerial=="userdefined"){    
+        for(i=0; i<21; i++){
+            robot.keyTap('down')
+        }
+        robot.typeString(pmUserDefined.name)
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        for(i=0; i<10; i++){
+            robot.keyTap('right')
+            robot.keyTap('delete')
+        }
+        robot.typeString(pmUserDefined.coeffThermalExpansion)
+    } else {
+        for(i=0; i<mi.PipeMaterial.indexOf(pipematerial); i++){
+            robot.keyTap('down')
+        }
+        sleep.msleep(1000)    
     }
-    sleep.msleep(1000)
     robot.keyTap('tab')
     robot.keyTap('enter')
     //select venturi cylindrical throat
     robot.keyTap('tab')
     robot.keyTap('tab')
-    let ind = mi.VenturiCylindricalThroat.indexOf(VCT)
-    if(ind<6){
-        for (i=0; i<6-ind; i++){
-            robot.keyTap('up')
-        }
-    } else {
-        for (i=0; i<=ind-6; i++){
+    if(VCT=="userdefined"){
+        for(i=0; i<15; i++){
             robot.keyTap('down')
         }
+        robot.typeString(vctUserDefined.name)
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        for(i=0; i<10; i++){
+            robot.keyTap('right')
+            robot.keyTap('delete')
+        }
+        robot.typeString(vctUserDefined .coeffThermalExpansion)
+    } else {
+        let ind = mi.VenturiCylindricalThroat.indexOf(VCT)
+        if(ind<6){
+            for (i=0; i<6-ind; i++){
+                robot.keyTap('up')
+            }
+        } else {
+            for (i=0; i<=ind-6; i++){
+                robot.keyTap('down')
+            }
+        }    
     }
     robot.keyTap('tab')
     robot.keyTap('enter')
