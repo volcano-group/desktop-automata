@@ -13,7 +13,7 @@ robot.setMouseDelay(100)
 //robot.keyTap('enter')
 //sleep.msleep(500)
 
-exports.machindeinlet = function(pressuretap, pipematerial, VCT) {
+exports.machindeinlet = function(pressuretap, pipematerial, VCT, special) {
     //select venturi
     robot.keyTap('tab')
     robot.keyTap('down')
@@ -54,4 +54,35 @@ exports.machindeinlet = function(pressuretap, pipematerial, VCT) {
     }
     robot.keyTap('tab')
     robot.keyTap('enter')
+    //select special factor
+    if(special=='none'){
+        robot.keyTap('enter')
+    } else if (special=='McOn&WvcOn'){
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('space')
+        robot.keyTap('tab')
+        robot.keyTap('space')
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+    } else if (special=="McOn"){
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('space')
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+    } else if (special=="WvcOn"){
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('space')
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+    }
+    
+    
 }
