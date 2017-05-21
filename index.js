@@ -81,7 +81,7 @@ robot.keyTap('enter')*/
 
 //
 
-for(let i = 3; i; i--)
+/*for(let i = 3; i; i--)
   robot.keyTap('left')
 
 robot.keyTap('right')
@@ -110,9 +110,10 @@ robot.keyTap('enter')
 
 robot.typeString('ProvaInputVenturi')
 
-robot.keyTap('enter')
+robot.keyTap('enter')*/
 
 //
+let i = 0
 for(i=0; i<9; i++){
     robot.keyTap('tab')
 }
