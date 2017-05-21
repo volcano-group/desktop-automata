@@ -12,7 +12,7 @@ robot.setMouseDelay(100)
 
 robot.keyTap('command')
 
-robot.typeString('FlowConsultant8')
+robot.typeString('FC8')
 
 robot.keyTap('enter')
 
