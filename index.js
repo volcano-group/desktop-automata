@@ -112,6 +112,31 @@ robot.typeString('ProvaInputVenturi')
 
 robot.keyTap('enter')
 
+//
+for(i=0; i<9; i++){
+    robot.keyTap('tab')
+}
+robot.keyTap('enter')
+for(i=0; i<7; i++){
+    robot.keyTap('tab')
+}
+robot.keyTap('enter')
+robot.keyTap('tab')
+robot.keyTap('tab')
+robot.keyTap('enter')
+robot.keyTap('enter')
+robot.keyTap('enter')
+robot.keyTap('enter')
+robot.keyTap('tab')
+robot.keyTap('tab')
+robot.keyTap('enter')
+sleep.msleep(2000)
+robot.typeString('ProvaInputVenturi')
+robot.keyTap('enter')
+
+
+
+
 
 
 
