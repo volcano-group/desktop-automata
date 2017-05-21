@@ -4,7 +4,7 @@ import venturi from './fc8_venturi_map.json'
 const mi = venturi.MachinedInled    
 
 //set speed
-robot.setKeyboardDelay(200)
+robot.setKeyboardDelay(350)
 robot.setMouseDelay(100)
 
 //open FC8
@@ -27,7 +27,6 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
     for(i=0; i<mi.PressureTap.indexOf(pressuretap); i++){
         robot.keyTap('up')
     }
-    sleep.msleep(1000)
     robot.keyTap('tab')
     robot.keyTap('enter')
     //select pipe material
@@ -47,8 +46,7 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
     } else {
         for(i=0; i<mi.PipeMaterial.indexOf(pipematerial); i++){
             robot.keyTap('down')
-        }
-        sleep.msleep(1000)    
+        }   
     }
     robot.keyTap('tab')
     robot.keyTap('enter')

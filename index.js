@@ -6,7 +6,7 @@ import venturi from './fc8_main'
 
 // Set speed
 
-robot.setKeyboardDelay(200)
+robot.setKeyboardDelay(350)
 robot.setMouseDelay(100)
 
 // Open FC8
@@ -123,7 +123,6 @@ for(i=0; i<7; i++){
 }
 robot.keyTap('enter')
 robot.keyTap('enter')
-sleep.msleep(200)
 robot.keyTap('tab')
 robot.keyTap('tab')
 robot.keyTap('enter')
