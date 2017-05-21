@@ -18,7 +18,7 @@ robot.keyTap('enter')
 
 sleep.msleep(500)
 
-/*// Insert Data
+// Insert Data
 
 robot.keyTap('enter')
 
@@ -69,7 +69,7 @@ robot.keyTap('enter')
 
 //
 
-for(let i = 3; i; i--)
+/*for(let i = 3; i; i--)
   robot.keyTap('left')
 
 robot.keyTap('right')
