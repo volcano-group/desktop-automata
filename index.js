@@ -123,6 +123,7 @@ for(i=0; i<7; i++){
 }
 robot.keyTap('enter')
 robot.keyTap('enter')
+sleep.msleep(200)
 robot.keyTap('tab')
 robot.keyTap('tab')
 robot.keyTap('enter')
