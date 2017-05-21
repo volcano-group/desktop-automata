@@ -12,13 +12,13 @@ robot.setMouseDelay(100)
 
 robot.keyTap('command')
 
-robot.typeString('C:\\FlowConsultant8\\FC8.exe')
+robot.typeString('FlowConsultant8')
 
 robot.keyTap('enter')
 
 sleep.msleep(500)
 
-// Insert Data
+/*// Insert Data
 
 robot.keyTap('enter')
 
@@ -98,7 +98,7 @@ robot.keyTap('enter')
 
 robot.typeString('Prova Automatica')
 
-robot.keyTap('enter')
+robot.keyTap('enter')*/
 
 
 
