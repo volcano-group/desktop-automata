@@ -2,8 +2,6 @@ import robot from "robotjs"
 
 import sleep from 'sleep'
 
-import venturi from './fc8_main'
-
 // Set speed
 
 robot.setKeyboardDelay(350)
@@ -23,16 +21,7 @@ sleep.msleep(500)
 // Insert Data
 
 
-//fare riferimento a fc8_venturi_map per vedere gli input disponibili
-//compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
-venturi.machinedinlet("Upstream", 
-                      "Duplex",
-                      {id: "User Defined Pipe Material", name: "", coeffThermalExpansion: ""} , 
-                      "userdefined",
-                      {id:"User Defined Venturi Cylindrical Throat", name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
-                      "McOn")
-
-/*robot.keyTap('enter')
+robot.keyTap('enter')
 
 robot.keyTap('enter')
 
@@ -77,11 +66,11 @@ robot.keyTap('enter')
 
 robot.keyTap('tab')
 
-robot.keyTap('enter')*/
+robot.keyTap('enter')
 
 //
 
-/*for(let i = 3; i; i--)
+for(let i = 3; i; i--)
   robot.keyTap('left')
 
 robot.keyTap('right')
@@ -110,30 +99,10 @@ robot.keyTap('enter')
 
 robot.typeString('ProvaInputVenturi')
 
-robot.keyTap('enter')*/
+robot.keyTap('enter')
 
 //
-let i = 0
-for(i=0; i<9; i++){
-    robot.keyTap('tab')
-}
-robot.keyTap('enter')
-for(i=0; i<7; i++){
-    robot.keyTap('tab')
-}
-robot.keyTap('enter')
-robot.keyTap('enter')
-robot.keyTap('tab')
-robot.keyTap('tab')
-robot.keyTap('enter')
-robot.keyTap('enter')
-robot.keyTap('enter')
-robot.keyTap('tab')
-robot.keyTap('tab')
-robot.keyTap('enter')
-sleep.msleep(1000)
-robot.typeString('ProvaInputVenturi')
-robot.keyTap('enter')
+
 
 
 

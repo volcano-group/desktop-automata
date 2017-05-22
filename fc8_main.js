@@ -12,6 +12,12 @@ robot.setMouseDelay(100)
 //robot.typeString('C:\\FlowConsultant8\\FC8.exe')
 //robot.keyTap('enter')
 //sleep.msleep(500)
+exports.startFC8 = function(){
+    robot.keyTap('command')
+    robot.typeString('FC8')
+    robot.keyTap('enter')
+    sleep.msleep(500)
+}
 
 exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, vctUserDefined, special) {
     //select venturi
@@ -108,5 +114,32 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
         robot.keyTap('enter')
     }
     robot.keyTap('tab')
+    robot.keyTap('enter')
+}
+
+exports.autoCompileGas(){
+    let i = 0
+    for(i=0; i<9; i++){
+        robot.keyTap('tab')
+    }
+    robot.keyTap('enter')
+    for(i=0; i<7; i++){
+        robot.keyTap('tab')
+    }
+    robot.keyTap('enter')
+    robot.keyTap('enter')
+    robot.keyTap('tab')
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    robot.keyTap('enter')
+}
+
+exports.printPDF = function(){
+    robot.keyTap('enter')
+    robot.keyTap('tab')
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    sleep.msleep(1000)
+    robot.typeString('ProvaInputVenturi')
     robot.keyTap('enter')
 }
