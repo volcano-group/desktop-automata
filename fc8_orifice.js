@@ -7,7 +7,7 @@ const ft = orifice.FlangeTaps
 robot.setKeyboardDelay(350)
 robot.setMouseDelay(100)
 
-exports.flangetaps = function(request)style, standard, pressuretap, pipematerial, pmUserDefined, primaryelement, peUserDefined, special) {
+exports.flangetaps = function(request){
     //select orifice
     robot.keyTap('enter')
     //select flangetaps
