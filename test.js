@@ -8,4 +8,5 @@ test.machinedinlet("Upstream",
                    "userdefined",
                    {id:"User Defined Venturi Cylindrical Throat", name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
                    "McOn")
+test.autoCompileGas()
 test.printPDF()
