@@ -18,8 +18,8 @@ exports.flangetaps = function(style, standard, pressuretap, pipematerial, pmUser
     robot.keyTap('tab')
     robot.keyTap('enter')
     //select orifice stlye
-    let i = 0;
-    for(i=0; i<ft.Style.indexOf(style)){
+    let i = 0
+    for(i=0; i<ft.Style.indexOf(style); i++){
         robot.keyTap('down')
     }
     robot.keyTap('tab')
