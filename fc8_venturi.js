@@ -7,7 +7,7 @@ const mi = venturi.MachinedInled
 robot.setKeyboardDelay(350)
 robot.setMouseDelay(100)
 
-exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, vctUserDefined, special) {
+exports.machinedinlet = function(request){
     //select venturi
     robot.keyTap('tab')
     robot.keyTap('down')
@@ -17,8 +17,8 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
     robot.keyTap('enter')
     //select pressuretap
     let i = 0;
-    console.log(mi.PressureTap.indexOf(pressuretap));
-    for(i=0; i<mi.PressureTap.indexOf(pressuretap); i++){
+    console.log(mi.PressureTap.indexOf(request.pressuretap));
+    for(i=0; i<mi.PressureTap.indexOf(request.pressuretap); i++){
         robot.keyTap('up')
     }
     robot.keyTap('tab')
@@ -26,19 +26,19 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
     //select pipe material
     robot.keyTap('tab')
     robot.keyTap('tab')
-    if(pipematerial=="userdefined"){    
+    if(request.pipematerial=="userdefined"){    
         for(i=0; i<21; i++){
             robot.keyTap('down')
         }
-        robot.typeString(pmUserDefined.name)
+        robot.typeString(request.pmUserDefined.name)
         robot.keyTap('tab')
         robot.keyTap('enter')
         for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
-        robot.typeString(pmUserDefined.coeffThermalExpansion)
+        robot.typeString(request.pmUserDefined.coeffThermalExpansion)
     } else {
-        for(i=0; i<mi.PipeMaterial.indexOf(pipematerial); i++){
+        for(i=0; i<mi.PipeMaterial.indexOf(request.pipematerial); i++){
             robot.keyTap('down')
         }   
     }
@@ -47,25 +47,26 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
     //select venturi cylindrical throat
     robot.keyTap('tab')
     robot.keyTap('tab')
-    if(VCT=="userdefined"){
+    if(request.VCT=="userdefined"){
         for(i=0; i<15; i++){
             robot.keyTap('down')
         }
-        robot.typeString(vctUserDefined.name)
+        robot.typeString(request.vctUserDefined.name)
         robot.keyTap('tab')
         robot.keyTap('enter')
         for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
-        robot.typeString(vctUserDefined .coeffThermalExpansion)
+        robot.typeString(request.vctUserDefined .coeffThermalExpansion)
     } else {
-        let ind = mi.VenturiCylindricalThroat.indexOf(VCT)
-        if(ind<6){
-            for (i=0; i<6-ind; i++){
+        let ind = mi.VenturiCylindricalThroat.indexOf(request.VCT)
+        let indStd = mi.VenturiCylindricalThroat.indexOf('316')
+        if(ind<indStd){
+            for (i=0; i<indStd-ind; i++){
                 robot.keyTap('up')
             }
         } else {
-            for (i=0; i<=ind-6; i++){
+            for (i=0; i<=ind-indStd; i++){
                 robot.keyTap('down')
             }
         }    
@@ -73,9 +74,9 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
     robot.keyTap('tab')
     robot.keyTap('enter')
     //select special factor
-    if(special=='none'){
+    if(request.special=='none'){
         robot.keyTap('enter')
-    } else if (special=='McOn&WvcOn'){
+    } else if (request.special=='McOn&WvcOn'){
         robot.keyTap('tab')
         robot.keyTap('tab')
         robot.keyTap('space')
@@ -84,7 +85,7 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
         robot.keyTap('tab')
         robot.keyTap('tab')
         robot.keyTap('enter')
-    } else if (special=="McOn"){
+    } else if (request.special=="McOn"){
         robot.keyTap('tab')
         robot.keyTap('tab')
         robot.keyTap('space')
@@ -92,7 +93,7 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
         robot.keyTap('tab')
         robot.keyTap('tab')
         robot.keyTap('enter')
-    } else if (special=="WvcOn"){
+    } else if (request.special=="WvcOn"){
         robot.keyTap('tab')
         robot.keyTap('tab')
         robot.keyTap('tab')
