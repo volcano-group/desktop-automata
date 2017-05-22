@@ -117,7 +117,7 @@ exports.machinedinlet = function(pressuretap, pipematerial, pmUserDefined, VCT, 
     robot.keyTap('enter')
 }
 
-exports.autoCompileGas(){
+exports.autoCompileGas = function(){
     let i = 0
     for(i=0; i<9; i++){
         robot.keyTap('tab')
