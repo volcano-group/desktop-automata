@@ -4,7 +4,7 @@ import orifice from './fc8_orifice'
 //fare riferimento a fc8_venturi_map per vedere gli input disponibili
 //compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 
-//test.startFC8()
+test.startFC8()
 //venturi.machinedinlet("Upstream", 
 //                   "Duplex",
 //                   {id: "User Defined Pipe Material", name: "", coeffThermalExpansion: ""} , 
