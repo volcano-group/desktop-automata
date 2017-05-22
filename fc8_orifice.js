@@ -7,7 +7,7 @@ const ft = orifice.FlangeTaps
 robot.setKeyboardDelay(350)
 robot.setMouseDelay(100)
 
-exports.flangetaps = function(style, standard, pressuretap, pipematerial, pmUserDefined, primaryelement, peUserDefined, special) {
+exports.flangetaps = function(request)style, standard, pressuretap, pipematerial, pmUserDefined, primaryelement, peUserDefined, special) {
     //select orifice
     robot.keyTap('enter')
     //select flangetaps
@@ -19,7 +19,7 @@ exports.flangetaps = function(style, standard, pressuretap, pipematerial, pmUser
     robot.keyTap('enter')
     //select orifice stlye
     let i = 0
-    for(i=0; i<ft.Style.indexOf(style); i++){
+    for(i=0; i<ft.Style.indexOf(request.style); i++){
         robot.keyTap('down')
     }
     robot.keyTap('tab')
@@ -27,7 +27,7 @@ exports.flangetaps = function(style, standard, pressuretap, pipematerial, pmUser
     //select standard
     robot.keyTap('tab')
     robot.keyTap('tab')
-    let ind = ft.Standard.indexOf(standard)
+    let ind = ft.Standard.indexOf(request.standard)
     let stdInd = ft.Standard.indexOf('ANSI-2530/AGA-3/API-Ch.14 (1992-)')
     if(ind<stdInd){
         for (i=0; i<stdInd-ind; i++){
@@ -41,7 +41,7 @@ exports.flangetaps = function(style, standard, pressuretap, pipematerial, pmUser
     robot.keyTap('tab')
     robot.keyTap('enter')
     //select pressuretap
-    for(i=0; i<ft.PressureTap.indexOf(pressuretap); i++){
+    for(i=0; i<ft.PressureTap.indexOf(request.pressuretap); i++){
         robot.keyTap('up')
     }
     robot.keyTap('tab')
@@ -49,19 +49,19 @@ exports.flangetaps = function(style, standard, pressuretap, pipematerial, pmUser
     //select pipe material
     robot.keyTap('tab')
     robot.keyTap('tab')
-    if(pipematerial=="userdefined"){    
+    if(request.pipematerial=="userdefined"){    
         for(i=0; i<21; i++){
             robot.keyTap('down')
         }
-        robot.typeString(pmUserDefined.name)
+        robot.typeString(request.pmUserDefined.name)
         robot.keyTap('tab')
         robot.keyTap('enter')
         for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
-        robot.typeString(pmUserDefined.coeffThermalExpansion)
+        robot.typeString(request.pmUserDefined.coeffThermalExpansion)
     } else {
-        for(i=0; i<ft.PipeMaterial.indexOf(pipematerial); i++){
+        for(i=0; i<ft.PipeMaterial.indexOf(request.pipematerial); i++){
             robot.keyTap('down')
         }   
     }
@@ -70,19 +70,19 @@ exports.flangetaps = function(style, standard, pressuretap, pipematerial, pmUser
     //select primary element material
     robot.keyTap('tab')
     robot.keyTap('tab')
-    if(primaryelement=="userdefined"){
+    if(request.primaryelement=="userdefined"){
         for(i=0; i<15; i++){
             robot.keyTap('down')
         }
-        robot.typeString(peUserDefined.name)
+        robot.typeString(request.peUserDefined.name)
         robot.keyTap('tab')
         robot.keyTap('enter')
         for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
-        robot.typeString(peUserDefined.coeffThermalExpansion)
+        robot.typeString(request.peUserDefined.coeffThermalExpansion)
     } else {
-        let ind = ft.PrimaryElementMaterial.indexOf(primaryelement)
+        let ind = ft.PrimaryElementMaterial.indexOf(request.primaryelement)
         if(ind<6){
             for (i=0; i<6-ind; i++){
                 robot.keyTap('up')
@@ -98,15 +98,15 @@ exports.flangetaps = function(style, standard, pressuretap, pipematerial, pmUser
     //select special factor
     robot.keyTap('tab')
     robot.keyTap('tab')
-    if(special.ManometerCorrectionFactor == "on"){
+    if(request.special.ManometerCorrectionFactor == "on"){
         robot.keyTap('space')
     }
     robot.keyTap('tab')
-    if(special.DrainHole == "on"){
+    if(request.special.DrainHole == "on"){
         robot.keyTap('space')
     }
     robot.keyTap('tab')
-    if(special.WaterVaporCorrection == "on"){
+    if(request.special.WaterVaporCorrection == "on"){
         robot.keyTap('space')
     }
     robot.keyTap('tab')     

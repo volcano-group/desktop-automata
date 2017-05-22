@@ -13,13 +13,14 @@ test.startFC8()
 //                   "McOn")
 //test.autoCompileGas()
 //test.printPDF()
-
-orifice.flangetaps("Clamped",
-                   "ASME3M (1983- 2003, ASME PTC 19.5 (2004-)",
-                   "Downstream",
-                   "Duplex",
-                   {id: "User Defined Pipe Material", name: "", coeffThermalExpansion: ""} , 
-                   "userdefined",
-                   {id:"User Defined Primary Element Material", name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
-                   {ManometerCorrectionFactor: "on", DrainHole: "off", WaterVaporCorrection: "on"}
-                  )
+let request = {
+    style: "Clamped",
+    standard: "ASME3M (1983- 2003, ASME PTC 19.5 (2004-)",
+    pressuretap: "Downstream",
+    pipematerial: "Duplex",
+    pmUserDefined:{name: "", coeffThermalExpansion: ""} , 
+    primaryelement: "userdefined",
+    peUserDefined:{name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
+    special: {ManometerCorrectionFactor: "on", DrainHole: "off", WaterVaporCorrection: "on"}
+}
+orifice.flangetaps(request)
