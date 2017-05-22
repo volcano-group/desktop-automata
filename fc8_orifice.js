@@ -1,7 +1,7 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
 import orifice from './fc8_orifice_map.json'
-const ft = venturi.FlangeTaps   
+const ft = orifice.FlangeTaps   
 
 //set speed
 robot.setKeyboardDelay(350)
