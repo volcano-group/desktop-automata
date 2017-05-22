@@ -70,11 +70,11 @@ exports.flangetaps = function(style, standard, pressuretap, pipematerial, pmUser
     //select primary element material
     robot.keyTap('tab')
     robot.keyTap('tab')
-    if(VCT=="userdefined"){
+    if(primaryelement=="userdefined"){
         for(i=0; i<15; i++){
             robot.keyTap('down')
         }
-        robot.typeString(vctUserDefined.name)
+        robot.typeString(peUserDefined.name)
         robot.keyTap('tab')
         robot.keyTap('enter')
         for(i=0; i<10; i++){
