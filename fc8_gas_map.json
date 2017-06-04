@@ -136,7 +136,6 @@
                   "Centimetre",
                   "Millimetre"
                  ],
-    "BasePressure": "",
     "BasePressureUnit": ["psia",
                        "MPa, abs",
                        "Pa,abs"
@@ -145,14 +144,11 @@
                        "kgf/m^,abs"
                        "kgf/cm^,abs"
                       ],
-    "BaseTemp": "",
     "BaseTempUnit": ["TdegF",
                    "TdegR",
                    "TdegC",
                    "TK"
                   ],
-    "HeatingTemp": "",
-    "EnergyCost": "",
     "GasType": ["Enter Fluid Properties",
               "Gas Mixture",
               "AlChE 250+ Fluids (NOT WORKING RIGHT NOW)",
@@ -182,35 +178,6 @@
               "I-Pentane",
               "Propane",
               "Propylene"
-             ],
-    "State": {
-        Pressure: "",
-        BarometricPressure: "",
-        Temperature: ""
-    },
-    "Base": {
-        "DP":{
-            NormalFlow: "",
-            FlowrateMAX: "",
-            Flowrate: "",
-            PipeInternalDiameter: "", //da sistemare con le opzioni
-            BorePrimaryElement: "",
-            BetaRatio: ""
-        },
-        "Flow":{
-            DifferentialPressure: "",
-            PipeInternalDiameter: "", //da sistemare con opzioni
-            BorePrimaryElement: "",
-            BetaRatio
-        },
-        "Size":{
-            NormalFlowPercMax: "", //%max flow
-            FlowRateMax: "",
-            FlowRate: "",
-            DifferentialMaxFlow: "",
-            PipeDiameter: "" //da sistemare con varie opzioni standard
-            
-        }
-    }
+             ]
     
 }
