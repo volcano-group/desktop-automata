@@ -40,7 +40,7 @@ exports.gas = function(object) {
     for(i=0; i<gas.Differential.indexOf(object.differentialUnit); i++){
         robot.keyTap('down')
     }
-    for(I=0; i<16; i++){
+    for(i=0; i<16; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
