@@ -88,7 +88,7 @@ exports.gas = function(object) {
     for(i=0; i<gas.Flow.Time.indexOf(object.flowUnitTime); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<12; i++){
+    for(i=0; i<16; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
@@ -98,7 +98,7 @@ exports.gas = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<10; i++){
+    for(i=0; i<14; i++){
         robot.keyTap('tab')
     }
     for(i=0; i<gas.Density.Mass.indexOf(object.densityMassUnit); i++){
@@ -108,7 +108,7 @@ exports.gas = function(object) {
     for(i=0; i<gas.Density.Volume.indexOf(object.densityVolumeUnit); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<12; i++){
+    for(i=0; i<16; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
@@ -118,13 +118,14 @@ exports.gas = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<9; i++){
+    for(i=0; i<13; i++){
         robot.keyTap('tab')
     }
     for(i=0; i<gas.DensityMethod.indexOf(object.densityMethod); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<12; i++){
+    for(i=0; i<16
+        ; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
@@ -134,7 +135,7 @@ exports.gas = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<8; i++){
+    for(i=0; i<12; i++){
         robot.keyTap('tab')
     }
     for(i=0; i<gas.Viscosity.indexOf(object.viscosityUnit); i++){
@@ -240,6 +241,7 @@ exports.gas = function(object) {
         }
         robot.keyTap('tab')
         robot.keyTap('enter')
+        robot.keyTap('enter') //da testare
     }
     
     //etner pressure bpressure e temperature
@@ -316,6 +318,9 @@ exports.gas = function(object) {
         robot.keyTap('enter')
         robot.keyTap('enter')
     } else if (object.choice == "size"){
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
         robot.keyTap('tab')
         robot.keyTap('tab')
         for(i=0; i<10; i++){
