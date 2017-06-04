@@ -14,7 +14,7 @@ let request = {
     special: "McOn"
 }
 test.selectType("Orifice")
-venturi.machinedinlet(request)
+//venturi.machinedinlet(request)
 //test.autoCompileGas()
 //test.printPDF()
 //let request = {

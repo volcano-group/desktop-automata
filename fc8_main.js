@@ -24,6 +24,7 @@ exports.startFC8 = function(){
 
 exports.selectType = function(request){
     robot.keyTap('tab')
+    let i = 0
     for(i=0; i<type.indexOf(request); i++){
         robot.keyTap('down')
     }
