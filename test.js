@@ -5,7 +5,8 @@ import gas from './fc8_gas'
 //fare riferimento a fc8_venturi_map per vedere gli input disponibili
 //compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 
-test.startFC8()
+//test.startFC8()
+
 //let request = {
 //    pressuretap: "Upstream", 
 //    pipematerial: "Duplex",
@@ -14,21 +15,25 @@ test.startFC8()
 //    vctUserDefined: {name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
 //    special: "McOn"
 //}
-test.selectType("Orifice")
+
+//test.selectType("Orifice")
+
 //venturi.machinedinlet(request)
 //test.autoCompileGas()
 //test.printPDF()
-let requestPipe = {
-    style: "Clamped",
-    standard: "ASME3M (1983- 2003, ASME PTC 19.5 (2004-)",
-    pressuretap: "Downstream",
-    pipematerial: "Duplex",
-    pmUserDefined:{name: "", coeffThermalExpansion: ""} , 
-    primaryelement: "userdefined",
-    peUserDefined:{name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
-    special: {ManometerCorrectionFactor: "on", DrainHole: "off", WaterVaporCorrection: "on"}
-}
-orifice.flangetaps(requestPipe)
+
+//let requestPipe = {
+//    style: "Clamped",
+//    standard: "ASME3M (1983- 2003, ASME PTC 19.5 (2004-)",
+//    pressuretap: "Downstream",
+//    pipematerial: "Duplex",
+//    pmUserDefined:{name: "", coeffThermalExpansion: ""} , 
+//    primaryelement: "userdefined",
+//    peUserDefined:{name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
+//    special: {ManometerCorrectionFactor: "on", DrainHole: "off", WaterVaporCorrection: "on"}
+//}
+//orifice.flangetaps(requestPipe)
+
 let requestGas = {
     pressureUnit: "Pa,abs",
     differentialUnit: "Inches of Mercury @ 39.2F",
