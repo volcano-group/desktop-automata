@@ -80,7 +80,7 @@ exports.gas = function(object) {
             robot.keyTap('up')
         }
     } else {
-        for (i=0; i<=ind-indStd; i++){
+        for (i=0; i<ind-indStd; i++){
             robot.keyTap('down')
         }
     }    
@@ -234,9 +234,10 @@ exports.gas = function(object) {
     indStd = gas.GasType.indexOf('AGA-8 Detailed Methos, Input Mole Fractions')
     if(ind<indStd){
         robot.keyTap('tab')
+        robot.keyTap('down')
         robot.keyTap('enter')
     } else {
-        for (i=0; i<=ind-indStd; i++){
+        for (i=0; i<ind-indStd; i++){
             robot.keyTap('down')
         }
         robot.keyTap('tab')
