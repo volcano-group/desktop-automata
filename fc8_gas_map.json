@@ -111,14 +111,14 @@
     },
     "DensityMethod": ["Density",
                       "pvT pf, Tf, Zf, G (Specific Gravity)",
-                      "pvT pf, Tf, Zf, Mw (Molecular Weight)",
+                      "pvT pf, Tf, Zf, Mw (Molecular Weight)"
                      ],
     "Viscosity":["Centipoise cP",
                 "Millipoise mP",
                 "Micropoise microP",
                 "Stoke vSt",
                 "Centistoke vcSt",
-                "ft^2/s"
+                "ft^2/s",
                 "Milli Pascal.sec (milliPa.s)",
                 "lbf.s/ft^2",
                 "lbf.s/in^2",
@@ -141,7 +141,7 @@
                        "Pa,abs"
                        "kPa,abs",
                        "Bar,abs",
-                       "kgf/m^,abs"
+                       "kgf/m^,abs",
                        "kgf/cm^,abs"
                       ],
     "BaseTempUnit": ["TdegF",
