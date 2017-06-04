@@ -5,11 +5,30 @@ import sleep from 'sleep'
 robot.setKeyboardDelay(350)
 robot.setMouseDelay(100)
 
+let type = [
+    "Orifice",
+    "Venturi",
+    "Nozzle",
+    "Fixed Geometry",
+    "V-Cone",
+    "Segmental Meters",
+    "Linear Meters"
+]
+
 exports.startFC8 = function(){
     robot.keyTap('command')
     robot.typeString('FC8')
     robot.keyTap('enter')
     sleep.msleep(500)
+}
+
+exports.selectType = function(request){
+    robot.keyTap('tab')
+    for(i=0; i<type.indexOf(request); i++){
+        robot.keyTap('down')
+    }
+    robot.keyTap('tab')
+    robot.keyTap('enter')
 }
 
 exports.autoCompileGas = function(){
