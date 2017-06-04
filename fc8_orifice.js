@@ -9,7 +9,7 @@ robot.setMouseDelay(100)
 
 exports.flangetaps = function(request){
     //select orifice
-    robot.keyTap('enter')
+    //robot.keyTap('enter')
     //select flangetaps
     robot.keyTap('tab')
     robot.keyTap('tab')
