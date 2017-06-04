@@ -144,7 +144,7 @@
                        "kgf/m^,abs",
                        "kgf/cm^,abs"
                       ],
-    "BaseTempUnit": ["TdegF",
+    "BaseTemperatureUnit": ["TdegF",
                    "TdegR",
                    "TdegC",
                    "TK"
