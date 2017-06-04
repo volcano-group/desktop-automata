@@ -228,8 +228,8 @@ exports.gas = function(object) {
     //select gas
     robot.keyTap('tab')
     robot.keyTap('tab')
-    let ind = gas.GasType.indexOf(object.gasType)
-    let indStd = gas.GasType.indexOf('AGA-8 Detailed Methos, Input Mole Fractions')
+    ind = gas.GasType.indexOf(object.gasType)
+    indStd = gas.GasType.indexOf('AGA-8 Detailed Methos, Input Mole Fractions')
     if(ind<indStd){
         robot.keyTap('tab')
         robot.keyTap('enter')
