@@ -8,6 +8,7 @@ robot.setMouseDelay(100)
 
 exports.gas = function(object) {
     //select pressure unit
+    let i = 0
     robot.keyTap('enter')
     for(i=0; i<9; i++){
         robot.keyTap('tab')
