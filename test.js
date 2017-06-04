@@ -13,7 +13,7 @@ let request = {
     vctUserDefined: {name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
     special: "McOn"
 }
-test.selectType("Orifice")
+test.selectType("Venturi")
 //venturi.machinedinlet(request)
 //test.autoCompileGas()
 //test.printPDF()
