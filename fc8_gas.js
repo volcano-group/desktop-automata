@@ -202,7 +202,7 @@ exports.gas = function(object) {
     for(i=0; i<7; i++){
         robot.keyTap('tab')
     }
-    for(i=0; i<gas.baseTemperatureUnit.indexOf(object.baseTemperatureUnit); i++){
+    for(i=0; i<gas.BaseTemperatureUnit.indexOf(object.baseTemperatureUnit); i++){
         robot.keyTap('up')
     }
     
