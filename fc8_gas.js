@@ -52,7 +52,7 @@ exports.gas = function(object) {
     for(i=0; i<16; i++){
         robot.keyTap('tab')
     }  
-    for(i=0; i<gas.Temperature.indexOf(object.temperatureUnit)){
+    for(i=0; i<gas.Temperature.indexOf(object.temperatureUnit); i++){
         robot.keyTap('up')
     }
     for(i=0; i<10; i++){
