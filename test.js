@@ -30,7 +30,7 @@ import gas from './fc8_gas'
 //    pmUserDefined:{name: "", coeffThermalExpansion: ""} , 
 //    primaryelement: "userdefined",
 //    peUserDefined:{name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
-//    special: {ManometerCorrectionFactor: "on", DrainHole: "off", WaterVaporCorrection: "on"}
+//    special: {ManometerCorrectionFactor: "on", DrainHole: "off", WaterVaporCorrection: "off"}
 //}
 //orifice.flangetaps(requestPipe)
 
