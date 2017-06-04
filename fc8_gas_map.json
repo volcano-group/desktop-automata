@@ -3,7 +3,7 @@
                 "hw,68F,abs",
                 "hw,68F,gage",
                 "MPa,abs",
-                "MPa,gage"
+                "MPa,gage",
                 "Pa,abs",
                 "Pa,gage",
                 "kPa,abs",
@@ -138,7 +138,7 @@
                  ],
     "BasePressureUnit": ["psia",
                        "MPa, abs",
-                       "Pa,abs"
+                       "Pa,abs",
                        "kPa,abs",
                        "Bar,abs",
                        "kgf/m^,abs",
