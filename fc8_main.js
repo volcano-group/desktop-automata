@@ -49,12 +49,11 @@ exports.autoCompileGas = function(){
     robot.keyTap('enter')
 }
 
-exports.printPDF = function(){
-    robot.keyTap('enter')
+exports.printPDF = function(fileName){
     robot.keyTap('tab')
     robot.keyTap('tab')
     robot.keyTap('enter')
-    sleep.msleep(1000)
-    robot.typeString('ProvaInputVenturi')
+    sleep.msleep(2000)
+    robot.typeString(fileName)
     robot.keyTap('enter')
 }

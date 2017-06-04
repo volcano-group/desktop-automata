@@ -1,24 +1,24 @@
 {
-    Pressure: ["psia",
-                 "psig",
-                 "hw,68F,abs",
-                 "hw,68F,gage",
-                 "MPa,abs",
-                 "MPa,gage"
-                 "Pa,abs",
-                 "Pa,gage",
-                 "kPa,abs",
-                 "kPa,gage",
-                 "Bar,abs",
-                 "Bar,gage",
-                 "milliBar,abs",
-                 "milliBar,gage",
-                 "kgf/m^2,abs",
-                 "kgf/m^2,gage",
-                 "kgf/cm^2,abs",
-                 "kgf/cm^2,gage",
+    "Pressure": ["psig",
+                "hw,68F,abs",
+                "hw,68F,gage",
+                "MPa,abs",
+                "MPa,gage"
+                "Pa,abs",
+                "Pa,gage",
+                "kPa,abs",
+                "kPa,gage",
+                "Bar,abs",
+                "Bar,gage",
+                "milliBar,abs",
+                "milliBar,gage",
+                "kgf/m^2,abs",
+                "kgf/m^2,gage",
+                "kgf/cm^2,abs",
+                "kgf/cm^2,gage",
+                "psia"
                 ],
-    Differential: ["Inches of Water @ 68F (ASME, Miller, Spink)",
+    "Differential": ["Inches of Water @ 68F (ASME, Miller, Spink)",
                   "Inches of Water @ 60F (AGA/API)",
                   "Inches of Water @ 39.2F",
                   "Inches of Mercury @ 39.2F",
@@ -39,52 +39,48 @@
                   "mm of Mercury @ 0 degC",
                   "mm of Mercury @ 15.56 degC (60f)"
                  ],
-    Temperature: ["TdegF",
+    "Temperature": ["TdegF",
                     "TdegR",
                     "TdegC",
                     "TK"
                    ],
-    Flow: {
-        Units:{
-            Mass:["Mass lbm",
+    "Flow": {
+        "Unit":["Mass lbm",
                     "Mass kg",
                     "Mass g",
-                    "Mass Metric Ton"
-                   ],
-            Flowing:["Flowing ft^3",
-                       "Flowing mft^3",
-                       "Flowing mmft^3",
-                       "Flowing gallon",
-                       "Flowing barrel 31 (gal,beer)",
-                       "Flowing barrel 31.5 (gal,wine)",
-                       "Flowing m^3",
-                       "Flowing barrel 42 (gal, petroleum)",
-                       "Flowing litre (cubic decimetres)",
-                       "Flowing millitres (cubis centimentres)"
-                      ],
-            Base:["Base Ft^3 Cubic Feet: SCF",
+                    "Mass Metric Ton",
+                    "Flowing ft^3",
+                    "Flowing mft^3",
+                    "Flowing mmft^3",
+                    "Flowing gallon",
+                    "Flowing barrel 31 (gal,beer)",
+                    "Flowing barrel 31.5 (gal,wine)",
+                    "Flowing m^3",
+                    "Flowing barrel 42 (gal, petroleum)",
+                    "Flowing litre (cubic decimetres)",
+                    "Flowing millitres (cubis centimentres)",
+                    "Base Ft^3 Cubic Feet: SCF",
                     "Base Ft^3 Cubic Feet: MSCF",
                     "Base Ft^3 Cubic Feet: MMSCF",
-                    "US Gallon",
-                    "Barrel 31 Gal,beer",
-                    "Barrel 31.5 Gal,wine",
-                    "Barrel 42 Gal,petroleum",
-                    "Cubic Metres: for NCMH, etc.",
-                    "1000 Cubic Metres: for kM3",
-                    "Litre (Cubic Decimetres)",
-                    "Millilitre (ML Cubic Centimetres)"
-                   ]
-        },
-        Time:["Second",
-                "Minute",
-                "Hour",
+                    "Base US Gallon",
+                    "Base Barrel 31 Gal,beer",
+                    "Base Barrel 42 Gal,petroleum",
+                    "Base Cubic Metres: for NCMH, etc.",
+                    "Base 1000 Cubic Metres: for kM3",
+                    "Base Litre (Cubic Decimetres)",
+                    "Base Millilitre (ML Cubic Centimetres)",
+                    "Base Barrel 31.5 Gal,wine"
+                   ],
+        "Time":["Hour",
                 "24 Hour",
                 "Week",
-                "Year"
+                "Year",
+                "Second",
+                "Minute",
                ]
     },
-    Density: {
-        Mass: ["Pound Mass lbm (US Flow Std)",
+    "Density": {
+        "Mass": ["Pound Mass lbm (US Flow Std)",
                "Pound Apothecary lb,ap",
                "Ounce Avoirdupois oz,m",
                "Ounce Troy lb,ap",
@@ -99,7 +95,7 @@
                "kgf.s^2/m",
                "Carat"
               ],
-        Volume: ["Cubic Feet",
+        "Volume": ["Cubic Feet",
                  "Cubic Inches",
                  "Gallon US liquid",
                  "Gallon UK liquid",
@@ -113,35 +109,35 @@
                  "Stere"
                 ]
     },
-    DensityMethod: ["pvT pf, Tf, Zf, G (Specific Gravity)",
-                    "pvT pf, Tf, Zf, Mw (Molecular Weight)",
-                    "Density"
-                   ],
-    Viscosity:["lbf.s/ft^2",
-               "lbf.s/in^2",
-               "lbm/(ft.s)",
-               "lbm/(ft.h)",
-               "slug/(ft.s)",
-               "Pascal.sec (Pa.s)",
-               "Micro Pascal.sec (MicroPa.s)",
-               "Milli Pascal.sec (milliPa.s)",
-               "Poise P",
-               "Centipoise cP",
-               "Millipoise mP",
-               "Micropoise microP",
-               "Stoke vSt",
-               "Centistoke vcSt",
-               "ft^2/s
+    "DensityMethod": ["Density",
+                      "pvT pf, Tf, Zf, G (Specific Gravity)",
+                      "pvT pf, Tf, Zf, Mw (Molecular Weight)",
+                     ],
+    "Viscosity":["Centipoise cP",
+                "Millipoise mP",
+                "Micropoise microP",
+                "Stoke vSt",
+                "Centistoke vcSt",
+                "ft^2/s"
+                "Milli Pascal.sec (milliPa.s)",
+                "lbf.s/ft^2",
+                "lbf.s/in^2",
+                "lbm/(ft.s)",
+                "lbm/(ft.h)",
+                "slug/(ft.s)",
+                "Pascal.sec (Pa.s)",
+                "Micro Pascal.sec (MicroPa.s)",
+                "Poise P"                 
               ],
-    Dimensional: ["Inches",
+    "Dimensional": ["Inches",
                   "Feet",
                   "Metre",
                   "Decimetre",
                   "Centimetre",
                   "Millimetre"
                  ],
-    BasePressure: "",
-    BasePressureUnit: ["psia",
+    "BasePressure": "",
+    "BasePressureUnit": ["psia",
                        "MPa, abs",
                        "Pa,abs"
                        "kPa,abs",
@@ -149,15 +145,15 @@
                        "kgf/m^,abs"
                        "kgf/cm^,abs"
                       ],
-    BaseTemp: "",
-    BaseTempUnit: ["TdegF (degrees Farenheit)",
-                   "TdegR (Absolute Temperature degR)",
-                   "TdegC (degrees Celsius)",
-                   "TK (Absolute Temperature K)"
+    "BaseTemp": "",
+    "BaseTempUnit": ["TdegF",
+                   "TdegR",
+                   "TdegC",
+                   "TK"
                   ],
-    HeatingTemp: "",
-    EnergyCost: "",
-    GasType: ["Enter Fluid Properties",
+    "HeatingTemp": "",
+    "EnergyCost": "",
+    "GasType": ["Enter Fluid Properties",
               "Gas Mixture",
               "AlChE 250+ Fluids (NOT WORKING RIGHT NOW)",
               "ASME 1967",
@@ -187,13 +183,13 @@
               "Propane",
               "Propylene"
              ],
-    State: {
+    "State": {
         Pressure: "",
         BarometricPressure: "",
         Temperature: ""
     },
-    Base: {
-        DP:{
+    "Base": {
+        "DP":{
             NormalFlow: "",
             FlowrateMAX: "",
             Flowrate: "",
@@ -201,13 +197,13 @@
             BorePrimaryElement: "",
             BetaRatio: ""
         },
-        Flow:{
+        "Flow":{
             DifferentialPressure: "",
             PipeInternalDiameter: "", //da sistemare con opzioni
             BorePrimaryElement: "",
             BetaRatio
         },
-        Size:{
+        "Size":{
             NormalFlowPercMax: "", //%max flow
             FlowRateMax: "",
             FlowRate: "",
