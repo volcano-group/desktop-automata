@@ -83,7 +83,7 @@ let request = {
             dp: {
                 percMaxFlow: "100",
                 maxFlow: "602653.92",
-                normalFlow: "603653.92"
+                normalFlow: "602653.92"
             },
             flow: {
                 differentialPressure: "100"
