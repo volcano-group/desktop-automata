@@ -39,7 +39,7 @@ import gas from './fc8_gas'
 }
 orifice.flangetaps(requestPipe)*/
 
-let requestGas = {
+/*let requestGas = {
     pressureUnit: "psig,gage",
     differentialUnit: "hw68f",
     temperatureUnit: "TdegF",
@@ -81,4 +81,6 @@ let requestGas = {
     }
 }
 gas.gas(requestGas)
-test.printPDF("Prova Automatica con Gas")
+test.printPDF("Prova Automatica con Gas")*/
+
+robot.moveMouse(100, 100)
