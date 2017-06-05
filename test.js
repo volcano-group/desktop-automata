@@ -92,5 +92,5 @@ test.printPDF("Prova Automatica con Gas")*/
 
 robot.moveMouse(50, 25)
 robot.mouseClick()
-robot.moveMouse(50, 80)
+robot.moveMouse(50, 150)
 robot.mouseClick()
