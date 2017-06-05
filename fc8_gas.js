@@ -230,7 +230,7 @@ exports.gas = function(object) {
     //select gas
     robot.keyTap('tab')
     robot.keyTap('tab')
-    ind = gas.GasType.indexOf(object.gasType)
+    /*ind = gas.GasType.indexOf(object.gasType)
     indStd = gas.GasType.indexOf('AGA-8 Detailed Methos, Input Mole Fractions')
     if(ind<indStd){
         robot.keyTap('tab')
@@ -243,7 +243,16 @@ exports.gas = function(object) {
         robot.keyTap('tab')
         robot.keyTap('enter')
         robot.keyTap('enter') //da testare
+    }*/
+    for(i=0; i<22; i++){
+        robot.keyTap('down')
     }
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    robot.typeString(object.fluidProperties.name)
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    
     
     //etner pressure bpressure e temperature
     for(i=0; i<4; i++){
@@ -257,12 +266,45 @@ exports.gas = function(object) {
     for(i=0; i<10; i++){
         robot.keyTap('delete')
     }
-    robot.typeString(object.bPressure)
+    robot.typeString(object.temperature)
     robot.keyTap('tab')
     for(i=0; i<10; i++){
         robot.keyTap('delete')
     }
-    robot.typeString(object.temperature)
+    robot.typeString(object.flowingDensity)
+    robot.keyTap('tab')
+    for(i=0; i<10; i++){
+        robot.keyTap('delete')
+    }
+    robot.typeString(object.baseDensity)
+    robot.keyTap('tab')
+    for(i=0; i<10; i++){
+        robot.keyTap('delete')
+    }
+    robot.typeString(object.viscosity)
+    robot.keyTap('tab')
+    for(i=0; i<10; i++){
+        robot.keyTap('delete')
+    }
+    robot.typeString(object.isentropicExponent)
+    robot.keyTap('tab')
+    for(i=0; i<10; i++){
+        robot.keyTap('delete')
+    }
+    robot.typeString(object.manometerData.localGravity)
+    robot.keyTap('tab')
+    for(i=0; i<4; i++){
+        robot.keyTap('enter')
+    }
+    for(i=0; i<10; i++){
+        robot.keyTap('delete')
+    }
+    robot.typeString(object.manometerData.meterTemperature)
+    robot.keyTap('tab')
+    for(i=0; i<10; i++){
+        robot.keyTap('delete')
+    }
+    robot.typeString(object.manometerData.seal)
     robot.keyTap('tab')
 }
 

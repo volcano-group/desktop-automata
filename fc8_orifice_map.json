@@ -66,6 +66,24 @@
             "Manometer Correction Factor",
             "Drain Hole",
             "Water Capor Correction"
+        ],
+        "VentDrainHole":[
+            "No Vent/Drain Hole",
+            "0.0625",
+            "0.0938",
+            "0.1250",
+            "0.1563",
+            "0.1875",
+            "0.2188",
+            "0.25",
+            "0.2813",
+            "0.3125",
+            "0.3438",
+            "0.375",
+            "0.4063",
+            "0.4375",
+            "0.4688",
+            "0.5"
         ]
     }
 }

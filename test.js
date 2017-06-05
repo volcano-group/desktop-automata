@@ -33,7 +33,7 @@ let request = {
             holes: "1",
             WaterVaporCorrection: "off"
         },
-        gasUnits: "US vapor"
+        gasUnits: "US gas"
     },
     gas: {
         pressureUnit: "psig,gage",
@@ -52,10 +52,22 @@ let request = {
         baseTemperatureUnit: "TdegF",
         heatingTemperature: "60",
         energyCost: "1",
-        gasType: "Ammonia",
-        pressure: "605",
-        bPressure: "14.696",
-        temperature: "183"
+        gasType: "Enter Fluid Properties",
+        fluidProperties: {
+            name: "Propylene"
+        },
+        pressure: "614.6960",
+        bPressure: "",
+        temperature: "80",
+        flowingDensity: "2.02402",
+        baseDensity: "",
+        viscosity: "0.01139667",
+        isentropicExponent: "1.3066",
+        manometerData: {
+            localGravity: "32.17405",
+            meterTemperature: "80",
+            seal: "2.00328"
+        }
     },
     calculation: {
         method: "dp",
@@ -64,8 +76,8 @@ let request = {
             borePrimaryElement: "3.80577",
             dp: {
                 percMaxFlow: "100",
-                maxFlow: "603656.55",
-                normalFlow: "603656.55"
+                maxFlow: "602653.92",
+                normalFlow: "603653.92"
             },
             flow: {
                 differentialPressure: "100"
@@ -76,7 +88,8 @@ let request = {
                 normalFlow: "603656.55",
                 differential: "100"
             }
-        }
+        },
+        ventDrainHole:  "0.2188"
     },
     fileName: "Prova automatica con gas"
     
@@ -107,6 +120,6 @@ switch(reqPipe.gasUnits){
 
 
 let reqCalculation = request.calculation
-//test.calculation(reqCalculation)
+test.calculation(reqCalculation)
 
 //test.printPDF(request.fileName)

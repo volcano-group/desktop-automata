@@ -1,5 +1,6 @@
 import robot from 'robotjs'
-import sleep from 'sleep'  
+import sleep from 'sleep'
+import orifice from './fc8_orifice_map.json'
 
 //set speed
 robot.setKeyboardDelay(350)
@@ -136,8 +137,26 @@ exports.calculation = function(object) {
         robot.typeString(object.base.pipeDiameter)
         robot.keyTap('tab')
         robot.keyTap('enter')
-        robot.keyTap('enter')
     }
+    if(object.ventDrainHole!="none"){
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        let ind = orifice.VentDrainHoles.indexOf(object.ventDrainHole)
+        let indStd = orifice.VentDrainHoles.indexOf("0.1875")
+        if(ind<indStd){
+            for (i=0; i<indStd-ind; i++){
+                robot.keyTap('up')
+            }
+        } else {
+            for (i=0; i<ind-indStd; i++){
+                robot.keyTap('down')
+            }
+        }
+        robot.keyTap('tab')
+    }
+    robot.keyTap('enter')
+    robot.keyTap('enter')
+    
 }
 
 exports.printPDF = function(fileName){
