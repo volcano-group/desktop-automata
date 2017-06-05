@@ -52,7 +52,7 @@ let requestGas = {
     dimensionalUnit: "Inches",
     basePressure: "14.696",
     basePressureUnit: "psia",
-    baseTemperature: "180",
+    baseTemperature: "60",
     baseTemperatureUnit: "TdegF",
     heatingTemperature: "60",
     energyCost: "1",
