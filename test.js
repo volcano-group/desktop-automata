@@ -90,4 +90,4 @@ orifice.flangetaps(requestPipe)*/
 gas.gas(requestGas)
 test.printPDF("Prova Automatica con Gas")*/
 
-robot.moveMouse(50, 50)
+robot.moveMouse(50, 25)
