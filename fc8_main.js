@@ -141,8 +141,8 @@ exports.calculation = function(object) {
     if(object.ventDrainHole!="none"){
         robot.keyTap('tab')
         robot.keyTap('tab')
-        let ind = orifice.VentDrainHole.indexOf(object.ventDrainHole)
-        let indStd = orifice.VentDrainHole.indexOf("0.1875")
+        let ind = orifice.FlangeTaps.VentDrainHole.indexOf(object.ventDrainHole)
+        let indStd = orifice.FlangeTaps.VentDrainHole.indexOf("0.1875")
         if(ind<indStd){
             for (i=0; i<indStd-ind; i++){
                 robot.keyTap('up')
