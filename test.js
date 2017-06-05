@@ -32,7 +32,7 @@ let requestPipe = {
     peUserDefined:{name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
     special: {
         ManometerCorrectionFactor: "on",
-        DrainHole: "off",
+        DrainHole: "on",
         holes: "1",
         WaterVaporCorrection: "off"
     }
