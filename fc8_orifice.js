@@ -102,11 +102,21 @@ exports.flangetaps = function(request){
     robot.keyTap('tab')
     if(request.special.DrainHole == "on"){
         robot.keyTap('space')
+        robot.keyTap('tab')
+        if(request.special.WaterVaporCorrection == "on"){
+            robot.keyTap('space')
+        }
+        robot.keyTap('tab')
+        if(request.special.holes=="2"){
+            robot.keyTap('right')
+        }
+    } else {
+        robot.keyTap('tab')
+        if(request.special.WaterVaporCorrection == "on"){
+            robot.keyTap('space')
+        }    
     }
-    robot.keyTap('tab')
-    if(request.special.WaterVaporCorrection == "on"){
-        robot.keyTap('space')
-    }
+    
     robot.keyTap('tab')     
     robot.keyTap('tab')     
     robot.keyTap('enter')     
