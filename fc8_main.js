@@ -49,6 +49,96 @@ exports.autoCompileGas = function(){
     robot.keyTap('enter')
 }
 
+exports.calculation = function(object) {
+    //select dp flow size
+    if(object.method == "dp"){
+        robot.keyTap('enter')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.dp.percMaxFlow)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.dp.maxFlow)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.dp.normalFlow)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.pipeDiameter)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.borePrimaryElement)
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        robot.keyTap('enter')
+    } else if (object.choice == "flow"){
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.flow.differentialPressure)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.pipeDiameter)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.borePrimaryElement)
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        robot.keyTap('enter')
+    } else if (object.choice == "size"){
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.size.percMaxFlow)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.size.maxFlow)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.size.normalFlow)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.size.differential)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.base.pipeDiameter)
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        robot.keyTap('enter')
+    }
+}
+
 exports.printPDF = function(fileName){
     robot.keyTap('tab')
     robot.keyTap('tab')
