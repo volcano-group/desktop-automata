@@ -12,7 +12,7 @@ import gas from './fc8_gas'
 //fare riferimento a fc8_venturi_map per vedere gli input disponibili
 //compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 
-test.startFC8()
+//test.startFC8()
 
 let request = {
     pipe: {
@@ -60,7 +60,7 @@ let request = {
         bPressure: "",
         temperature: "80",
         flowingDensity: "2.02402",
-        baseDensity: "0..464",
+        baseDensity: "0.0464",
         viscosity: "0.01139667",
         isentropicExponent: "1.3066",
         manometerData: {
@@ -96,15 +96,15 @@ let request = {
 }
 
 
-test.selectType(request.pipe.type)
+//test.selectType(request.pipe.type)
 
 let reqPipe = request.pipe
-switch(request.pipe.type2){
+/*switch(request.pipe.type2){
     case "Flange Taps": {
         orifice.flangetaps(reqPipe)
         break
     } 
-}
+}*/
 
 let reqGas = request.gas
 switch(reqPipe.gasUnits){
