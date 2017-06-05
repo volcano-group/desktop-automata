@@ -9,6 +9,7 @@ import test from './fc8_main'
 import venturi from './fc8_venturi'
 import orifice from './fc8_orifice'
 import gas from './fc8_gas'
+import vapor from './fc8_vapor'
 //fare riferimento a fc8_venturi_map per vedere gli input disponibili
 //compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 

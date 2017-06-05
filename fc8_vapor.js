@@ -1,30 +1,22 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
-import gas from './fc8_gas_map.json'   
+import vapor from './fc8_vapor_map.json'   
 
 //set speed
 robot.setKeyboardDelay(350)
 robot.setMouseDelay(100)
 
-exports.gas = function(object) {
+exports.vapor = function(object) {
     //select pressure unit
     let i = 0
     robot.keyTap('enter')
-    for(i=0; i<9; i++){
+    for(i=0; i<13; i++){
         robot.keyTap('tab')
     }
-    robot.keyTap('enter')
-    for(i=0; i<9; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<gas.Pressure.indexOf(object.pressureUnit); i++){
+    for(i=0; i<vapor.Pressure.indexOf(object.pressureUnit); i++){
         robot.keyTap('up')
     }
-    for(i=0; i<10; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    for(i=0; i<6; i++){
+    for(i=0; i<11; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
@@ -34,13 +26,13 @@ exports.gas = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<17; i++){
+    for(i=0; i<12; i++){
         robot.keyTap('tab')
     }
-    for(i=0; i<gas.Differential.indexOf(object.differentialUnit); i++){
+    for(i=0; i<vapor.Differential.indexOf(object.differentialUnit); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<16; i++){
+    for(i=0; i<11; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
@@ -50,45 +42,50 @@ exports.gas = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<16; i++){
+    for(i=0; i<11; i++){
         robot.keyTap('tab')
     }  
-    for(i=0; i<gas.Temperature.indexOf(object.temperatureUnit); i++){
+    for(i=0; i<vapor.Temperature.indexOf(object.temperatureUnit); i++){
         robot.keyTap('up')
     }
-    for(i=0; i<10; i++){
+    for(i=0; i<11; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<6; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    
+        
     //select Flow unit
     for(i=0; i<6; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i <16; i++){
+    for(i=0; i <11; i++){
         robot.keyTap('tab')
     }
-    let ind = gas.Flow.Unit.indexOf(object.flowUnit)
-    let indStd = gas.Flow.Unit.indexOf('Base Ft^3 Cubic Feet: SCF')
-    if(ind<indStd){
-        for (i=0; i<indStd-ind; i++){
-            robot.keyTap('up')
-        }
-    } else {
-        for (i=0; i<ind-indStd; i++){
+    let ind = vapor.Flow.Unit.indexOf(object.flowUnit)
+    if(ind >6 && ind == "Flowing millitres (cubis centimentres)"){
+        for(i=0; i<6; i++){
             robot.keyTap('down')
         }
-    }    
+        robot.keyTap('enter')
+        for(i=0; i<7; i++){
+            robot.keyTap('down')
+        }
+        robot.keyTap('enter')
+        
+    } else if (ind >= 6 & ind != "Flowing millitres (cubis centimentres)"){
+        for(i=0; i<6; i++){
+            robot.keyTap('down')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<ind-6; i++){
+            robot.keyTap('down')
+        }
+    }   
     robot.keyTap('tab')
-    for(i=0; i<gas.Flow.Time.indexOf(object.flowUnitTime); i++){
+    for(i=0; i<vapor.Flow.Time.indexOf(object.flowUnitTime); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<16; i++){
+    for(i=0; i<11; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
@@ -98,17 +95,17 @@ exports.gas = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<14; i++){
+    for(i=0; i<9; i++){
         robot.keyTap('tab')
     }
-    for(i=0; i<gas.Density.Mass.indexOf(object.densityMassUnit); i++){
+    for(i=0; i<vapor.Density.Mass.indexOf(object.densityMassUnit); i++){
         robot.keyTap('down')
     }
     robot.keyTap('tab')
-    for(i=0; i<gas.Density.Volume.indexOf(object.densityVolumeUnit); i++){
+    for(i=0; i<vapor.Density.Volume.indexOf(object.densityVolumeUnit); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<16; i++){
+    for(i=0; i<11; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
@@ -118,14 +115,13 @@ exports.gas = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<13; i++){
+    for(i=0; i<8; i++){
         robot.keyTap('tab')
     }
-    for(i=0; i<gas.DensityMethod.indexOf(object.densityMethod); i++){
+    for(i=0; i<vapor.DensityMethod.indexOf(object.densityMethod); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<16
-        ; i++){
+    for(i=0; i<11; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
@@ -135,13 +131,13 @@ exports.gas = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<12; i++){
+    for(i=0; i<7; i++){
         robot.keyTap('tab')
     }
-    for(i=0; i<gas.Viscosity.indexOf(object.viscosityUnit); i++){
+    for(i=0; i<vapor.Viscosity.indexOf(object.viscosityUnit); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<16; i++){
+    for(i=0; i<11; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
@@ -151,63 +147,19 @@ exports.gas = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<11; i++){
+    for(i=0; i<6; i++){
         robot.keyTap('tab')
     }
-    for(i=0; i<gas.Dimensional.indexOf(object.dimensionalUnit); i++){
+    for(i=0; i<vapor.Dimensional.indexOf(object.dimensionalUnit); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<16; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    
-    //enter base pressure
     for(i=0; i<11; i++){
         robot.keyTap('tab')
     }
-    for(i=0; i<7; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.basePressure)
-    robot.keyTap('tab')
     robot.keyTap('enter')
-    robot.keyTap('enter')
-    for(i=0; i<9; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<gas.BasePressureUnit.indexOf(object.basePressureUnit); i++){
-        robot.keyTap('up')
-    }
-    for(i=0; i<10; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    for(i=0; i<6; i++){
-        robot.keyTap('tab')    
-    }
-    robot.keyTap('enter')
-    
-    
-    //enter base temp
-    for(i=0; i<13; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.baseTemperature)
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    for(i=0; i<7; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<gas.BaseTemperatureUnit.indexOf(object.baseTemperatureUnit); i++){
-        robot.keyTap('up')
-    }
     
     //enter heating temperature
-    for(i=0; i<13; i++){
+    for(i=0; i<11; i++){
         robot.keyTap('tab')
     }
     for(i=0; i<8; i++){
@@ -222,7 +174,6 @@ exports.gas = function(object) {
     }
     robot.typeString(object.energyCost)
     robot.keyTap('tab')
-    robot.keyTap('tab')
     robot.keyTap('enter')
     robot.keyTap('tab')
     robot.keyTap('enter')
@@ -230,20 +181,12 @@ exports.gas = function(object) {
     //select gas
     robot.keyTap('tab')
     robot.keyTap('tab')
-    ind = gas.GasType.indexOf(object.gasType)
-    indStd = gas.GasType.indexOf('AGA-8 Detailed Methos, Input Mole Fractions')
-    if(ind<indStd){
-        robot.keyTap('tab')
-        robot.keyTap('down')
-        robot.keyTap('enter')
-    } else {
-        for (i=0; i<ind-indStd; i++){
-            robot.keyTap('down')
-        }
-        robot.keyTap('tab')
-        robot.keyTap('enter')
-        robot.keyTap('enter') //da testare
+    for(i=0; i<6; i++){
+        robot.keyTap('up')
     }
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    
     
     //etner pressure bpressure e temperature
     for(i=0; i<4; i++){
@@ -252,12 +195,7 @@ exports.gas = function(object) {
     for(i=0; i<10; i++){
         robot.keyTap('delete')
     }
-    robot.typeString(object.pressure)
-    robot.keyTap('tab')
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.bPressure)
+    robot.typeString(object.pressure)   
     robot.keyTap('tab')
     for(i=0; i<10; i++){
         robot.keyTap('delete')
