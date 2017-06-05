@@ -289,24 +289,27 @@ exports.gas = function(object) {
     }
     robot.typeString(object.isentropicExponent)
     robot.keyTap('tab')
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
+    if(object.manometer=="on"){
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.manometerData.localGravity)
+        robot.keyTap('tab')
+        for(i=0; i<4; i++){
+            robot.keyTap('enter')
+        }
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.manometerData.meterTemperature)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.manometerData.seal)
+        robot.keyTap('tab')    
     }
-    robot.typeString(object.manometerData.localGravity)
-    robot.keyTap('tab')
-    for(i=0; i<4; i++){
-        robot.keyTap('enter')
-    }
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.manometerData.meterTemperature)
-    robot.keyTap('tab')
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.manometerData.seal)
-    robot.keyTap('tab')
+    
 }
 
 

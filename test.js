@@ -63,6 +63,7 @@ let request = {
         baseDensity: "0.0464",
         viscosity: "0.01139667",
         isentropicExponent: "1.3066",
+        manometer: "on",
         manometerData: {
             localGravity: "32.17405",
             meterTemperature: "80",
