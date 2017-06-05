@@ -122,4 +122,4 @@ switch(reqPipe.gasUnits){
 let reqCalculation = request.calculation
 test.calculation(reqCalculation)
 
-//test.printPDF(request.fileName)
+test.printPDF(request.fileName)
