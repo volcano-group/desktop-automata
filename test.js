@@ -5,7 +5,7 @@ import gas from './fc8_gas'
 //fare riferimento a fc8_venturi_map per vedere gli input disponibili
 //compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 
-test.startFC8()
+//test.startFC8()
 
 //let request = {
 //    pressuretap: "Upstream", 
@@ -16,13 +16,13 @@ test.startFC8()
 //    special: "McOn"
 //}
 
-test.selectType("Orifice")
+//test.selectType("Orifice")
 
 //venturi.machinedinlet(request)
 //test.autoCompileGas()
 //test.printPDF()
 
-let requestPipe = {
+/*let requestPipe = {
     style: "Clamped",
     standard: "ASME3M (1983- 2003, ASME PTC 19.5 (2004-)",
     pressuretap: "Downstream",
@@ -37,7 +37,7 @@ let requestPipe = {
         WaterVaporCorrection: "off"
     }
 }
-orifice.flangetaps(requestPipe)
+orifice.flangetaps(requestPipe)*/
 
 let requestGas = {
     pressureUnit: "psig,gage",
