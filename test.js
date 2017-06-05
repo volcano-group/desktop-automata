@@ -12,7 +12,7 @@ import gas from './fc8_gas'
 //fare riferimento a fc8_venturi_map per vedere gli input disponibili
 //compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 
-//test.startFC8()
+test.startFC8()
 
 let request = {
     pipe: {
@@ -28,7 +28,7 @@ let request = {
         primaryelement: "userdefined",
         peUserDefined:{name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
         special: {
-            ManometerCorrectionFactor: "on",
+            ManometerCorrectionFactor: "off",
             DrainHole: "on",
             holes: "1",
             WaterVaporCorrection: "on"
@@ -65,7 +65,7 @@ let request = {
         isentropicExponent: "1.3066",
         //uguali a quelli di pipe
         special: {
-            ManometerCorrectionFactor: "on",
+            ManometerCorrectionFactor: "off",
             WaterVaporCorrection: "on"
         },
         humidity: "90",
@@ -102,15 +102,15 @@ let request = {
 }
 
 
-//test.selectType(request.pipe.type)
+test.selectType(request.pipe.type)
 
 let reqPipe = request.pipe
-/*switch(request.pipe.type2){
+switch(request.pipe.type2){
     case "Flange Taps": {
         orifice.flangetaps(reqPipe)
         break
     } 
-}*/
+}
 
 let reqGas = request.gas
 switch(reqPipe.gasUnits){
