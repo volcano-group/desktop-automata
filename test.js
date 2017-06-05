@@ -16,7 +16,7 @@ test.startFC8()
 //    special: "McOn"
 //}
 
-//test.selectType("Orifice")
+test.selectType("Orifice")
 
 //venturi.machinedinlet(request)
 //test.autoCompileGas()
