@@ -263,6 +263,7 @@ exports.gas = function(object) {
     }
     robot.typeString(object.pressure)
     robot.keyTap('tab')
+    robot.keyTap('tab')
     for(i=0; i<10; i++){
         robot.keyTap('delete')
     }
