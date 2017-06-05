@@ -119,7 +119,19 @@ exports.flangetaps = function(request){
     
     robot.keyTap('tab')     
     robot.keyTap('tab')     
-    robot.keyTap('enter')     
-    robot.keyTap('tab')     
     robot.keyTap('enter')
+    switch(request.gasUnits){
+        case "US gas": {
+            robot.keyTap('tab')     
+            robot.keyTap('enter')
+            break
+        }        
+        case "US vapor": {
+            robot.moveMouse(50, 25)
+            robot.mouseClick()
+            robot.moveMouse(50, 125)
+            robot.mouseClick()
+        }
+    }
+    
 }

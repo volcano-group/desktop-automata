@@ -51,6 +51,7 @@ exports.autoCompileGas = function(){
 
 exports.calculation = function(object) {
     //select dp flow size
+    let i = 0
     if(object.method == "dp"){
         robot.keyTap('enter')
         for(i=0; i<10; i++){

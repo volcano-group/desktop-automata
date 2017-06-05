@@ -32,10 +32,10 @@ let request = {
             DrainHole: "on",
             holes: "1",
             WaterVaporCorrection: "off"
-        }
+        },
+        gasUnits: "US vapor"
     },
     gas: {
-        type: "US gas",
         pressureUnit: "psig,gage",
         differentialUnit: "hw68f",
         temperatureUnit: "TdegF",
@@ -94,15 +94,19 @@ switch(request.pipe.type2){
 }
 
 let reqGas = request.gas
-gas.gas(reqGas)
+switch(reqPipe.gasUnits){
+    case "US gas": {
+        gas.gas(reqGas)
+        break
+    }
+    case "US vapor":{
+        console.log("vapore")
+        break
+    }
+}
+
 
 let reqCalculation = request.calculation
-test.calculation(reqCalculation)
+//test.calculation(reqCalculation)
 
-let requestCalculation =
-test.printPDF(request.fileName)
-
-robot.moveMouse(50, 25)
-robot.mouseClick()
-robot.moveMouse(50, 125)
-robot.mouseClick()
+//test.printPDF(request.fileName)
