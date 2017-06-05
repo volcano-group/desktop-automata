@@ -1,3 +1,10 @@
+import robot from 'robotjs'
+import sleep from 'sleep'
+
+//set speed
+robot.setKeyboardDelay(350)
+robot.setMouseDelay(100)
+
 import test from './fc8_main'
 import venturi from './fc8_venturi'
 import orifice from './fc8_orifice'
