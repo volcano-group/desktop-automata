@@ -60,7 +60,7 @@ let request = {
         bPressure: "",
         temperature: "80",
         flowingDensity: "2.02402",
-        baseDensity: "",
+        baseDensity: "0..464",
         viscosity: "0.01139667",
         isentropicExponent: "1.3066",
         manometerData: {
