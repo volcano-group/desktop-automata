@@ -31,7 +31,7 @@ let request = {
             ManometerCorrectionFactor: "on",
             DrainHole: "on",
             holes: "1",
-            WaterVaporCorrection: "off"
+            WaterVaporCorrection: "on"
         },
         gasUnits: "US gas"
     },
@@ -63,7 +63,12 @@ let request = {
         baseDensity: "0.0464",
         viscosity: "0.01139667",
         isentropicExponent: "1.3066",
-        manometer: "on",
+        //uguali a quelli di pipe
+        special: {
+            ManometerCorrectionFactor: "on",
+            WaterVaporCorrection: "on"
+        },
+        humidity: "90",
         manometerData: {
             localGravity: "32.17405",
             meterTemperature: "80",
