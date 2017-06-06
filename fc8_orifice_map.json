@@ -388,4 +388,269 @@
             "Water Capor Correction"
         ]
     },
+    
+    "QuadrantOrifice":{
+        "PressureTap":[
+            "Upstream",
+            "Downstream"
+        ],
+        "PipeMaterial":[
+            "Carbon Steel",
+            "5-9% Chrome-Moly Steel",
+            "Chrome-Moly Steel Grade 11",
+            "Chrome-Moly Steel Grade 22",
+            "300",
+            "304",
+            "316",
+            "321",
+            "400",
+            "Duplex",
+            "Super Duplex",
+            "Hastelloy B",
+            "Hastelloy C",
+            "Inconel X, annealed",
+            "Inconel, 624",
+            "Hanyess Stellite 25 (L605)",
+            "K-Monel",
+            "Monel 400",
+            "Titanium",
+            "Tantalum",
+            "PVC",
+            "User Defined (Enter Coefficient Below) NOT WORKING"
+        ],
+        "PrimaryElementMaterial":[
+            "Carbon Steel",
+            "5-9% Chrome-Moly Steel",
+            "Chrome-Moly Steel Grade 11",
+            "Chrome-Moly Steel Grade 22",
+            "300",
+            "304",
+            "316",
+            "321",
+            "400",
+            "Duplex",
+            "Super Duplex",
+            "Hastelloy B",
+            "Hastelloy C",
+            "Inconel X, annealed",
+            "Inconel, 624",
+            "Hanyess Stellite 25 (L605)",
+            "K-Monel",
+            "Monel 400",
+            "Titanium",
+            "Tantalum",
+            "PVC",
+            "User Defined (Enter Coefficient Below) NOT WORKING"
+        ],
+        "SpecialFactors":[
+            "Manometer Correction Factor",
+            "Water Capor Correction"
+        ]
+    },
+    
+    "RadiusVenaContractaTaps":{
+        "Style":[
+            "Clamped",
+            "Fitting"
+        ],
+        "Standard":[
+            "ISO-5167 (2003-), ASME 3M (2004-)",
+            "ASME3M (1983- 2003, ASME PTC 19.5 (2004-)",
+            "ANSI-2530/AGA-3/API-Ch.14 (1992-)"
+        ],
+        "PressureTap":[
+            "Upstream",
+            "Downstream"
+        ],
+        "PipeMaterial":[
+            "Carbon Steel",
+            "5-9% Chrome-Moly Steel",
+            "Chrome-Moly Steel Grade 11",
+            "Chrome-Moly Steel Grade 22",
+            "300",
+            "304",
+            "316",
+            "321",
+            "400",
+            "Duplex",
+            "Super Duplex",
+            "Hastelloy B",
+            "Hastelloy C",
+            "Inconel X, annealed",
+            "Inconel, 624",
+            "Hanyess Stellite 25 (L605)",
+            "K-Monel",
+            "Monel 400",
+            "Titanium",
+            "Tantalum",
+            "PVC",
+            "User Defined (Enter Coefficient Below) NOT WORKING"
+        ],
+        "PrimaryElementMaterial":[
+            "Carbon Steel",
+            "5-9% Chrome-Moly Steel",
+            "Chrome-Moly Steel Grade 11",
+            "Chrome-Moly Steel Grade 22",
+            "300",
+            "304",
+            "316",
+            "321",
+            "400",
+            "Duplex",
+            "Super Duplex",
+            "Hastelloy B",
+            "Hastelloy C",
+            "Inconel X, annealed",
+            "Inconel, 624",
+            "Hanyess Stellite 25 (L605)",
+            "K-Monel",
+            "Monel 400",
+            "Titanium",
+            "Tantalum",
+            "PVC",
+            "User Defined (Enter Coefficient Below) NOT WORKING"
+        ],
+        "SpecialFactors":[
+            "Manometer Correction Factor",
+            "Drain Hole",
+            "Water Capor Correction"
+        ],
+        "VentDrainHole":[
+            "No Vent/Drain Hole",
+            "0.0625",
+            "0.0938",
+            "0.1250",
+            "0.1563",
+            "0.1875",
+            "0.2188",
+            "0.25",
+            "0.2813",
+            "0.3125",
+            "0.3438",
+            "0.375",
+            "0.4063",
+            "0.4375",
+            "0.4688",
+            "0.5"
+        ]
+    }, 
+    
+    "HonoredOrificeRunCornerTaps":{
+        "PressureTap":[
+            "Upstream",
+            "Downstream"
+        ],
+        "PipeMaterial":[
+            "Carbon Steel",
+            "5-9% Chrome-Moly Steel",
+            "Chrome-Moly Steel Grade 11",
+            "Chrome-Moly Steel Grade 22",
+            "300",
+            "304",
+            "316",
+            "321",
+            "400",
+            "Duplex",
+            "Super Duplex",
+            "Hastelloy B",
+            "Hastelloy C",
+            "Inconel X, annealed",
+            "Inconel, 624",
+            "Hanyess Stellite 25 (L605)",
+            "K-Monel",
+            "Monel 400",
+            "Titanium",
+            "Tantalum",
+            "PVC",
+            "User Defined (Enter Coefficient Below) NOT WORKING"
+        ],
+        "PrimaryElementMaterial":[
+            "Carbon Steel",
+            "5-9% Chrome-Moly Steel",
+            "Chrome-Moly Steel Grade 11",
+            "Chrome-Moly Steel Grade 22",
+            "300",
+            "304",
+            "316",
+            "321",
+            "400",
+            "Duplex",
+            "Super Duplex",
+            "Hastelloy B",
+            "Hastelloy C",
+            "Inconel X, annealed",
+            "Inconel, 624",
+            "Hanyess Stellite 25 (L605)",
+            "K-Monel",
+            "Monel 400",
+            "Titanium",
+            "Tantalum",
+            "PVC",
+            "User Defined (Enter Coefficient Below) NOT WORKING"
+        ],
+        "SpecialFactors":[
+            "Manometer Correction Factor",
+            "Water Capor Correction"
+        ]
+    },
+    
+    "HonoredOrificeRunFlangeTaps":{
+        "PressureTap":[
+            "Upstream",
+            "Downstream"
+        ],
+        "PipeMaterial":[
+            "Carbon Steel",
+            "5-9% Chrome-Moly Steel",
+            "Chrome-Moly Steel Grade 11",
+            "Chrome-Moly Steel Grade 22",
+            "300",
+            "304",
+            "316",
+            "321",
+            "400",
+            "Duplex",
+            "Super Duplex",
+            "Hastelloy B",
+            "Hastelloy C",
+            "Inconel X, annealed",
+            "Inconel, 624",
+            "Hanyess Stellite 25 (L605)",
+            "K-Monel",
+            "Monel 400",
+            "Titanium",
+            "Tantalum",
+            "PVC",
+            "User Defined (Enter Coefficient Below) NOT WORKING"
+        ],
+        "PrimaryElementMaterial":[
+            "Carbon Steel",
+            "5-9% Chrome-Moly Steel",
+            "Chrome-Moly Steel Grade 11",
+            "Chrome-Moly Steel Grade 22",
+            "300",
+            "304",
+            "316",
+            "321",
+            "400",
+            "Duplex",
+            "Super Duplex",
+            "Hastelloy B",
+            "Hastelloy C",
+            "Inconel X, annealed",
+            "Inconel, 624",
+            "Hanyess Stellite 25 (L605)",
+            "K-Monel",
+            "Monel 400",
+            "Titanium",
+            "Tantalum",
+            "PVC",
+            "User Defined (Enter Coefficient Below) NOT WORKING"
+        ],
+        "SpecialFactors":[
+            "Manometer Correction Factor",
+            "Water Capor Correction"
+        ]
+    }
+    
 }

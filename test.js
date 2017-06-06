@@ -110,7 +110,40 @@ switch(request.pipe.type2){
     case "Flange Taps": {
         orifice.flangetaps(reqPipe)
         break
-    } 
+    }
+    case "Corner Taps":{
+        orifice.cornertaps
+        break
+        
+    }
+    case "Thick Orifice":{
+        orifice.thickorifice
+        break
+    }
+    case "Restrictive Orifice":{
+        orifice.restrictiveorifice
+        break
+    }
+    case "Conic Orifice":{
+        orifice.conicorifice
+        break
+    }
+    case "Quadrant Orifice":{
+        orifice.quadrantorifice
+        break
+    }
+    case "Radius/Vena Contracta Taps":{
+        orifice.radiusvena
+        break
+    }
+    case "Honored Orifice Run, Flange Taps":{
+        orifice.hoft
+        break
+    }
+    case "Honored Orifice Run, Corner Taps":{
+        orifice.hoct
+        break
+    }
 }
 
 let reqGas = request.gas
