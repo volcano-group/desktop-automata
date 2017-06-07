@@ -36,7 +36,7 @@ exports.flangetaps = function(request){
     robot.keyTap('tab')
     let ind = ft.Standard.indexOf(request.standard)
     let indStd = ft.Standard.indexOf('ANSI-2530/AGA-3/API-Ch.14 (1992-)')
-    if(ind<stdInd){
+    if(ind<indStd){
         for (i=0; i<indStd-ind; i++){
             robot.keyTap('up')
         }
