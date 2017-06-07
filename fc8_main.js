@@ -52,6 +52,7 @@ exports.autoCompileGas = function(){
 
 exports.calculation = function(object) {
     //select dp flow size
+    robot.setKeyboardDelay(250)
     let i = 0
     if(object.method == "dp"){
         robot.keyTap('enter')
