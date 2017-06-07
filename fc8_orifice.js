@@ -12,7 +12,7 @@ const hoft = orifice.HonoredOrificeRunFlangeTaps
 const hoct = orifice.HonoredOrificeRunCornerTaps
 
 //set speed
-robot.setKeyboardDelay(200)
+robot.setKeyboardDelay(150)
 robot.setMouseDelay(100)
 
 //flangetaps

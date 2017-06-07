@@ -2,7 +2,7 @@ import robot from 'robotjs'
 import sleep from 'sleep'
 
 //set speed
-robot.setKeyboardDelay(200)
+robot.setKeyboardDelay(150)
 robot.setMouseDelay(100)
 
 import test from './fc8_main'
@@ -47,12 +47,12 @@ let request = {
         densityVolumeUnit: "Cubic Metre",
         densityMethod: "Density",
         viscosityUnit: "Centipoise cP",
-        dimensionalUnit: "Inches",
+        dimensionalUnit: "Millimetre",
         basePressure: "14.696",
         basePressureUnit: "Bar,abs",
         baseTemperature: "60",
         baseTemperatureUnit: "TdegC",
-        heatingTemperature: "60",
+        heatingTemperature: "15.56",
         energyCost: "1",
         gasType: "Enter Fluid Properties",
         fluidProperties: {

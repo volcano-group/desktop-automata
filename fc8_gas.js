@@ -3,7 +3,7 @@ import sleep from 'sleep'
 import gas from './fc8_gas_map.json'   
 
 //set speed
-robot.setKeyboardDelay(200)
+robot.setKeyboardDelay(150)
 robot.setMouseDelay(100)
 
 exports.gas = function(object) {
