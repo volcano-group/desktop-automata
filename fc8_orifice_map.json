@@ -11,8 +11,8 @@
             "ANSI 2530/AGA3/Buckingham/Spink (1953-1991), ANSI/API 2530 (to 1995) AGA-3 (1935-1995) Spink (1935 to date)" 
         ],
         "PressureTap":[
-            "Upstream",
-            "Downstream"
+            "Downstream",
+            "Upstream"
         ],
         "PipeMaterial":[
             "Carbon Steel",
@@ -98,8 +98,8 @@
             "ANSI-2530/AGA-3/API-Ch.14 (1992-)"
         ],
         "PressureTap":[
-            "Upstream",
-            "Downstream"
+            "Downstream",
+            "Upstream"
         ],
         "PipeMaterial":[
             "Carbon Steel",
@@ -254,8 +254,8 @@
             "Fitting"
         ],
         "PressureTap":[
-            "Upstream",
-            "Downstream"
+            "Downstream",
+            "Upstream"
         ],
         "PipeMaterial":[
             "Carbon Steel",
@@ -332,8 +332,8 @@
     
     "ConicOrifice":{
         "PressureTap":[
-            "Upstream",
-            "Downstream"
+            "Downstream",
+            "Upstream"
         ],
         "PipeMaterial":[
             "Carbon Steel",
@@ -391,8 +391,8 @@
     
     "QuadrantOrifice":{
         "PressureTap":[
-            "Upstream",
-            "Downstream"
+            "Downstream",
+            "Upstream"
         ],
         "PipeMaterial":[
             "Carbon Steel",
@@ -459,8 +459,8 @@
             "ANSI-2530/AGA-3/API-Ch.14 (1992-)"
         ],
         "PressureTap":[
-            "Upstream",
-            "Downstream"
+            "Downstream",
+            "Upstream"
         ],
         "PipeMaterial":[
             "Carbon Steel",
@@ -537,8 +537,8 @@
     
     "HonoredOrificeRunCornerTaps":{
         "PressureTap":[
-            "Upstream",
-            "Downstream"
+            "Downstream",
+            "Upstream"
         ],
         "PipeMaterial":[
             "Carbon Steel",
@@ -596,8 +596,8 @@
     
     "HonoredOrificeRunFlangeTaps":{
         "PressureTap":[
-            "Upstream",
-            "Downstream"
+            "Downstream",
+            "Upstream"
         ],
         "PipeMaterial":[
             "Carbon Steel",
