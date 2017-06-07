@@ -163,7 +163,7 @@ exports.calculation = function(object) {
     robot.keyTap('tab')
     robot.keyTap('tab')
     robot.keyTap('enter')
-    
+    robot.keyTap('enter')
     
 }
 
