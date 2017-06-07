@@ -20,54 +20,54 @@ let request = {
         type: "Orifice",
         type2: "Flange Taps",
         style: "Clamped",
-        standard: "ASME3M (1983- 2003, ASME PTC 19.5 (2004-)",
+        standard: "ISO-5167 (2003-), ASME 3M (2004-)",
         pressuretap: "Downstream",
-        pipematerial: "Duplex",
+        pipematerial: "Carbon Steel",
         VCT: "",
         vctUserDefined: {name: "", coeffThermalExpansion: ""},
         pmUserDefined:{name: "", coeffThermalExpansion: ""} , 
-        primaryelement: "userdefined",
-        peUserDefined:{name: "Carbon Steel", coeffThermalExpansion: "0.00000608"},
+        primaryelement: "316",
+        peUserDefined:{name: "", coeffThermalExpansion: ""},
         special: {
             ManometerCorrectionFactor: "off",
             DrainHole: "on",
             holes: "1",
-            WaterVaporCorrection: "on"
+            WaterVaporCorrection: "off"
         },
         gasUnits: "US gas"
     },
     gas: {
-        pressureUnit: "psig,gage",
-        differentialUnit: "hw68f",
-        temperatureUnit: "TdegF",
-        flowUnit: "Base Ft^3 Cubic Feet: SCF",
+        pressureUnit: "Bar,abs",
+        differentialUnit: "mm of Water @ 4 degC",
+        temperatureUnit: "TdegC",
+        flowUnit: "Mass kg",
         flowUnitTime: "Hour",
-        densityMassUnit: "Pound Mass lbm (US Flow Std)",
-        densityVolumeUnit: "Cubic Feet",
+        densityMassUnit: "Kilogram (ISO Standards)",
+        densityVolumeUnit: "Cubic Metre",
         densityMethod: "Density",
         viscosityUnit: "Centipoise cP",
         dimensionalUnit: "Inches",
         basePressure: "14.696",
-        basePressureUnit: "psia",
+        basePressureUnit: "Bar,abs",
         baseTemperature: "60",
-        baseTemperatureUnit: "TdegF",
+        baseTemperatureUnit: "TdegC",
         heatingTemperature: "60",
         energyCost: "1",
         gasType: "Enter Fluid Properties",
         fluidProperties: {
-            name: "Propylene"
+            name: "Natural Gas"
         },
-        pressure: "614.6960",
+        pressure: "25",
         bPressure: "",
-        temperature: "80",
-        flowingDensity: "2.02402",
-        baseDensity: "0.0464",
-        viscosity: "0.01139667",
-        isentropicExponent: "1.3066",
+        temperature: "25",
+        flowingDensity: "20.71",
+        baseDensity: "0.931",
+        viscosity: "0.012",
+        isentropicExponent: "1.364",
         //uguali a quelli di pipe
         special: {
             ManometerCorrectionFactor: "off",
-            WaterVaporCorrection: "on"
+            WaterVaporCorrection: "off"
         },
         humidity: "90",
         manometerData: {
@@ -77,10 +77,10 @@ let request = {
         }
     },
     calculation: {
-        method: "dp",
+        method: "size",
         base: {
-            pipeDiameter: "7.625",
-            borePrimaryElement: "3.80577",
+            pipeDiameter: "102.331",
+            borePrimaryElement: "57.51",
             dp: {
                 percMaxFlow: "100",
                 maxFlow: "602653.92",
@@ -90,13 +90,13 @@ let request = {
                 differentialPressure: "100"
             },
             size: {
-                percMaxFlow: "100",
-                maxFlow: "603656.55",
-                normalFlow: "603656.55",
-                differential: "100"
+                percMaxFlow: "70.75",
+                maxFlow: "6000",
+                normalFlow: "4245",
+                differential: "2500"
             }
         },
-        ventDrainHole:  "0.2188"
+        ventDrainHole:  "0.1250"
     },
     fileName: "Prova automatica con gas"
     
