@@ -35,13 +35,13 @@ exports.flangetaps = function(request){
     robot.keyTap('tab')
     robot.keyTap('tab')
     let ind = ft.Standard.indexOf(request.standard)
-    let stdInd = ft.Standard.indexOf('ANSI-2530/AGA-3/API-Ch.14 (1992-)')
+    let indStd = ft.Standard.indexOf('ANSI-2530/AGA-3/API-Ch.14 (1992-)')
     if(ind<stdInd){
-        for (i=0; i<stdInd-ind; i++){
+        for (i=0; i<indStd-ind; i++){
             robot.keyTap('up')
         }
     } else {
-        for (i=0; i<=ind-stdInd; i++){
+        for (i=0; i<=ind-indStd; i++){
             robot.keyTap('down')
         }
     }
