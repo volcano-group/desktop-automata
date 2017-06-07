@@ -88,236 +88,418 @@ exports.gas = function(object) {
     for(i=0; i<gas.Flow.Time.indexOf(object.flowUnitTime); i++){
         robot.keyTap('down')
     }
-    for(i=0; i<16; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    
-    //select density unit
-    for(i=0; i<7; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    for(i=0; i<14; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<gas.Density.Mass.indexOf(object.densityMassUnit); i++){
-        robot.keyTap('down')
-    }
-    robot.keyTap('tab')
-    for(i=0; i<gas.Density.Volume.indexOf(object.densityVolumeUnit); i++){
-        robot.keyTap('down')
-    }
-    for(i=0; i<16; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    
-    //select density method
-    for(i=0; i<8; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    for(i=0; i<13; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<gas.DensityMethod.indexOf(object.densityMethod); i++){
-        robot.keyTap('down')
-    }
-    for(i=0; i<16
-        ; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    
-    //select viscosity
-    for(i=0; i<9; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    for(i=0; i<12; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<gas.Viscosity.indexOf(object.viscosityUnit); i++){
-        robot.keyTap('down')
-    }
-    for(i=0; i<16; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    
-    //select dimensional unit
-    for(i=0; i<10; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    for(i=0; i<11; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<gas.Dimensional.indexOf(object.dimensionalUnit); i++){
-        robot.keyTap('down')
-    }
-    for(i=0; i<16; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    
-    //enter base pressure
-    for(i=0; i<11; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<7; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.basePressure)
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    robot.keyTap('enter')
-    for(i=0; i<9; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<gas.BasePressureUnit.indexOf(object.basePressureUnit); i++){
-        robot.keyTap('up')
-    }
-    for(i=0; i<10; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    for(i=0; i<6; i++){
-        robot.keyTap('tab')    
-    }
-    robot.keyTap('enter')
-    
-    
-    //enter base temp
-    for(i=0; i<13; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.baseTemperature)
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    for(i=0; i<7; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<gas.BaseTemperatureUnit.indexOf(object.baseTemperatureUnit); i++){
-        robot.keyTap('up')
-    }
-    
-    //enter heating temperature
-    for(i=0; i<13; i++){
-        robot.keyTap('tab')
-    }
-    for(i=0; i<8; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.heatingTemperature)
-    
-    //enter cost
-    robot.keyTap('tab')
-    for(i=0; i<7; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.energyCost)
-    robot.keyTap('tab')
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    
-    //select gas
-    robot.keyTap('tab')
-    robot.keyTap('tab')
-    /*ind = gas.GasType.indexOf(object.gasType)
-    indStd = gas.GasType.indexOf('AGA-8 Detailed Methos, Input Mole Fractions')
-    if(ind<indStd){
-        robot.keyTap('tab')
-        robot.keyTap('down')
+    if(object.flowMethod=="Mass" || object.flowMethod=="Flowing"){
+        for(i=0; i<12; i++){
+            robot.keyTap('tab')
+        }
         robot.keyTap('enter')
-    } else {
-        for (i=0; i<ind-indStd; i++){
+
+        //select density unit
+        for(i=0; i<7; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<10; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.Density.Mass.indexOf(object.densityMassUnit); i++){
+            robot.keyTap('down')
+        }
+        robot.keyTap('tab')
+        for(i=0; i<gas.Density.Volume.indexOf(object.densityVolumeUnit); i++){
+            robot.keyTap('down')
+        }
+        for(i=0; i<12; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+
+        //select density method
+        for(i=0; i<8; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<19; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.DensityMethod.indexOf(object.densityMethod); i++){
+            robot.keyTap('down')
+        }
+        for(i=0; i<12; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+
+        //select viscosity
+        for(i=0; i<9; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<8; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.Viscosity.indexOf(object.viscosityUnit); i++){
+            robot.keyTap('down')
+        }
+        for(i=0; i<12; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+
+        //select dimensional unit
+        for(i=0; i<10; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<7; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.Dimensional.indexOf(object.dimensionalUnit); i++){
+            robot.keyTap('down')
+        }
+        for(i=0; i<12; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+
+        //enter heating temperature
+        for(i=0; i<11; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<8; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.heatingTemperature)
+
+        //enter cost
+        robot.keyTap('tab')
+        for(i=0; i<7; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.energyCost)
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+
+        //select gas
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        /*ind = gas.GasType.indexOf(object.gasType)
+        indStd = gas.GasType.indexOf('AGA-8 Detailed Methos, Input Mole Fractions')
+        if(ind<indStd){
+            robot.keyTap('tab')
+            robot.keyTap('down')
+            robot.keyTap('enter')
+        } else {
+            for (i=0; i<ind-indStd; i++){
+                robot.keyTap('down')
+            }
+            robot.keyTap('tab')
+            robot.keyTap('enter')
+            robot.keyTap('enter') //da testare
+        }*/
+        for(i=0; i<22; i++){
             robot.keyTap('down')
         }
         robot.keyTap('tab')
         robot.keyTap('enter')
-        robot.keyTap('enter') //da testare
-    }*/
-    for(i=0; i<22; i++){
-        robot.keyTap('down')
-    }
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    robot.typeString(object.fluidProperties.name)
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    
-    
-    //etner pressure bpressure e temperature
-    for(i=0; i<4; i++){
+        robot.typeString(object.fluidProperties.name)
         robot.keyTap('tab')
-    }
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.pressure)
-    robot.keyTap('tab')
-    robot.keyTap('tab')
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.temperature)
-    robot.keyTap('tab')
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.flowingDensity)
-    robot.keyTap('tab')
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.baseDensity)
-    if(object.special.WaterVaporCorrection=="on"){
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.humidity)
-    }
-    robot.keyTap('tab')
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.viscosity)
-    robot.keyTap('tab')
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.isentropicExponent)
-    robot.keyTap('tab')
-    if(object.special.ManometerCorrectionFactor=="on"){
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.manometerData.localGravity)
-        robot.keyTap('tab')
+        robot.keyTap('enter')
+
+
+        //etner pressure bpressure e temperature
         for(i=0; i<4; i++){
-            robot.keyTap('enter')
+            robot.keyTap('tab')
         }
         for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
-        robot.typeString(object.manometerData.meterTemperature)
+        robot.typeString(object.pressure)
+        robot.keyTap('tab')
+        //robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.temperature)
         robot.keyTap('tab')
         for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
-        robot.typeString(object.manometerData.seal)
-        robot.keyTap('tab')    
+        robot.typeString(object.flowingDensity)
+        if(object.special.WaterVaporCorrection=="on"){
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.humidity)
+        }
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.viscosity)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.isentropicExponent)
+        robot.keyTap('tab')
+        if(object.special.ManometerCorrectionFactor=="on"){
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.manometerData.localGravity)
+            robot.keyTap('tab')
+            for(i=0; i<4; i++){
+                robot.keyTap('enter')
+            }
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.manometerData.meterTemperature)
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.manometerData.seal)
+            robot.keyTap('tab')    
+        }
+    } else {
+        for(i=0; i<16; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+
+        //select density unit
+        for(i=0; i<7; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<14; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.Density.Mass.indexOf(object.densityMassUnit); i++){
+            robot.keyTap('down')
+        }
+        robot.keyTap('tab')
+        for(i=0; i<gas.Density.Volume.indexOf(object.densityVolumeUnit); i++){
+            robot.keyTap('down')
+        }
+        for(i=0; i<16; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+
+        //select density method
+        for(i=0; i<8; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<13; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.DensityMethod.indexOf(object.densityMethod); i++){
+            robot.keyTap('down')
+        }
+        for(i=0; i<16
+            ; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+
+        //select viscosity
+        for(i=0; i<9; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<12; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.Viscosity.indexOf(object.viscosityUnit); i++){
+            robot.keyTap('down')
+        }
+        for(i=0; i<16; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+
+        //select dimensional unit
+        for(i=0; i<10; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<11; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.Dimensional.indexOf(object.dimensionalUnit); i++){
+            robot.keyTap('down')
+        }
+        for(i=0; i<16; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+
+        //enter base pressure
+        for(i=0; i<11; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<7; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.basePressure)
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        robot.keyTap('enter')
+        for(i=0; i<9; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.BasePressureUnit.indexOf(object.basePressureUnit); i++){
+            robot.keyTap('up')
+        }
+        for(i=0; i<10; i++){
+            robot.keyTap('tab')
+        }
+        robot.keyTap('enter')
+        for(i=0; i<6; i++){
+            robot.keyTap('tab')    
+        }
+        robot.keyTap('enter')
+
+
+        //enter base temp
+        for(i=0; i<13; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.baseTemperature)
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        for(i=0; i<7; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<gas.BaseTemperatureUnit.indexOf(object.baseTemperatureUnit); i++){
+            robot.keyTap('up')
+        }
+
+        //enter heating temperature
+        for(i=0; i<13; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<8; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.heatingTemperature)
+
+        //enter cost
+        robot.keyTap('tab')
+        for(i=0; i<7; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.energyCost)
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+
+        //select gas
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        /*ind = gas.GasType.indexOf(object.gasType)
+        indStd = gas.GasType.indexOf('AGA-8 Detailed Methos, Input Mole Fractions')
+        if(ind<indStd){
+            robot.keyTap('tab')
+            robot.keyTap('down')
+            robot.keyTap('enter')
+        } else {
+            for (i=0; i<ind-indStd; i++){
+                robot.keyTap('down')
+            }
+            robot.keyTap('tab')
+            robot.keyTap('enter')
+            robot.keyTap('enter') //da testare
+        }*/
+        for(i=0; i<22; i++){
+            robot.keyTap('down')
+        }
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+        robot.typeString(object.fluidProperties.name)
+        robot.keyTap('tab')
+        robot.keyTap('enter')
+
+
+        //etner pressure bpressure e temperature
+        for(i=0; i<4; i++){
+            robot.keyTap('tab')
+        }
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.pressure)
+        robot.keyTap('tab')
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.temperature)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.flowingDensity)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.baseDensity)
+        if(object.special.WaterVaporCorrection=="on"){
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.humidity)
+        }
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.viscosity)
+        robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.isentropicExponent)
+        robot.keyTap('tab')
+        if(object.special.ManometerCorrectionFactor=="on"){
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.manometerData.localGravity)
+            robot.keyTap('tab')
+            for(i=0; i<4; i++){
+                robot.keyTap('enter')
+            }
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.manometerData.meterTemperature)
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.manometerData.seal)
+            robot.keyTap('tab')    
+        }
+
     }
-    
 }
+    
 
 
 

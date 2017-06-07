@@ -40,6 +40,7 @@ let request = {
         pressureUnit: "Bar,abs",
         differentialUnit: "mm of Water @ 4 degC",
         temperatureUnit: "TdegC",
+        flowMethod: "Mass",
         flowUnit: "Mass kg",
         flowUnitTime: "Hour",
         densityMassUnit: "Kilogram (ISO Standards)",
