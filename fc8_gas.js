@@ -119,7 +119,7 @@ exports.gas = function(object) {
             robot.keyTap('tab')
         }
         robot.keyTap('enter')
-        for(i=0; i<19; i++){
+        for(i=0; i<9; i++){
             robot.keyTap('tab')
         }
         for(i=0; i<gas.DensityMethod.indexOf(object.densityMethod); i++){
