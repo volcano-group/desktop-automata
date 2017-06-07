@@ -92,8 +92,8 @@ let request = {
             },
             size: {
                 percMaxFlow: "70.75",
-                maxFlow: "6000",
-                normalFlow: "4245",
+                maxFlow: "6000.0000",
+                normalFlow: "4245.0000",
                 differential: "2500"
             }
         },
