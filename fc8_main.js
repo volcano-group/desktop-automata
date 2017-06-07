@@ -109,10 +109,10 @@ exports.calculation = function(object) {
         robot.keyTap('enter')
         robot.keyTap('tab')
         robot.keyTap('tab')
-        for(i=0; i<10; i++){
+        /*for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
-        robot.typeString(object.base.size.percMaxFlow)
+        robot.typeString(object.base.size.percMaxFlow)*/
         robot.keyTap('tab')
         for(i=0; i<10; i++){
             robot.keyTap('delete')
@@ -142,7 +142,7 @@ exports.calculation = function(object) {
         robot.keyTap('tab')
         robot.keyTap('tab')
         let ind = orifice.FlangeTaps.VentDrainHole.indexOf(object.ventDrainHole)
-        let indStd = orifice.FlangeTaps.VentDrainHole.indexOf("0.1875")
+        let indStd = orifice.FlangeTaps.VentDrainHole.indexOf('0.1250')
         if(ind<indStd){
             for (i=0; i<indStd-ind; i++){
                 robot.keyTap('up')
