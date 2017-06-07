@@ -272,6 +272,7 @@ exports.cornertaps = function(request){
             robot.mouseClick()
         }
     }
+}
 
 //thick orifice
 exports.thickorifice = function(request){
