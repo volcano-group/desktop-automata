@@ -800,6 +800,7 @@ exports.radiusvena = function(request){
             robot.mouseClick()
         }
     }
+}
 
 //honored orifice run flange taps 
 exports.horflangetaps = function(request){
