@@ -97,7 +97,7 @@ let request = {
                 differential: "2500"
             }
         },
-        ventDrainHole:  "0.1250"
+        ventDrainHole: "0.1250"
     },
     fileName: "Prova automatica con gas"
     

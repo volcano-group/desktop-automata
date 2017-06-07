@@ -134,6 +134,8 @@ exports.calculation = function(object) {
         }
         robot.typeString(object.base.pipeDiameter)
         robot.keyTap('tab')
+        robot.keyTap('tab')
+        
         robot.keyTap('enter')
     }
     if(object.ventDrainHole!="none"){
@@ -153,7 +155,14 @@ exports.calculation = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
+    for(i=0; i<10; i++){
+        robot.keyTap('tab')
+    }
     robot.keyTap('enter')
+    robot.keyTap('tab')
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    
     
 }
 
