@@ -3,7 +3,7 @@ import sleep from 'sleep'
 import orifice from './fc8_orifice_map.json'
 
 //set speed
-robot.setKeyboardDelay(350)
+robot.setKeyboardDelay(200)
 robot.setMouseDelay(100)
 
 let type = [

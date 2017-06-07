@@ -2,7 +2,7 @@ import robot from 'robotjs'
 import sleep from 'sleep'
 
 //set speed
-robot.setKeyboardDelay(350)
+robot.setKeyboardDelay(200)
 robot.setMouseDelay(100)
 
 import test from './fc8_main'
