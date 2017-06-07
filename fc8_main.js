@@ -81,7 +81,7 @@ exports.calculation = function(object) {
         robot.typeString(object.base.borePrimaryElement)
         robot.keyTap('tab')
         robot.keyTap('enter')
-    } else if (object.choice == "flow"){
+    } else if (object.method == "flow"){
         robot.keyTap('tab')
         robot.keyTap('enter')
         robot.keyTap('tab')
@@ -103,7 +103,7 @@ exports.calculation = function(object) {
         robot.keyTap('tab')
         robot.keyTap('tab')
         robot.keyTap('enter')
-    } else if (object.choice == "size"){
+    } else if (object.method == "size"){
         robot.keyTap('tab')
         robot.keyTap('tab')
         robot.keyTap('enter')
