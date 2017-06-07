@@ -89,13 +89,14 @@ exports.flangetaps = function(request){
         }
         robot.typeString(request.peUserDefined.coeffThermalExpansion)
     } else {
-        let ind = ft.PrimaryElementMaterial.indexOf(request.primaryelement)
-        if(ind<6){
-            for (i=0; i<6-ind; i++){
+        ind = ft.PrimaryElementMaterial.indexOf(request.primaryelement)
+        indStd = ft.PrimaryElementMaterial.indexOf('316')
+        if(ind<indStd){
+            for (i=0; i<indStd-ind; i++){
                 robot.keyTap('up')
             }
         } else {
-            for (i=0; i<=ind-6; i++){
+            for (i=0; i<ind-indStd; i++){
                 robot.keyTap('down')
             }
         }    
