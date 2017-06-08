@@ -78,8 +78,7 @@ exports.main = function(request) {
     helpers.calculation(reqCalculation)
     
     //print pdf
-    let now = new Date()
-    let fileName = now + '-' + reqPipe.type + '-' + reqPipe.type2
+    let fileName = Date.now() + '-' + reqPipe.type + '-' + reqPipe.type2
     helpers.printPDF(fileName)
     
     //close fc8
