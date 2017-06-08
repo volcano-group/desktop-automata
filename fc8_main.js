@@ -78,6 +78,9 @@ exports.main = function(request) {
     helpers.calculation(reqCalculation)
     
     //print pdf
-    helpers.printPDF(request.fileName)   
+    const fileName = Date.now() + '-' + reqPipe.type + '-' + reqPipe.type2   helpers.printPDF(request.fileName)
     
+    //close fc8
+    robot.keyTap('f4', alt)
+    sleep.msleep(2000)
 }
