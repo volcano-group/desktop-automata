@@ -168,6 +168,7 @@ exports.calculation = function(object) {
 }
 
 exports.printPDF = function(fileName, customer, tag){
+    let i=0
     for(i=0; i<7; i++){
         robot.keyTap('tab')
     }
