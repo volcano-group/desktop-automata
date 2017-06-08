@@ -3,7 +3,7 @@ import main from './fc8_main'
 let request = {
     state: "new",
     createdAt: Date.now(),
-    customer: "Pippo",
+    customer: "Volcano Group",
     items: [
         {
             tag: '1111',
