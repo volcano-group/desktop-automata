@@ -83,5 +83,7 @@ exports.main = function(request) {
     
     //close fc8
     robot.keyTap('f4', 'alt')
+    robot.keyTap('tab')
+    robot.keyTap('enter')
     sleep.msleep(2000)
 }
