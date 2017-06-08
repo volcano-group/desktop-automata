@@ -1,177 +1,83 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
-import orifice from './fc8_orifice_map.json'
-
 //set speed
 robot.setKeyboardDelay(150)
 robot.setMouseDelay(100)
 
-let type = [
-    "Orifice",
-    "Venturi",
-    "Nozzle",
-    "Fixed Geometry",
-    "V-Cone",
-    "Segmental Meters",
-    "Linear Meters"
-]
+import helpers from './fc8_helpers'
+import venturi from './fc8_venturi'
+import orifice from './fc8_orifice'
+import gas from './fc8_gas'
+import vapor from './fc8_vapor'
+//fare riferimento a fc8_venturi_map per vedere gli input disponibili
+//compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 
-exports.startFC8 = function(){
-    robot.keyTap('command')
-    robot.typeString('FC8')
-    robot.keyTap('enter')
-    sleep.msleep(500)
-}
-
-exports.selectType = function(request){
-    robot.keyTap('tab')
-    let i = 0
-    for(i=0; i<type.indexOf(request); i++){
-        robot.keyTap('down')
-    }
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-}
-
-exports.autoCompileGas = function(){
-    let i = 0
-    for(i=0; i<9; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    for(i=0; i<7; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    robot.keyTap('enter')
-    robot.keyTap('tab')
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    robot.keyTap('enter')
-}
-
-exports.calculation = function(object) {
-    //select dp flow size
-    robot.setKeyboardDelay(250)
-    let i = 0
-    if(object.method == "dp"){
-        robot.keyTap('enter')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.dp.percMaxFlow)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.dp.maxFlow)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.dp.normalFlow)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.pipeDiameter)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.borePrimaryElement)
-        robot.keyTap('tab')
-        robot.keyTap('enter')
-    } else if (object.method == "flow"){
-        robot.keyTap('tab')
-        robot.keyTap('enter')
-        robot.keyTap('tab')
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.flow.differentialPressure)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.pipeDiameter)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.borePrimaryElement)
-        robot.keyTap('tab')
-        robot.keyTap('tab')
-        robot.keyTap('enter')
-    } else if (object.method == "size"){
-        robot.keyTap('tab')
-        robot.keyTap('tab')
-        robot.keyTap('enter')
-        robot.keyTap('tab')
-        robot.keyTap('tab')
-        /*for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.size.percMaxFlow)*/
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.size.maxFlow)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.size.normalFlow)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.size.differential)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.base.pipeDiameter)
-        robot.keyTap('tab')
-        robot.keyTap('tab')
-        
-        robot.keyTap('enter')
-    }
-    if(object.ventDrainHole!="none"){
-        robot.keyTap('tab')
-        robot.keyTap('tab')
-        let ind = orifice.FlangeTaps.VentDrainHole.indexOf(object.ventDrainHole)
-        let indStd = orifice.FlangeTaps.VentDrainHole.indexOf('0.1250')
-        if(ind<indStd){
-            for (i=0; i<indStd-ind; i++){
-                robot.keyTap('up')
-            }
-        } else {
-            for (i=0; i<ind-indStd; i++){
-                robot.keyTap('down')
-            }
-        }
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    for(i=0; i<10; i++){
-        robot.keyTap('tab')
-    }
-    robot.keyTap('enter')
-    robot.keyTap('tab')
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    robot.keyTap('enter')
+exports.main = function(request) {
+    const reqPipe = request.pipe
+    const reqGas = request.gas
+    const reqCalculation = request.calculation
     
-}
+    //lancia fc8
+    helpers.startFC8()
+    //selezione primo tipo di tubo
+    helpers.selectType(reqPipe.type)
+    //selezione secondo tipo di tubo e lancio degli script
+    switch(reqPipe.type2){
+        case "Flange Taps": {
+            orifice.flangetaps(reqPipe)
+            break
+        }
+        case "Corner Taps":{
+            orifice.cornertaps(reqPipe)
+            break
 
-exports.printPDF = function(fileName){
-    robot.keyTap('tab')
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    sleep.msleep(2000)
-    robot.typeString(fileName)
-    robot.keyTap('enter')
+        }
+        case "Thick Orifice":{
+            orifice.thickorifice(reqPipe)
+            break
+        }
+        case "Restrictive Orifice":{
+            orifice.restrictiveorifice(reqPipe)
+            break
+        }
+        case "Conic Orifice":{
+            orifice.conicorifice(reqPipe)
+            break
+        }
+        case "Quadrant Orifice":{
+            orifice.quadrantorifice(reqPipe)
+            break
+        }
+        case "Radius/Vena Contracta Taps":{
+            orifice.radiusvena(reqPipe)
+            break
+        }
+        case "Honored Orifice Run, Flange Taps":{
+            orifice.hoft(reqPipe)
+            break
+        }
+        case "Honored Orifice Run, Corner Taps":{
+            orifice.hoct(reqPipe)
+            break
+        }
+    }
+    
+    //select gas/vapor type
+    switch(reqPipe.gasUnits){
+        case "US gas": {
+            gas.gas(reqGas)
+            break
+        }
+        case "US vapor":{
+            console.log("vapore")
+            break
+        }
+    }
+    
+    //input calculation
+    helpers.calculation(reqCalculation)
+    
+    //print pdf
+    helpers.printPDF(request.fileName)   
+    
 }
