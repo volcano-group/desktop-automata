@@ -167,9 +167,20 @@ exports.calculation = function(object) {
     
 }
 
-exports.printPDF = function(fileName){
+exports.printPDF = function(fileName, customer, tag){
+    for(i=0; i<7; i++){
+        robot.keyTap('tab')
+    }
+    for(i=0; i<10; i++){
+        robot.keyTap('delete')
+    }
+    robot.typeString(customer)
     robot.keyTap('tab')
     robot.keyTap('tab')
+    robot.typeString(tag)
+    for(i=0; i<13; i++){
+        robot.keyTap('tab')
+    }
     robot.keyTap('enter')
     sleep.msleep(2000)
     robot.typeString(fileName)

@@ -12,7 +12,7 @@ import vapor from './fc8_vapor'
 //fare riferimento a fc8_venturi_map per vedere gli input disponibili
 //compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 
-exports.main = function(request) {
+exports.main = function(request, customer) {
     const reqPipe = request.pipe
     const reqGas = request.gas
     const reqCalculation = request.calculation
@@ -79,7 +79,7 @@ exports.main = function(request) {
     
     //print pdf
     let fileName = Date.now() + '-' + reqPipe.type + '-' + reqPipe.type2
-    helpers.printPDF(fileName)
+    helpers.printPDF(fileName, customer, request.tag)
     
     //close fc8
     robot.keyTap('f4', 'alt')
