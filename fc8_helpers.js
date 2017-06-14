@@ -21,7 +21,7 @@ exports.startFC8 = function(){
     robot.typeString('FC8')
     sleep.msleep(500)
     robot.keyTap('enter')
-    sleep.msleep(1000)
+    sleep.msleep(500)
 }
 
 exports.selectType = function(request){
@@ -183,7 +183,7 @@ exports.printPDF = function(fileName, customer, tag){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    sleep.msleep(1000)
+    sleep.msleep(500)
     robot.typeString(fileName)
     robot.keyTap('enter')
 }
