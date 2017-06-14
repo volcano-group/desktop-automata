@@ -132,7 +132,7 @@ let request = {
               "pipeDiameter": "102.331",
               "borePrimaryElement": "57.51",
               "size": {
-                "maxFlow": "6000.0000",
+                "maxFlow": "60000000000.0000",
                 "normalFlow": "4245.0000",
                 "differential": "2500"
               }
