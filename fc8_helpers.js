@@ -190,11 +190,11 @@ exports.printPDF = function(fileName, customer, tag){
 }
 
 exports.existFile = function (fileName, errors) {
-    console.log("controllo esistenza file ", fileName)
     fs.exists('../Documents/'+fileName, function(exists) {
-        console.log(exists)
         if(!exists){
+            console.log(errors)
             errors.push(fileName)
+            console.log(errors)
             console.log(fileName, "ha presentato un errore")
         } else {
             console.log("File creato")
