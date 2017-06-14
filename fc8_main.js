@@ -12,7 +12,7 @@ import vapor from './fc8_vapor'
 //fare riferimento a fc8_venturi_map per vedere gli input disponibili
 //compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 
-exports.main = function(request, customer) {
+exports.main = function(request, customer, errors) {
     const reqPipe = request.pipe
     const reqGas = request.gas
     const reqCalculation = request.calculation
@@ -85,5 +85,8 @@ exports.main = function(request, customer) {
     robot.keyTap('f4', 'alt')
     robot.keyTap('tab')
     robot.keyTap('enter')
-    sleep.msleep(2000)
+    
+    helpers.existFile(request.tag, errors)
+    
+    sleep.msleep(1000)
 }

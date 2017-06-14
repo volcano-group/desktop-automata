@@ -1,6 +1,7 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
 import orifice from './fc8_orifice_map.json'
+import fs from 'fs'
 
 /*//set speed
 robot.setKeyboardDelay(150)
@@ -186,4 +187,15 @@ exports.printPDF = function(fileName, customer, tag){
     sleep.msleep(500)
     robot.typeString(fileName)
     robot.keyTap('enter')
+}
+
+exports.existFile = function (tag, errors) {
+    fs.existsSync("C:/Users/Administrator/Documents/"+tag, (exist)=>{
+        if(!exist){
+            errors.push(tag)
+            console.log(tag, "ha presentato un errore")
+        } else {
+            console.log("File creato")
+        }
+    })
 }
