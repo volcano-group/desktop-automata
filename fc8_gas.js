@@ -224,11 +224,36 @@ exports.gas = function(object) {
             robot.keyTap('delete')
         }
         robot.typeString(object.temperature)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
+        if(object.densityMethod=="Density"){
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.flowingDensity)    
+        } else if (object.densityMethod=="pvT pf, Tf, Zf, G (Specific Gravity)"){
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.specificGravity)
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.flowingCompressibilityFactor)
+        } else if (object.densityMethod=="pvT pf, Tf, Zf, Mw (Molecular Weight)"){
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.molecularWeight)
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.flowingCompressibilityFactor)
         }
-        robot.typeString(object.flowingDensity)
+        
         /*if(object.special.WaterVaporCorrection=="on"){
             robot.keyTap('tab')
             for(i=0; i<10; i++){
@@ -443,21 +468,59 @@ exports.gas = function(object) {
         }
         robot.typeString(object.pressure)
         robot.keyTap('tab')
+        for(i=0; i<10; i++){
+            robot.keyTap('delete')
+        }
+        robot.typeString(object.basePressure)
         robot.keyTap('tab')
         for(i=0; i<10; i++){
             robot.keyTap('delete')
         }
         robot.typeString(object.temperature)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
+        if(object.densityMethod=="Density"){
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.flowingDensity)    
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.baseDensity)
+        } else if (object.densityMethod=="pvT pf, Tf, Zf, G (Specific Gravity)"){
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.specificGravity)
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.flowingCompressibilityFactor)
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.baseCompressibilityFactor)
+        } else if (object.densityMethod=="pvT pf, Tf, Zf, Mw (Molecular Weight)"){
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.molecularWeight)
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.flowingCompressibilityFactor)
+            robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.densitySpecial.flowingCompressibilityFactor)
         }
-        robot.typeString(object.flowingDensity)
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
-        }
-        robot.typeString(object.baseDensity)
         /*if(object.special.WaterVaporCorrection=="on"){
             robot.keyTap('tab')
             for(i=0; i<10; i++){

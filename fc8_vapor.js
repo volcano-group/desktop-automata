@@ -2,9 +2,9 @@ import robot from 'robotjs'
 import sleep from 'sleep'
 import vapor from './fc8_vapor_map.json'   
 
-//set speed
+/*//set speed
 robot.setKeyboardDelay(350)
-robot.setMouseDelay(100)
+robot.setMouseDelay(100)*/
 
 exports.vapor = function(object) {
     //select pressure unit

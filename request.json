@@ -38,7 +38,8 @@
                 densitySpecial: {
                     molecularWeight: "",
                     flowingCompressibilityFactor: "",
-                    specificGravity: ""
+                    specificGravity: "",
+                    baseCompressibilityFactor
                 },
                 viscosityUnit: "Centipoise cP",
                 dimensionalUnit: "Millimetre",
@@ -53,7 +54,6 @@
                     name: "Natural Gas"
                 },
                 pressure: "25",
-                bPressure: "",
                 temperature: "25",
                 flowingDensity: "20.71",
                 baseDensity: "0.931",
