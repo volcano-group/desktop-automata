@@ -143,9 +143,7 @@ exports.calculation = function(object) {
         robot.keyTap('tab')
         robot.keyTap('tab')
         let ind = orifice.FlangeTaps.VentDrainHole.indexOf(object.ventDrainHole)
-        let indStd = orifice.FlangeTaps.VentDrainHole.indexOf('0.1250')
-        //console.log("indici:", ind, indStd)
-        sleep.msleep(1000)
+        let indStd = orifice.FlangeTaps.VentDrainHole.indexOf('0.0938')
         if(ind<indStd){
             for (i=0; i<indStd-ind; i++){
                 robot.keyTap('up')
@@ -155,7 +153,6 @@ exports.calculation = function(object) {
                 robot.keyTap('down')
             }
         }
-        sleep.msleep(1000)
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
