@@ -86,8 +86,9 @@ exports.main = function(request, customer, errors) {
     robot.keyTap('f4', 'alt')
     robot.keyTap('tab')
     robot.keyTap('enter')
+    sleep.msleep(1000)
     
     helpers.existFile(request.tag, errors)
     
-    sleep.msleep(1000)
+    
 }

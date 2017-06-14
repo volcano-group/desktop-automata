@@ -124,7 +124,7 @@ let request = {
             },
             "gasUnits": "US gas"
           },
-          "tag": "1112",
+          "tag": "1113",
           "calculation": {
             "ventDrainHole": "0.1250",
             "base": {
@@ -176,7 +176,7 @@ let request = {
             },
             "gasUnits": "US gas"
           },
-          "tag": "1112",
+          "tag": "1114",
           "calculation": {
             "ventDrainHole": "0.1250",
             "base": {
