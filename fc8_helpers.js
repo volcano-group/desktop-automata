@@ -145,6 +145,7 @@ exports.calculation = function(object) {
         let ind = orifice.FlangeTaps.VentDrainHole.indexOf(object.ventDrainHole)
         let indStd = orifice.FlangeTaps.VentDrainHole.indexOf('0.1250')
         //console.log("indici:", ind, indStd)
+        sleep.msleep(1000)
         if(ind<indStd){
             for (i=0; i<indStd-ind; i++){
                 robot.keyTap('up')
