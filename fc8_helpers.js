@@ -191,8 +191,9 @@ exports.printPDF = function(fileName, customer, tag){
 
 exports.existFile = function (tag, errors) {
     console.log("controllo esistenza file ", tag)
-    fs.existsSync("C:/Users/Administrator/Documents/"+tag, (exist)=>{
-        if(!exist){
+    fs.existsSync("C:/Users/Administrator/Documents/"+tag, (exists)=>{
+        console.log(exists)
+        if(!exists){
             errors.push(tag)
             console.log(tag, "ha presentato un errore")
         } else {

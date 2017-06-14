@@ -83,7 +83,6 @@ exports.main = function(request, customer, errors) {
     helpers.printPDF(fileName, customer, request.tag)
     
     //close fc8
-    robot.setKeyboardDelay(150)
     robot.keyTap('f4', 'alt')
     robot.keyTap('tab')
     robot.keyTap('enter')
