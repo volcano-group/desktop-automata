@@ -1,6 +1,6 @@
 import main from './fc8_main'
 
-let request = {
+let requestStd = {
     state: "new",
     createdAt: Date.now(),
     customer: "Volcano Group",
@@ -14,9 +14,9 @@ let request = {
                 standard: "ISO-5167 (2003-), ASME 3M (2004-)",
                 pressuretap: "Downstream",
                 pipematerial: "Carbon Steel",
+                pmUserDefined:{name: "", coeffThermalExpansion: ""}, 
                 VCT: "",
                 vctUserDefined: {name: "", coeffThermalExpansion: ""},
-                pmUserDefined:{name: "", coeffThermalExpansion: ""} , 
                 primaryelement: "316",
                 peUserDefined:{name: "", coeffThermalExpansion: ""},
                 special: {
@@ -37,6 +37,11 @@ let request = {
                 densityMassUnit: "Kilogram (ISO Standards)",
                 densityVolumeUnit: "Cubic Metre",
                 densityMethod: "Density",
+                densitySpecial: {
+                    molecularWeight: "",
+                    flowingCompressibilityFactor: "",
+                    specificGravity: ""
+                },
                 viscosityUnit: "Centipoise cP",
                 dimensionalUnit: "Millimetre",
                 basePressure: "14.696",
@@ -88,7 +93,8 @@ let request = {
                         differential: "2500"
                     }
                 },
-                ventDrainHole: "0.1250"
+                ventDrainHole: "0.1250",
+                userDefinedDiameters: ""
             },
             fileName: "Prova automatica con gas"
         },
@@ -180,6 +186,126 @@ let request = {
             fileName: "Prova automatica con gas"
         }
     ]
+}
+
+let request = {
+    state: "new",
+    createdAt: Date.now(),
+    customer: "Volcano Group",
+    items: [
+        {
+          "pipe": {
+            "type": "Orifice",
+            "type2": "Flange Taps",
+            "style": "Clamped",
+            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
+            "pressuretap": "Downstream",
+            "pipematerial": "Carbon Steel",
+            "primaryelement": "316",
+            "special": {
+              "DrainHole": "on",
+              "holes": "1"
+            },
+            "gasUnits": "US gas"
+          },
+          "tag": "1111",
+          "calculation": {
+            "ventDrainHole": "0.125",
+            "base": {
+              "pipeDiameter": "102.331",
+              "borePrimaryElement": "57.51",
+              "size": {
+                "maxFlow": "6000.0000",
+                "normalFlow": "4245.0000",
+                "differential": "2500"
+              }
+            },
+            "method": "size"
+          },
+          "gas": {
+            "dimensionalUnit": "Millimetre",
+            "pressure": "25",
+            "pressureUnit": "Bar,abs",
+            "differentialUnit": "mm of Water @ 4 degC",
+            "temperature": "25",
+            "temperatureUnit": "TdegC",
+            "flowingDensity": "20.71",
+            "flowMethod": "Mass",
+            "flowUnit": "Mass Kg",
+            "basePressure": "14.696",
+            "basePressureUnit": "Bar,abs",
+            "baseTemperature": "60",
+            "baseTemperatureUnit": "TdegC",
+            "densityMassUnit": "Kilogram (ISO Standards)",
+            "densityVolumeUnit": "Cubic Metre",
+            "densityMethod": "Density",
+            "viscosity": "0.012",
+            "viscosityUnit": "Centipoise cP",
+            "gasType": "Enter Fluid Properties",
+            "fluidProperties": {
+              "name": "Natural Gas"
+            },
+            "heatingTemperature": "15.56",
+            "isentropicExponent": "1.364"
+          }
+        },
+        {
+          "pipe": {
+            "type": "Orifice",
+            "type2": "Flange Taps",
+            "style": "Clamped",
+            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
+            "pressuretap": "Downstream",
+            "pipematerial": "Carbon Steel",
+            "primaryelement": "316",
+            "special": {
+              "DrainHole": "on",
+              "holes": "1"
+            },
+            "gasUnits": "US gas"
+          },
+          "tag": "1112",
+          "calculation": {
+            "ventDrainHole": "0.125",
+            "base": {
+              "pipeDiameter": "102.331",
+              "borePrimaryElement": "57.51",
+              "size": {
+                "maxFlow": "6000.0000",
+                "normalFlow": "4245.0000",
+                "differential": "2500"
+              }
+            },
+            "method": "size"
+          },
+          "gas": {
+            "dimensionalUnit": "Millimetre",
+            "pressure": "25",
+            "pressureUnit": "Bar,abs",
+            "differentialUnit": "mm of Water @ 4 degC",
+            "temperature": "25",
+            "temperatureUnit": "TdegC",
+            "flowingDensity": "20.71",
+            "flowMethod": "Mass",
+            "flowUnit": "Mass kg",
+            "basePressure": "14.696",
+            "basePressureUnit": "Bar,abs",
+            "baseTemperature": "60",
+            "baseTemperatureUnit": "TdegC",
+            "densityMassUnit": "Kilogram (ISO Standards)",
+            "densityVolumeUnit": "Cubic Metre",
+            "densityMethod": "Density",
+            "viscosity": "0.012",
+            "viscosityUnit": "Centipoise cP",
+            "gasType": "Enter Fluid Properties",
+            "fluidProperties": {
+              "name": "Natural Gas"
+            },
+            "heatingTemperature": "15.56",
+            "isentropicExponent": "1.364"
+          }
+        }
+      ]
 }
 
 request.items.map((object)=>main.main(object, request.customer))

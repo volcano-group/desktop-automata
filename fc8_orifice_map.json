@@ -6,7 +6,7 @@
         ],
         "Standard":[
             "ISO-5167 (2003-), ASME 3M (2004-)",
-            "ASME3M (1983- 2003, ASME PTC 19.5 (2004-)",
+            "ASME3M (1983- 2003), ASME PTC 19.5 (2004-)",
             "ANSI-2530/AGA-3/API-Ch.14 (1992-)",
             "ANSI 2530/AGA3/Buckingham/Spink (1953-1991), ANSI/API 2530 (to 1995) AGA-3 (1935-1995) Spink (1935 to date)" 
         ],
@@ -83,7 +83,8 @@
             "0.4063",
             "0.4375",
             "0.4688",
-            "0.5"
+            "0.5",
+            "Enter Diameter"
         ]
     },
     
