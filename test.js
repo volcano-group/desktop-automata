@@ -221,11 +221,5 @@ let errors = []
 
 request.items.map((object)=>main.main(object, request.customer, errors))
 
-helpers.existFile('../Documents/1111', function(exists){
-    if (exists) {
-        console.log("Exists")
-    } else {
-        console.log("NOT Exists")
-    }
-})
+helpers.existFile('1111', errors) 
 console.log(errors)
