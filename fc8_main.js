@@ -79,8 +79,7 @@ exports.main = function(request, customer, errors) {
     helpers.calculation(reqCalculation)
     
     //print pdf
-    //let fileName = Date.now() + '-' + request.tag + '-' + reqPipe.type2
-    let fileName = request.tag
+    let fileName = Date.now() + '-' + request.tag + '-' + reqPipe.type2 + '.pdf'
     helpers.printPDF(fileName, customer, request.tag)
     
     //close fc8
@@ -89,7 +88,7 @@ exports.main = function(request, customer, errors) {
     robot.keyTap('enter')
     sleep.msleep(1000)
     
-    //helpers.existFile(fileName, errors)
+    helpers.existFile(fileName, errors)
     
     
 }
