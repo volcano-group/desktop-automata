@@ -2,9 +2,9 @@ import robot from 'robotjs'
 import sleep from 'sleep'
 import gas from './fc8_gas_map.json'   
 
-//set speed
+/*//set speed
 robot.setKeyboardDelay(150)
-robot.setMouseDelay(100)
+robot.setMouseDelay(100)*/
 
 exports.gas = function(object) {
     //select pressure unit

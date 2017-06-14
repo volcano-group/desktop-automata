@@ -11,9 +11,9 @@ const rv = orifice.RadiusVenaContractaTaps
 const hoft = orifice.HonoredOrificeRunFlangeTaps
 const hoct = orifice.HonoredOrificeRunCornerTaps
 
-//set speed
+/*//set speed
 robot.setKeyboardDelay(150)
-robot.setMouseDelay(100)
+robot.setMouseDelay(100)*/
 
 //flangetaps
 exports.flangetaps = function(request){
