@@ -221,5 +221,5 @@ let errors = []
 
 request.items.map((object)=>main.main(object, request.customer, errors))
 
-helpers.existFile('1111', errors) 
+helpers.existFile('1111.pdf', errors) 
 console.log(errors)
