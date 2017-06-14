@@ -53,7 +53,6 @@ exports.autoCompileGas = function(){
 
 exports.calculation = function(object) {
     //select dp flow size
-    robot.setKeyboardDelay(250)
     let i = 0
     if(object.method == "dp"){
         robot.keyTap('enter')
@@ -145,6 +144,7 @@ exports.calculation = function(object) {
         robot.keyTap('tab')
         let ind = orifice.FlangeTaps.VentDrainHole.indexOf(object.ventDrainHole)
         let indStd = orifice.FlangeTaps.VentDrainHole.indexOf('0.1250')
+        console.log("indici:", ind, indStd)
         if(ind<indStd){
             for (i=0; i<indStd-ind; i++){
                 robot.keyTap('up')
