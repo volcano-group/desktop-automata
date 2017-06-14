@@ -1,4 +1,5 @@
 import main from './fc8_main'
+import helpers from './fc8_helpers'
 
 let request = {
     state: "new",
@@ -219,4 +220,12 @@ let request = {
 let errors = []
 
 request.items.map((object)=>main.main(object, request.customer, errors))
+
+helpers.existFile('../Documents/1111', function(exists){
+    if (exists) {
+        console.log("Exists")
+    } else {
+        console.log("NOT Exists")
+    }
+})
 console.log(errors)
