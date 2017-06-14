@@ -1,5 +1,6 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
+var fs = require('fs')
 //set speed
 robot.setKeyboardDelay(5)
 robot.setMouseDelay(100)

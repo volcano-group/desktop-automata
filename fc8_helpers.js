@@ -1,7 +1,7 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
 import orifice from './fc8_orifice_map.json'
-import fs from 'fs'
+var fs = require('fs')
 
 /*//set speed
 robot.setKeyboardDelay(150)
@@ -190,6 +190,7 @@ exports.printPDF = function(fileName, customer, tag){
 }
 
 exports.existFile = function (tag, errors) {
+    console.log("controllo esistenza file ", tag)
     fs.existsSync("C:/Users/Administrator/Documents/"+tag, (exist)=>{
         if(!exist){
             errors.push(tag)
