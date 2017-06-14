@@ -19,8 +19,9 @@ let type = [
 exports.startFC8 = function(){
     robot.keyTap('command')
     robot.typeString('FC8')
-    robot.keyTap('enter')
     sleep.msleep(500)
+    robot.keyTap('enter')
+    sleep.msleep(1000)
 }
 
 exports.selectType = function(request){
