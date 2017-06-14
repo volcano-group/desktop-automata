@@ -189,15 +189,15 @@ exports.printPDF = function(fileName, customer, tag){
     robot.keyTap('enter')
 }
 
-exports.existFile = function (tag, errors) {
+exports.existFile = function (fileName, errors) {
     console.log("controllo esistenza file ", tag)
-    fs.existsSync("C:/Users/Administrator/Documents/"+tag, (exists)=>{
+    fs.existsSync("C:/Users/Administrator/Documents/"+fileName, function(exists) {
         console.log(exists)
         if(!exists){
-            errors.push(tag)
-            console.log(tag, "ha presentato un errore")
+            errors.push(fileName)
+            console.log(fileName, "ha presentato un errore")
         } else {
             console.log("File creato")
         }
-    })
+    });
 }
