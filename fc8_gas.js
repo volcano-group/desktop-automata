@@ -229,13 +229,13 @@ exports.gas = function(object) {
             robot.keyTap('delete')
         }
         robot.typeString(object.flowingDensity)
-        if(object.special.WaterVaporCorrection=="on"){
+        /*if(object.special.WaterVaporCorrection=="on"){
             robot.keyTap('tab')
             for(i=0; i<10; i++){
                 robot.keyTap('delete')
             }
             robot.typeString(object.humidity)
-        }
+        }*/
         robot.keyTap('tab')
         for(i=0; i<10; i++){
             robot.keyTap('delete')
@@ -247,7 +247,7 @@ exports.gas = function(object) {
         }
         robot.typeString(object.isentropicExponent)
         robot.keyTap('tab')
-        if(object.special.ManometerCorrectionFactor=="on"){
+        /*if(object.special.ManometerCorrectionFactor=="on"){
             for(i=0; i<10; i++){
                 robot.keyTap('delete')
             }
@@ -266,7 +266,7 @@ exports.gas = function(object) {
             }
             robot.typeString(object.manometerData.seal)
             robot.keyTap('tab')    
-        }
+        }*/
     } else {
         for(i=0; i<16; i++){
             robot.keyTap('tab')
@@ -458,13 +458,13 @@ exports.gas = function(object) {
             robot.keyTap('delete')
         }
         robot.typeString(object.baseDensity)
-        if(object.special.WaterVaporCorrection=="on"){
+        /*if(object.special.WaterVaporCorrection=="on"){
             robot.keyTap('tab')
             for(i=0; i<10; i++){
                 robot.keyTap('delete')
             }
             robot.typeString(object.humidity)
-        }
+        }*/
         robot.keyTap('tab')
         for(i=0; i<10; i++){
             robot.keyTap('delete')
@@ -476,7 +476,7 @@ exports.gas = function(object) {
         }
         robot.typeString(object.isentropicExponent)
         robot.keyTap('tab')
-        if(object.special.ManometerCorrectionFactor=="on"){
+        /*if(object.special.ManometerCorrectionFactor=="on"){
             for(i=0; i<10; i++){
                 robot.keyTap('delete')
             }
@@ -495,7 +495,7 @@ exports.gas = function(object) {
             }
             robot.typeString(object.manometerData.seal)
             robot.keyTap('tab')    
-        }
+        }*/
 
     }
 }

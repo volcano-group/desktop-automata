@@ -69,7 +69,7 @@ exports.main = function(request, customer) {
             break
         }
         case "US vapor":{
-            console.log("vapore")
+            vapor.vapor(reqGas)
             break
         }
     }
