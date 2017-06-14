@@ -150,7 +150,7 @@ let request = {
             "flowUnit": "Mass kg",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
+            "densityMethod": "Density",
             "viscosity": "0.012",
             "viscosityUnit": "Centipoise cP",
             "gasType": "Enter Fluid Properties",
