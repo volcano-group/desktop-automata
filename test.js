@@ -167,6 +167,8 @@ let request = {
 
 let errors = []
 
-request.items.map((object)=>main.main(object, request.customer, errors))
+request.items.map((object)=>main.main(object, request.customer, errors)).then(function(){
+    console.log(errors)
+})
 
 console.log(errors)
