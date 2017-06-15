@@ -89,12 +89,14 @@ exports.main = async function(request, customer, errors) {
     sleep.msleep(1000)
     
     //helpers.existFile(fileName, errors)
-    helpers.existFile(fileName).then(()=>{
+    helpers.existFile(fileName, errors)
+    
+    /*.then(()=>{
         console.log("file creato")
     }).catch((file) => {
         errors.push(file)
-        console.log(file, " presente errori")
-    })
+        console.log(file, " presenta errori")
+    })*/
     
     /*try {
         await a
