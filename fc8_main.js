@@ -82,14 +82,17 @@ exports.main = async function(request, customer, errors) {
     let fileName = Date.now() + '-' + request.tag + '-' + reqPipe.type2 + '.pdf'
     helpers.printPDF(fileName, customer, request.tag)
     
+    
+    //helpers.existFile(fileName, errors)
+    helpers.existFile(fileName, errors)
+    
     //close fc8
     robot.keyTap('f4', 'alt')
     robot.keyTap('tab')
     robot.keyTap('enter')
     sleep.msleep(1000)
     
-    //helpers.existFile(fileName, errors)
-    helpers.existFile(fileName, errors)
+    
     
     /*.then(()=>{
         console.log("file creato")
