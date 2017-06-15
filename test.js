@@ -167,6 +167,9 @@ let request = {
 
 let errors = []
 
-request.items.map((object)=>main.main(object, request.customer, errors))
+try = async function (request, errors){
+    request.items.map((object)=>main.main(object, request.customer, errors)).then(()=>{console.log(errors)})
+} 
 
-console.log(errors)
+try(request, errors)
+//console.log(errors)
