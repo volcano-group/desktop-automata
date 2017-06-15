@@ -191,7 +191,7 @@ exports.printPDF = function(fileName, customer, tag){
 
 exports.existFile = function (fileName, errors) {
     return new Promise((resolve, reject)=>{
-        fs.exists('../Documents/'+fileName) ? resolve("ok") : reject("no file")
+        fs.exists('../Documents/'+fileName) ? resolve("ok") : reject(fileName)
     })
     /*fs.exists('../Documents/'+fileName, function(exists) {
         if(!exists){
