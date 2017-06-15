@@ -197,6 +197,7 @@ exports.existFile = function (fileName, errors) {
         if(!exists){
             errors.push(fileName)
             console.log(fileName, "ha presentato un errore")
+            console.log(errors)
         } 
     });
 }
