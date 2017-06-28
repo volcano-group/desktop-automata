@@ -85,6 +85,7 @@ exports.main = async function(request, customer, errors) {
             robot.mouseClick()
             break
         }
+    }
     
     //select gas/vapor type
     switch(reqPipe.gasUnits){
