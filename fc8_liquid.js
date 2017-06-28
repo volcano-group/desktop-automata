@@ -68,7 +68,7 @@ exports.UsLiquid = function(object) {
         for(i=0; i<ind-indStd; i++){
             robot.keyTap('down')
         }
-    else {
+    } else {
         for(i=0; i<indStd-ind; i++){
             robot.keyTap('up')
         }
@@ -297,8 +297,8 @@ exports.SiLiquid = function(object) {
         for(i=0; i<ind-indStd; i++){
             robot.keyTap('down')
         }
-    else {
-        for(i=0; i<indStd-ind; i++){
+    } else {
+         for(i=0; i<indStd-ind; i++){
             robot.keyTap('up')
         }
     }
