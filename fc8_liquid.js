@@ -230,9 +230,9 @@ exports.main = function(object) {
     }
     robot.typeString(object.viscosity)
     robot.keyTap('tab')
-    for(i=0; i<10; i++){
+    /*for(i=0; i<10; i++){
         robot.keyTap('delete')
     }
-    robot.typeString(object.densitySpecial.vaporPressure)
+    robot.typeString(object.densitySpecial.vaporPressure)*/
     robot.keyTap('tab')
 }
