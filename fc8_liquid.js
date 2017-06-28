@@ -17,10 +17,13 @@ exports.UsLiquid = function(object) {
     for(i=0; i<us.Pressure.indexOf(object.pressureUnit); i++){
         robot.keyTap('up')
     }
-    for(i=0; i<11; i++){
+    for(i=0; i<10; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    
     
     //select differential unit
     for(i=0; i<4; i++){
@@ -49,9 +52,11 @@ exports.UsLiquid = function(object) {
     for(i=0; i<us.Temperature.indexOf(object.temperatureUnit); i++){
         robot.keyTap('up')
     }
-    for(i=0; i<11; i++){
+    for(i=0; i<10; i++){
         robot.keyTap('tab')
     }
+    robot.keyTap('enter')
+    robot.keyTap('tab')
     robot.keyTap('enter')
         
     //select Flow unit
