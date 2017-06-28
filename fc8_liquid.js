@@ -200,7 +200,7 @@ exports.main = function(object) {
             robot.keyTap('delete')
         }
         robot.typeString(object.flowingDensity)    
-        if(object.flowMethod=="Flowing"){
+        if(object.flowMethod=="Base"){
            robot.keyTap('tab')
             for(i=0; i<10; i++){
                 robot.keyTap('delete')
