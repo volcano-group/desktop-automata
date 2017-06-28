@@ -236,6 +236,6 @@ exports.main = function(object) {
     for(i=0; i<10; i++){
         robot.keyTap('delete')
     }
-    robot.typeString(object.vaporPressure)
+    robot.typeString(object.densitySpecial.vaporPressure)
     robot.keyTap('tab')
 }

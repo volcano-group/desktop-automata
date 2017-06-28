@@ -130,48 +130,6 @@ exports.flangetaps = function(request){
     robot.keyTap('tab')     
     robot.keyTap('tab')     
     robot.keyTap('enter')
-    switch(request.gasUnits){
-        case "US Gas": {
-            robot.keyTap('tab')     
-            robot.keyTap('enter')
-            break
-        }
-        case "US Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 100)
-            robot.mouseClick()
-            break
-        }
-        case "US Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 125)
-            robot.mouseClick()
-            break
-        }
-        case "SI Gas": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 150)
-            robot.mouseClick()
-            break
-        }
-        case "SI Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 175)
-            robot.mouseClick()
-            break
-        }
-        case "SI Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 200)
-            robot.mouseClick()
-            break
-        }
-    }
     
 }
 
@@ -289,48 +247,7 @@ exports.cornertaps = function(request){
     robot.keyTap('tab')     
     robot.keyTap('tab')     
     robot.keyTap('enter')
-    switch(request.gasUnits){
-        case "US Gas": {
-            robot.keyTap('tab')     
-            robot.keyTap('enter')
-            break
-        }
-        case "US Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 100)
-            robot.mouseClick()
-            break
-        }
-        case "US Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 125)
-            robot.mouseClick()
-            break
-        }
-        case "SI Gas": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 150)
-            robot.mouseClick()
-            break
-        }
-        case "SI Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 175)
-            robot.mouseClick()
-            break
-        }
-        case "SI Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 200)
-            robot.mouseClick()
-            break
-        }
-    }
+    
 }
 
 //thick orifice
@@ -420,48 +337,6 @@ exports.thickorifice = function(request){
     robot.keyTap('tab')     
     robot.keyTap('tab')     
     robot.keyTap('enter')
-    switch(request.gasUnits){
-        case "US Gas": {
-            robot.keyTap('tab')     
-            robot.keyTap('enter')
-            break
-        }
-        case "US Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 100)
-            robot.mouseClick()
-            break
-        }
-        case "US Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 125)
-            robot.mouseClick()
-            break
-        }
-        case "SI Gas": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 150)
-            robot.mouseClick()
-            break
-        }
-        case "SI Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 175)
-            robot.mouseClick()
-            break
-        }
-        case "SI Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 200)
-            robot.mouseClick()
-            break
-        }
-    }
     
 }
 
@@ -562,48 +437,6 @@ exports.restrictiveorifice = function(request){
     robot.keyTap('tab')     
     robot.keyTap('tab')     
     robot.keyTap('enter')
-    switch(request.gasUnits){
-        case "US Gas": {
-            robot.keyTap('tab')     
-            robot.keyTap('enter')
-            break
-        }
-        case "US Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 100)
-            robot.mouseClick()
-            break
-        }
-        case "US Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 125)
-            robot.mouseClick()
-            break
-        }
-        case "SI Gas": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 150)
-            robot.mouseClick()
-            break
-        }
-        case "SI Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 175)
-            robot.mouseClick()
-            break
-        }
-        case "SI Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 200)
-            robot.mouseClick()
-            break
-        }
-    }
     
 }
 
@@ -685,48 +518,6 @@ exports.conicorifice = function(request){
     robot.keyTap('tab')
     robot.keyTap('tab')     
     robot.keyTap('enter')
-    switch(request.gasUnits){
-        case "US Gas": {
-            robot.keyTap('tab')     
-            robot.keyTap('enter')
-            break
-        }
-        case "US Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 100)
-            robot.mouseClick()
-            break
-        }
-        case "US Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 125)
-            robot.mouseClick()
-            break
-        }
-        case "SI Gas": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 150)
-            robot.mouseClick()
-            break
-        }
-        case "SI Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 175)
-            robot.mouseClick()
-            break
-        }
-        case "SI Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 200)
-            robot.mouseClick()
-            break
-        }
-    }
     
 }
 
@@ -808,48 +599,6 @@ exports.quadrantorifice = function(request){
     robot.keyTap('tab')
     robot.keyTap('tab')     
     robot.keyTap('enter')
-    switch(request.gasUnits){
-        case "US Gas": {
-            robot.keyTap('tab')     
-            robot.keyTap('enter')
-            break
-        }
-        case "US Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 100)
-            robot.mouseClick()
-            break
-        }
-        case "US Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 125)
-            robot.mouseClick()
-            break
-        }
-        case "SI Gas": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 150)
-            robot.mouseClick()
-            break
-        }
-        case "SI Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 175)
-            robot.mouseClick()
-            break
-        }
-        case "SI Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 200)
-            robot.mouseClick()
-            break
-        }
-    }
     
 }
 
@@ -963,48 +712,7 @@ exports.radiusvena = function(request){
     robot.keyTap('tab')     
     robot.keyTap('tab')     
     robot.keyTap('enter')
-    switch(request.gasUnits){
-        case "US Gas": {
-            robot.keyTap('tab')     
-            robot.keyTap('enter')
-            break
-        }
-        case "US Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 100)
-            robot.mouseClick()
-            break
-        }
-        case "US Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 125)
-            robot.mouseClick()
-            break
-        }
-        case "SI Gas": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 150)
-            robot.mouseClick()
-            break
-        }
-        case "SI Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 175)
-            robot.mouseClick()
-            break
-        }
-        case "SI Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 200)
-            robot.mouseClick()
-            break
-        }
-    }
+    
 }
 
 //honored orifice run flange taps 
@@ -1085,48 +793,6 @@ exports.horflangetaps = function(request){
     robot.keyTap('tab')
     robot.keyTap('tab')     
     robot.keyTap('enter')
-    switch(request.gasUnits){
-        case "US Gas": {
-            robot.keyTap('tab')     
-            robot.keyTap('enter')
-            break
-        }
-        case "US Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 100)
-            robot.mouseClick()
-            break
-        }
-        case "US Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 125)
-            robot.mouseClick()
-            break
-        }
-        case "SI Gas": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 150)
-            robot.mouseClick()
-            break
-        }
-        case "SI Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 175)
-            robot.mouseClick()
-            break
-        }
-        case "SI Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 200)
-            robot.mouseClick()
-            break
-        }
-    }
     
 }
 
@@ -1208,47 +874,5 @@ exports.horcornertaps = function(request){
     robot.keyTap('tab')
     robot.keyTap('tab')     
     robot.keyTap('enter')
-    switch(request.gasUnits){
-        case "US Gas": {
-            robot.keyTap('tab')     
-            robot.keyTap('enter')
-            break
-        }
-        case "US Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 100)
-            robot.mouseClick()
-            break
-        }
-        case "US Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 125)
-            robot.mouseClick()
-            break
-        }
-        case "SI Gas": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 150)
-            robot.mouseClick()
-            break
-        }
-        case "SI Liquid": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 175)
-            robot.mouseClick()
-            break
-        }
-        case "SI Vapor": {
-            robot.moveMouse(50, 25)
-            robot.mouseClick()
-            robot.moveMouse(50, 200)
-            robot.mouseClick()
-            break
-        }
-    }
     
 }
