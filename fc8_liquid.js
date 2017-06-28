@@ -194,11 +194,6 @@ exports.main = function(object) {
         robot.keyTap('delete')
     }
     robot.typeString(object.temperature)
-    robot.keyTap('tab')
-    for(i=0; i<10; i++){
-        robot.keyTap('delete')
-    }
-    robot.typeString(object.temperature)
     if(object.densityMethod=="Density"){
         robot.keyTap('tab')
         for(i=0; i<10; i++){
