@@ -2,7 +2,7 @@ import robot from 'robotjs'
 import sleep from 'sleep'
 var fs = require('fs')
 //set speed
-robot.setKeyboardDelay(20)
+robot.setKeyboardDelay(220)
 robot.setMouseDelay(100)
 
 import helpers from './fc8_helpers'
