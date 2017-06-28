@@ -141,30 +141,35 @@ exports.flangetaps = function(request){
             robot.mouseClick()
             robot.moveMouse(50, 100)
             robot.mouseClick()
+            break
         }
         case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
             robot.mouseClick()
+            break
         }
         case "SI Gas": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 150)
             robot.mouseClick()
+            break
         }
         case "SI Liquid": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 175)
             robot.mouseClick()
+            break
         }
         case "SI Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 200)
             robot.mouseClick()
+            break
         }
     }
     
@@ -295,30 +300,35 @@ exports.cornertaps = function(request){
             robot.mouseClick()
             robot.moveMouse(50, 100)
             robot.mouseClick()
+            break
         }
         case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
             robot.mouseClick()
+            break
         }
         case "SI Gas": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 150)
             robot.mouseClick()
+            break
         }
         case "SI Liquid": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 175)
             robot.mouseClick()
+            break
         }
         case "SI Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 200)
             robot.mouseClick()
+            break
         }
     }
 }
@@ -421,30 +431,35 @@ exports.thickorifice = function(request){
             robot.mouseClick()
             robot.moveMouse(50, 100)
             robot.mouseClick()
+            break
         }
         case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
             robot.mouseClick()
+            break
         }
         case "SI Gas": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 150)
             robot.mouseClick()
+            break
         }
         case "SI Liquid": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 175)
             robot.mouseClick()
+            break
         }
         case "SI Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 200)
             robot.mouseClick()
+            break
         }
     }
     
@@ -558,30 +573,35 @@ exports.restrictiveorifice = function(request){
             robot.mouseClick()
             robot.moveMouse(50, 100)
             robot.mouseClick()
+            break
         }
         case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
             robot.mouseClick()
+            break
         }
         case "SI Gas": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 150)
             robot.mouseClick()
+            break
         }
         case "SI Liquid": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 175)
             robot.mouseClick()
+            break
         }
         case "SI Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 200)
             robot.mouseClick()
+            break
         }
     }
     
@@ -676,30 +696,35 @@ exports.conicorifice = function(request){
             robot.mouseClick()
             robot.moveMouse(50, 100)
             robot.mouseClick()
+            break
         }
         case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
             robot.mouseClick()
+            break
         }
         case "SI Gas": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 150)
             robot.mouseClick()
+            break
         }
         case "SI Liquid": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 175)
             robot.mouseClick()
+            break
         }
         case "SI Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 200)
             robot.mouseClick()
+            break
         }
     }
     
@@ -794,30 +819,35 @@ exports.quadrantorifice = function(request){
             robot.mouseClick()
             robot.moveMouse(50, 100)
             robot.mouseClick()
+            break
         }
         case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
             robot.mouseClick()
+            break
         }
         case "SI Gas": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 150)
             robot.mouseClick()
+            break
         }
         case "SI Liquid": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 175)
             robot.mouseClick()
+            break
         }
         case "SI Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 200)
             robot.mouseClick()
+            break
         }
     }
     
@@ -944,30 +974,35 @@ exports.radiusvena = function(request){
             robot.mouseClick()
             robot.moveMouse(50, 100)
             robot.mouseClick()
+            break
         }
         case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
             robot.mouseClick()
+            break
         }
         case "SI Gas": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 150)
             robot.mouseClick()
+            break
         }
         case "SI Liquid": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 175)
             robot.mouseClick()
+            break
         }
         case "SI Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 200)
             robot.mouseClick()
+            break
         }
     }
 }
@@ -1061,30 +1096,35 @@ exports.horflangetaps = function(request){
             robot.mouseClick()
             robot.moveMouse(50, 100)
             robot.mouseClick()
+            break
         }
         case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
             robot.mouseClick()
+            break
         }
         case "SI Gas": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 150)
             robot.mouseClick()
+            break
         }
         case "SI Liquid": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 175)
             robot.mouseClick()
+            break
         }
         case "SI Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 200)
             robot.mouseClick()
+            break
         }
     }
     
@@ -1179,30 +1219,35 @@ exports.horcornertaps = function(request){
             robot.mouseClick()
             robot.moveMouse(50, 100)
             robot.mouseClick()
+            break
         }
         case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
             robot.mouseClick()
+            break
         }
         case "SI Gas": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 150)
             robot.mouseClick()
+            break
         }
         case "SI Liquid": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 175)
             robot.mouseClick()
+            break
         }
         case "SI Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 200)
             robot.mouseClick()
+            break
         }
     }
     
