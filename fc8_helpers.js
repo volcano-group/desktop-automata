@@ -177,7 +177,7 @@ exports.printPDF = function(fileName, customer, tag){
     robot.keyTap('tab')
     robot.keyTap('tab')
     robot.typeString(tag)
-    for(i=0; i<14; i++){
+    for(i=0; i<15; i++){
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
