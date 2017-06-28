@@ -64,6 +64,28 @@ exports.main = async function(request, customer, errors) {
         }
     }
     
+    //selectgas/vapor type
+    switch(reqPipe.gasUnits){
+        case "Gas": {
+            robot.keyTap('tab')     
+            robot.keyTap('enter')
+            break
+        }
+        case "Liquid": {
+            robot.moveMouse(50, 25)
+            robot.mouseClick()
+            robot.moveMouse(50, 100)
+            robot.mouseClick()
+            break
+        }
+        case "Vapor": {
+            robot.moveMouse(50, 25)
+            robot.mouseClick()
+            robot.moveMouse(50, 125)
+            robot.mouseClick()
+            break
+        }
+    
     //select gas/vapor type
     switch(reqPipe.gasUnits){
         case "Gas": {
