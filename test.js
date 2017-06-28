@@ -3,12 +3,13 @@ import helpers from './fc8_helpers'
 
 let request =  {
       "state": "new",
-      "createdAt": 1498660473461,
+      "createdAt": 1498665082391,
       "customer": "Volcano Group",
       "items": [
         {
           "tag": "120-FE-0051",
           "pipe": {
+            "type": "Orifice",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
@@ -19,7 +20,7 @@ let request =  {
               "DrainHole": "on",
               "holes": "1"
             },
-            "gasUnits": "SI Liquid"
+            "gasUnits": "US Liquid"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
@@ -57,6 +58,7 @@ let request =  {
         {
           "tag": "120-FE-0904",
           "pipe": {
+              "type": "Orifice",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
@@ -67,7 +69,7 @@ let request =  {
               "DrainHole": "on",
               "holes": "1"
             },
-            "gasUnits": "SI Gas"
+            "gasUnits": "US Gas"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
@@ -114,6 +116,7 @@ let request =  {
         {
           "tag": "120-FE-1904",
           "pipe": {
+              "type": "Orifice",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
@@ -124,7 +127,7 @@ let request =  {
               "DrainHole": "on",
               "holes": "1"
             },
-            "gasUnits": "SI Gas"
+            "gasUnits": "US Gas"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
@@ -171,6 +174,7 @@ let request =  {
         {
           "tag": "120-FE-1905",
           "pipe": {
+              "type": "Orifice",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
@@ -181,7 +185,7 @@ let request =  {
               "DrainHole": "on",
               "holes": "1"
             },
-            "gasUnits": "SI Gas"
+            "gasUnits": "US Gas"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
@@ -228,6 +232,7 @@ let request =  {
         {
           "tag": "120-FE-2904",
           "pipe": {
+              "type": "Orifice",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
@@ -238,7 +243,7 @@ let request =  {
               "DrainHole": "on",
               "holes": "1"
             },
-            "gasUnits": "SI Gas"
+            "gasUnits": "US Gas"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
@@ -285,6 +290,7 @@ let request =  {
         {
           "tag": "120-FE-2905",
           "pipe": {
+              "type": "Orifice",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
@@ -295,7 +301,7 @@ let request =  {
               "DrainHole": "on",
               "holes": "1"
             },
-            "gasUnits": "SI Gas"
+            "gasUnits": "US Gas"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
@@ -342,6 +348,7 @@ let request =  {
         {
           "tag": "120-FE-0903",
           "pipe": {
+              "type": "Orifice",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
@@ -352,7 +359,7 @@ let request =  {
               "DrainHole": "on",
               "holes": "1"
             },
-            "gasUnits": "SI Liquid"
+            "gasUnits": "US Liquid"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
@@ -390,6 +397,7 @@ let request =  {
         {
           "tag": "120-FE-1031",
           "pipe": {
+              "type": "Orifice",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
@@ -400,7 +408,7 @@ let request =  {
               "DrainHole": "on",
               "holes": "1"
             },
-            "gasUnits": "SI Gas"
+            "gasUnits": "US Gas"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
@@ -447,6 +455,7 @@ let request =  {
         {
           "tag": "120-FE-1041",
           "pipe": {
+              "type": "Orifice",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
@@ -457,7 +466,7 @@ let request =  {
               "DrainHole": "on",
               "holes": "1"
             },
-            "gasUnits": "SI Gas"
+            "gasUnits": "US Gas"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
