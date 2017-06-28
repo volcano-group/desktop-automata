@@ -61,7 +61,8 @@ let request =  {
                 "differential": "28"
               }
             },
-            "method": "size"
+            "method": "size",
+            "ventDrainHole": "0.0938"
           }
         },
         {
@@ -119,7 +120,8 @@ let request =  {
                 "differential": "29"
               }
             },
-            "method": "size"
+            "method": "size",
+            "ventDrainHole": "0.2500"
           }
         },
         {
@@ -177,7 +179,8 @@ let request =  {
                 "differential": "30"
               }
             },
-            "method": "size"
+            "method": "size",
+            "ventDrainHole": "0.1250"
           }
         },
         {
@@ -235,7 +238,8 @@ let request =  {
                 "differential": "31"
               }
             },
-            "method": "size"
+            "method": "size",
+            "ventDrainHole": "0.3125"
           }
         },
         {
@@ -293,7 +297,8 @@ let request =  {
                 "differential": "33"
               }
             },
-            "method": "size"
+            "method": "size",
+            "ventDrainHole": "0.2500"
           }
         },
         {
@@ -351,7 +356,8 @@ let request =  {
                 "differential": "34"
               }
             },
-            "method": "size"
+            "method": "size",
+            "ventDrainHole": "0.0625"
           }
         }
       ]
