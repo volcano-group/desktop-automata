@@ -159,15 +159,10 @@ exports.calculation = function(object) {
         robot.keyTap('tab')
     }
     robot.keyTap('enter')
-    for(i=0; i<10; i++){
-        robot.keyTap('tab')
+    for(i=0; i<2; i++){
+        robot.keyTap('tab', 'shift')
     }
     robot.keyTap('enter')
-    robot.keyTap('tab')
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    robot.keyTap('enter')
-    
 }
 
 exports.printPDF = function(fileName, customer, tag){
