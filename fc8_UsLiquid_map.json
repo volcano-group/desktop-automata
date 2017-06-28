@@ -109,8 +109,8 @@
                  "Stere"
                 ]
     },
-    "DensityMethod": ["Specific Gravity (Gb, Gf)",
-                      "Density"
+    "DensityMethod": ["Density",
+                      "Specific Gravity (Gb, Gf)"
                      ],
     "Viscosity":["Centipoise cP",
                 "Millipoise mP",
