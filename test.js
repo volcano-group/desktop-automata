@@ -41,7 +41,7 @@ let request =   {
             "differentialUnit": "kPa",
             "temperature": "115",
             "temperatureUnit": "TdegC",
-            "flowingDensity": "243044",
+            "flowingDensity": "949",
             "flowMethod": "Flowing",
             "flowUnit": "Flowing m^3",
             "densityMassUnit": "Kilogram (ISO Standards)",

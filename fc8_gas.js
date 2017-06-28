@@ -519,7 +519,7 @@ exports.main = function(object) {
             for(i=0; i<10; i++){
                 robot.keyTap('delete')
             }
-            robot.typeString(object.densitySpecial.flowingCompressibilityFactor)
+            robot.typeString(object.densitySpecial.baseCompressibilityFactor)
         }
         /*if(object.special.WaterVaporCorrection=="on"){
             robot.keyTap('tab')
