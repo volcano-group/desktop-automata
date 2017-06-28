@@ -6,7 +6,7 @@ import vapor from './fc8_vapor_map.json'
 robot.setKeyboardDelay(350)
 robot.setMouseDelay(100)*/
 
-exports.vapor = function(object) {
+exports.main = function(object) {
     //select pressure unit
     let i = 0
     robot.keyTap('enter')

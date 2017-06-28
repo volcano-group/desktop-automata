@@ -66,28 +66,16 @@ exports.main = async function(request, customer, errors) {
     
     //select gas/vapor type
     switch(reqPipe.gasUnits){
-        case "US Gas": {
-            gas.gas(reqGas)
+        case "Gas": {
+            gas.main(reqGas)
             break
         }
-        case "US Liquid":{
-            liquid.UsLiquid(reqGas)
+        case "Liquid":{
+            liquid.main(reqGas)
             break
         }
-        case "US Vapor":{
-            vapor.vapor(reqGas)
-            break
-        }
-        case "SI Gas":{
-            gas.gas(reqGas)
-            break
-        }
-        case "SI Liquid":{
-            liquid.SiLiquid(reqGas)
-            break
-        }
-        case "SI Vapor":{
-            vapor.vapor(reqGas)
+        case "Vapor":{
+            vapor.main(reqGas)
             break
         }
     }

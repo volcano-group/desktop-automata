@@ -6,7 +6,7 @@ import gas from './fc8_gas_map.json'
 robot.setKeyboardDelay(150)
 robot.setMouseDelay(100)*/
 
-exports.gas = function(object) {
+exports.main = function(object) {
     //select pressure unit
     let i = 0
     robot.keyTap('enter')
