@@ -200,11 +200,13 @@ exports.main = function(object) {
             robot.keyTap('delete')
         }
         robot.typeString(object.flowingDensity)    
-        robot.keyTap('tab')
-        for(i=0; i<10; i++){
-            robot.keyTap('delete')
+        if(object.flowMethod=="Flowing"){
+           robot.keyTap('tab')
+            for(i=0; i<10; i++){
+                robot.keyTap('delete')
+            }
+            robot.typeString(object.baseDensity)
         }
-        robot.typeString(object.baseDensity)
     } else if (object.densityMethod=="Specific Gravity (Gb, Gf)"){
         robot.keyTap('tab')
         for(i=0; i<10; i++){
