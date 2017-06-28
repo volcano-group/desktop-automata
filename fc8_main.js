@@ -71,7 +71,7 @@ exports.main = async function(request, customer, errors) {
             break
         }
         case "US Liquid":{
-            liquid.USLiquid(reqGas)
+            liquid.UsLiquid(reqGas)
             break
         }
         case "US Vapor":{
