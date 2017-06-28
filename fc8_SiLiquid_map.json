@@ -37,7 +37,7 @@
                   "psi differential (psid)",
                   "MPa",
                   "Pa",
-                  "kPa",
+                  "kPa"
                  ],
     "Temperature": ["TdegC",
                     "TK",
@@ -76,7 +76,7 @@
                 "24 Hour",
                 "Week",
                 "Year",
-                "Second",
+                "Second"
                ]
     },
     "Density": {
@@ -133,7 +133,7 @@
                    "Feet",
                    "Metre",
                    "Decimetre",
-                   "Centimetre",
+                   "Centimetre"
                  ],
     "BasePressureUnit": ["psia",
                        "MPa, abs",
