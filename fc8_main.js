@@ -96,11 +96,12 @@ exports.main = async function(request, customer, errors) {
     helpers.calculation(reqCalculation)
     
     //print pdf
-    let fileName = Date.now() + '-' + request.tag + '-' + reqPipe.type2 + '.pdf'
+    let fileName = Date.now() + '-' + request.tag + '-' + reqPipe.type2
     helpers.printPDF(fileName, customer, request.tag)
     
     
     //helpers.existFile(fileName, errors)
+    let fileNameCheck = fileName + '.pdf'
     helpers.existFile(fileName, errors)
     
     //close fc8
