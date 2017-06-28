@@ -2,7 +2,7 @@ import robot from 'robotjs'
 import sleep from 'sleep'
 var fs = require('fs')
 //set speed
-robot.setKeyboardDelay(5)
+robot.setKeyboardDelay(20)
 robot.setMouseDelay(100)
 
 import helpers from './fc8_helpers'
@@ -10,6 +10,7 @@ import venturi from './fc8_venturi'
 import orifice from './fc8_orifice'
 import gas from './fc8_gas'
 import vapor from './fc8_vapor'
+import liquid from './fc8_liquid'
 //fare riferimento a fc8_venturi_map per vedere gli input disponibili
 //compilare i json "User Defined" solo se nei relativi input è stato inserito "userdefined"
 
@@ -65,11 +66,27 @@ exports.main = async function(request, customer, errors) {
     
     //select gas/vapor type
     switch(reqPipe.gasUnits){
-        case "US gas": {
+        case "US Gas": {
             gas.gas(reqGas)
             break
         }
-        case "US vapor":{
+        case "US Liquid":{
+            liquid.liquid(reqGas)
+            break
+        }
+        case "US Vapor":{
+            vapor.vapor(reqGas)
+            break
+        }
+        case "SI Gas":{
+            gas.gas(reqGas)
+            break
+        }
+        case "SI Liquid":{
+            liquid.liquid(reqGas)
+            break
+        }
+        case "SI Vapor":{
             vapor.vapor(reqGas)
             break
         }

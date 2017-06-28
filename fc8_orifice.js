@@ -977,15 +977,39 @@ exports.horcornertaps = function(request){
     robot.keyTap('tab')     
     robot.keyTap('enter')
     switch(request.gasUnits){
-        case "US gas": {
+        case "US Gas": {
             robot.keyTap('tab')     
             robot.keyTap('enter')
             break
-        }        
-        case "US vapor": {
+        }
+        case "US Liquid": {
+            robot.moveMouse(50, 25)
+            robot.mouseClick()
+            robot.moveMouse(50, 100)
+            robot.mouseClick()
+        }
+        case "US Vapor": {
             robot.moveMouse(50, 25)
             robot.mouseClick()
             robot.moveMouse(50, 125)
+            robot.mouseClick()
+        }
+        case "SI Gas": {
+            robot.moveMouse(50, 25)
+            robot.mouseClick()
+            robot.moveMouse(50, 150)
+            robot.mouseClick()
+        }
+        case "SI Liquid": {
+            robot.moveMouse(50, 25)
+            robot.mouseClick()
+            robot.moveMouse(50, 175)
+            robot.mouseClick()
+        }
+        case "SI Vapor": {
+            robot.moveMouse(50, 25)
+            robot.mouseClick()
+            robot.moveMouse(50, 200)
             robot.mouseClick()
         }
     }
