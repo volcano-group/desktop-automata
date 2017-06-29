@@ -5,7 +5,7 @@ let parsed = {
   "data": {
     "generateJson": {
       "state": "new",
-      "createdAt": 1498740689959,
+      "createdAt": 1498741367047,
       "customer": "Volcano Group",
       "items": [
         {
@@ -25,7 +25,7 @@ let parsed = {
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "34,7",
+            "pressure": "34.7",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "390",
@@ -33,13 +33,13 @@ let parsed = {
             "flowMethod": "Mass",
             "flowUnit": "Mass kg",
             "flowUnitTime": "Hour",
-            "flowingDensity": "12,3",
+            "flowingDensity": "12.3",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
             "densitySpecial": {
               "molecularWeight": "18,02",
-              "flowingCompressibilityFactor": "0,95",
+              "flowingCompressibilityFactor": "0.95",
               "baseCompressibilityFactor": "1"
             },
             "viscosity": "0.024",
@@ -80,7 +80,7 @@ let parsed = {
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "34,7",
+            "pressure": "34.7",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "390",
@@ -88,13 +88,13 @@ let parsed = {
             "flowMethod": "Mass",
             "flowUnit": "Mass kg",
             "flowUnitTime": "Hour",
-            "flowingDensity": "12,3",
+            "flowingDensity": "12.3",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
             "densitySpecial": {
               "molecularWeight": "18,02",
-              "flowingCompressibilityFactor": "0,95",
+              "flowingCompressibilityFactor": "0.95",
               "baseCompressibilityFactor": "1"
             },
             "viscosity": "0.024",
@@ -104,11 +104,11 @@ let parsed = {
               "name": "High pressure superheated steam"
             },
             "heatingTemperature": "15.56",
-            "isentropicExponent": "1,23"
+            "isentropicExponent": "1.23"
           },
           "calculation": {
             "base": {
-              "pipeDiameter": "154,05",
+              "pipeDiameter": "154.05",
               "size": {
                 "maxFlow": "14500",
                 "normalFlow": "12400",
@@ -135,7 +135,7 @@ let parsed = {
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "34,7",
+            "pressure": "34.7",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "390",
@@ -143,13 +143,13 @@ let parsed = {
             "flowMethod": "Mass",
             "flowUnit": "Mass kg",
             "flowUnitTime": "Hour",
-            "flowingDensity": "12,3",
+            "flowingDensity": "12.3",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
             "densitySpecial": {
               "molecularWeight": "18,02",
-              "flowingCompressibilityFactor": "0,95",
+              "flowingCompressibilityFactor": "0.95",
               "baseCompressibilityFactor": "1"
             },
             "viscosity": "0.024",
@@ -159,11 +159,11 @@ let parsed = {
               "name": "High pressure superheated steam"
             },
             "heatingTemperature": "15.56",
-            "isentropicExponent": "1,23"
+            "isentropicExponent": "1.23"
           },
           "calculation": {
             "base": {
-              "pipeDiameter": "102,26",
+              "pipeDiameter": "102.26",
               "size": {
                 "maxFlow": "3500",
                 "normalFlow": "2900",
@@ -190,7 +190,7 @@ let parsed = {
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "34,7",
+            "pressure": "34.7",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "390",
@@ -198,13 +198,13 @@ let parsed = {
             "flowMethod": "Mass",
             "flowUnit": "Mass kg",
             "flowUnitTime": "Hour",
-            "flowingDensity": "12,3",
+            "flowingDensity": "12.3",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
             "densitySpecial": {
               "molecularWeight": "18,02",
-              "flowingCompressibilityFactor": "0,95",
+              "flowingCompressibilityFactor": "0.95",
               "baseCompressibilityFactor": "1"
             },
             "viscosity": "0.024",
@@ -214,11 +214,11 @@ let parsed = {
               "name": "High pressure superheated steam"
             },
             "heatingTemperature": "15.56",
-            "isentropicExponent": "1,23"
+            "isentropicExponent": "1.23"
           },
           "calculation": {
             "base": {
-              "pipeDiameter": "154,05",
+              "pipeDiameter": "154.05",
               "size": {
                 "maxFlow": "11000",
                 "normalFlow": "9000",
@@ -245,7 +245,7 @@ let parsed = {
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "26,5",
+            "pressure": "26.5",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "72",
@@ -257,13 +257,13 @@ let parsed = {
             "basePressureUnit": "Bar,abs",
             "baseTemperature": "0",
             "baseTemperatureUnit": "TdegC",
-            "flowingDensity": "12,5",
+            "flowingDensity": "12.4",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
             "densitySpecial": {
               "molecularWeight": "13,16",
-              "flowingCompressibilityFactor": "1,01",
+              "flowingCompressibilityFactor": "1.01",
               "baseCompressibilityFactor": "1"
             },
             "viscosity": "0.018",
@@ -273,11 +273,11 @@ let parsed = {
               "name": "Hydrocarbon streams"
             },
             "heatingTemperature": "15.56",
-            "isentropicExponent": "1,38"
+            "isentropicExponent": "1.38"
           },
           "calculation": {
             "base": {
-              "pipeDiameter": "885,46",
+              "pipeDiameter": "885.46",
               "size": {
                 "maxFlow": "790000",
                 "normalFlow": "662968",
@@ -304,7 +304,7 @@ let parsed = {
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "26,5",
+            "pressure": "26.5",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "72",
@@ -316,13 +316,13 @@ let parsed = {
             "basePressureUnit": "Bar,abs",
             "baseTemperature": "0",
             "baseTemperatureUnit": "TdegC",
-            "flowingDensity": "12,5",
+            "flowingDensity": "12.5",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
             "densitySpecial": {
               "molecularWeight": "13,16",
-              "flowingCompressibilityFactor": "1,01",
+              "flowingCompressibilityFactor": "1.01",
               "baseCompressibilityFactor": "1"
             },
             "viscosity": "0.018",
@@ -332,11 +332,11 @@ let parsed = {
               "name": "Hydrocarbon streams"
             },
             "heatingTemperature": "15.56",
-            "isentropicExponent": "1,38"
+            "isentropicExponent": "1.38"
           },
           "calculation": {
             "base": {
-              "pipeDiameter": "154,08",
+              "pipeDiameter": "154.08",
               "size": {
                 "maxFlow": "18181.9",
                 "normalFlow": "15000",
