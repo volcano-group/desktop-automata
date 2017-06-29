@@ -3,59 +3,68 @@ import helpers from './fc8_helpers'
 
 let request =   {
   "state": "new",
-  "createdAt": 1498729161519,
+  "createdAt": 1498731622595,
   "customer": "Volcano Group",
   "items": [
     {
-      "tag": "120-FE-0051",
+      "tag": "120-FE-2203",
       "pipe": {
         "type2": "Flange Taps",
         "style": "Clamped",
         "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
         "pressuretap": "Upstream",
         "pipematerial": "304",
-        "primaryelement": "316",
+        "primaryelement": "Monel 400",
         "special": {
           "DrainHole": "on",
           "holes": "1"
         },
-        "gasUnits": "Liquid",
+        "gasUnits": "Gas",
         "type": "Orifice"
       },
       "calculation": {
         "ventDrainHole": "0.0938",
         "base": {
-          "pipeDiameter": "193,67",
+          "pipeDiameter": "193.67",
           "size": {
-            "maxFlow": "363586,3",
-            "normalFlow": "243044",
-            "differential": "26"
+            "maxFlow": "18700",
+            "normalFlow": "15000",
+            "differential": "55"
           }
         },
         "method": "size"
       },
       "gas": {
         "dimensionalUnit": "Millimetre",
-        "pressure": "38,1",
+        "pressure": "4",
         "pressureUnit": "Bar,gage",
         "differentialUnit": "kPa",
-        "temperature": "115",
+        "temperature": "240",
         "temperatureUnit": "TdegC",
-        "flowMethod": "Flowing",
-        "flowUnit": "Flowing m^3",
+        "flowMethod": "Base",
+        "flowUnit": "Base Cubic Metres: for NCMH, etc.",
         "flowUnitTime": "Hour",
-        "basePressure": "1",
-        "flowingDensity": "949",
+        "basePressure": "1.0133",
+        "basePressureUnit": "Bar,abs",
+        "baseTemperature": "0",
+        "baseTemperatureUnit": "TdegC",
+        "flowingDensity": "3.13",
         "densityMassUnit": "Kilogram (ISO Standards)",
         "densityVolumeUnit": "Cubic Metre",
-        "densityMethod": "Density",
-        "viscosity": "0.243",
+        "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
+        "densitySpecial": {
+          "molecularWeight": "28.01",
+          "flowingCompressibilityFactor": "1",
+          "baseCompressibilityFactor": "1"
+        },
+        "viscosity": "0.017",
         "viscosityUnit": "Centipoise cP",
         "gasType": "Enter Fluid Properties",
         "fluidProperties": {
-          "name": "Stripped Process Condensate"
+          "name": "Hydrocarbon streams"
         },
-        "heatingTemperature": "15.56"
+        "heatingTemperature": "15.56",
+        "isentropicExponent": "1.41"
       }
     },
     {
@@ -77,7 +86,7 @@ let request =   {
       "calculation": {
         "ventDrainHole": "0.1563",
         "base": {
-          "pipeDiameter": "77,92",
+          "pipeDiameter": "77.92",
           "size": {
             "maxFlow": "8140",
             "normalFlow": "50",
@@ -96,17 +105,17 @@ let request =   {
         "flowMethod": "Base",
         "flowUnit": "Base Cubic Metres: for NCMH, etc.",
         "flowUnitTime": "Hour",
-        "basePressure": "1",
+        "basePressure": "1.0133",
         "basePressureUnit": "Bar,abs",
         "baseTemperature": "0",
         "baseTemperatureUnit": "TdegC",
-        "flowingDensity": "5,4",
+        "flowingDensity": "5.4",
         "densityMassUnit": "Kilogram (ISO Standards)",
         "densityVolumeUnit": "Cubic Metre",
         "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
         "densitySpecial": {
-          "molecularWeight": "28,01",
-          "flowingCompressibilityFactor": "0,99",
+          "molecularWeight": "28.01",
+          "flowingCompressibilityFactor": "0.99",
           "baseCompressibilityFactor": "1"
         },
         "viscosity": "0.019",
@@ -116,11 +125,64 @@ let request =   {
           "name": "Low pressure nitrogen"
         },
         "heatingTemperature": "15.56",
-        "isentropicExponent": "1,4"
+        "isentropicExponent": "1.4"
+      }
+    },
+    {
+      "tag": "120-FE-0051",
+      "pipe": {
+        "type2": "Flange Taps",
+        "style": "Clamped",
+        "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
+        "pressuretap": "Upstream",
+        "pipematerial": "304",
+        "primaryelement": "316",
+        "special": {
+          "DrainHole": "on",
+          "holes": "1"
+        },
+        "gasUnits": "Liquid",
+        "type": "Orifice"
+      },
+      "calculation": {
+        "ventDrainHole": "0.0938",
+        "base": {
+          "pipeDiameter": "193.67",
+          "size": {
+            "maxFlow": "363586.3",
+            "normalFlow": "243044",
+            "differential": "26"
+          }
+        },
+        "method": "size"
+      },
+      "gas": {
+        "dimensionalUnit": "Millimetre",
+        "pressure": "38.1",
+        "pressureUnit": "Bar,gage",
+        "differentialUnit": "kPa",
+        "temperature": "115",
+        "temperatureUnit": "TdegC",
+        "flowMethod": "Flowing",
+        "flowUnit": "Flowing m^3",
+        "flowUnitTime": "Hour",
+        "basePressure": "1.0133",
+        "flowingDensity": "949",
+        "densityMassUnit": "Kilogram (ISO Standards)",
+        "densityVolumeUnit": "Cubic Metre",
+        "densityMethod": "Density",
+        "viscosity": "0.243",
+        "viscosityUnit": "Centipoise cP",
+        "gasType": "Enter Fluid Properties",
+        "fluidProperties": {
+          "name": "Stripped Process Condensate"
+        },
+        "heatingTemperature": "15.56"
       }
     }
   ]
 }
+
 
 
 let errors = []
