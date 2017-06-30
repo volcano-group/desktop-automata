@@ -5,11 +5,11 @@ let parsed = {
   "data": {
     "generateJson": {
       "state": "new",
-      "createdAt": 1498741367047,
+      "createdAt": 1498818503719,
       "customer": "Volcano Group",
       "items": [
         {
-          "tag": "120-FE-1050",
+          "tag": "120-FE-0051",
           "pipe": {
             "type2": "Flange Taps",
             "style": "Clamped",
@@ -20,275 +20,96 @@ let parsed = {
             "special": {
               "DrainHole": "off"
             },
-            "gasUnits": "Gas",
+            "gasUnits": "Liquid",
             "type": "Orifice"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "34.7",
+            "pressure": "38,1",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
-            "temperature": "390",
+            "temperature": "115",
             "temperatureUnit": "TdegC",
-            "flowMethod": "Mass",
-            "flowUnit": "Mass kg",
-            "flowUnitTime": "Hour",
-            "flowingDensity": "12.3",
-            "densityMassUnit": "Kilogram (ISO Standards)",
-            "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
-            "densitySpecial": {
-              "molecularWeight": "18,02",
-              "flowingCompressibilityFactor": "0.95",
-              "baseCompressibilityFactor": "1"
-            },
-            "viscosity": "0.024",
-            "viscosityUnit": "Centipoise cP",
-            "gasType": "Enter Fluid Properties",
-            "fluidProperties": {
-              "name": "High pressure superheated steam"
-            },
-            "heatingTemperature": "15.56",
-            "isentropicExponent": "1.23"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "154.05",
-              "size": {
-                "maxFlow": "10000",
-                "normalFlow": "8264",
-                "differential": "42"
-              }
-            },
-            "method": "size"
-          }
-        },
-        {
-          "tag": "120-FE-1090",
-          "pipe": {
-            "type2": "Flange Taps",
-            "style": "Clamped",
-            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
-            "pipematerial": "304",
-            "primaryelement": "316",
-            "special": {
-              "DrainHole": "off"
-            },
-            "gasUnits": "Gas",
-            "type": "Orifice"
-          },
-          "gas": {
-            "dimensionalUnit": "Millimetre",
-            "pressure": "34.7",
-            "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "390",
-            "temperatureUnit": "TdegC",
-            "flowMethod": "Mass",
-            "flowUnit": "Mass kg",
-            "flowUnitTime": "Hour",
-            "flowingDensity": "12.3",
-            "densityMassUnit": "Kilogram (ISO Standards)",
-            "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
-            "densitySpecial": {
-              "molecularWeight": "18,02",
-              "flowingCompressibilityFactor": "0.95",
-              "baseCompressibilityFactor": "1"
-            },
-            "viscosity": "0.024",
-            "viscosityUnit": "Centipoise cP",
-            "gasType": "Enter Fluid Properties",
-            "fluidProperties": {
-              "name": "High pressure superheated steam"
-            },
-            "heatingTemperature": "15.56",
-            "isentropicExponent": "1.23"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "154.05",
-              "size": {
-                "maxFlow": "14500",
-                "normalFlow": "12400",
-                "differential": "43"
-              }
-            },
-            "method": "size"
-          }
-        },
-        {
-          "tag": "120-FE-1092",
-          "pipe": {
-            "type2": "Flange Taps",
-            "style": "Clamped",
-            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
-            "pipematerial": "304",
-            "primaryelement": "316",
-            "special": {
-              "DrainHole": "off"
-            },
-            "gasUnits": "Gas",
-            "type": "Orifice"
-          },
-          "gas": {
-            "dimensionalUnit": "Millimetre",
-            "pressure": "34.7",
-            "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "390",
-            "temperatureUnit": "TdegC",
-            "flowMethod": "Mass",
-            "flowUnit": "Mass kg",
-            "flowUnitTime": "Hour",
-            "flowingDensity": "12.3",
-            "densityMassUnit": "Kilogram (ISO Standards)",
-            "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
-            "densitySpecial": {
-              "molecularWeight": "18,02",
-              "flowingCompressibilityFactor": "0.95",
-              "baseCompressibilityFactor": "1"
-            },
-            "viscosity": "0.024",
-            "viscosityUnit": "Centipoise cP",
-            "gasType": "Enter Fluid Properties",
-            "fluidProperties": {
-              "name": "High pressure superheated steam"
-            },
-            "heatingTemperature": "15.56",
-            "isentropicExponent": "1.23"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "102.26",
-              "size": {
-                "maxFlow": "3500",
-                "normalFlow": "2900",
-                "differential": "44"
-              }
-            },
-            "method": "size"
-          }
-        },
-        {
-          "tag": "120-FE-1093",
-          "pipe": {
-            "type2": "Flange Taps",
-            "style": "Clamped",
-            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
-            "pipematerial": "304",
-            "primaryelement": "316",
-            "special": {
-              "DrainHole": "off"
-            },
-            "gasUnits": "Gas",
-            "type": "Orifice"
-          },
-          "gas": {
-            "dimensionalUnit": "Millimetre",
-            "pressure": "34.7",
-            "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "390",
-            "temperatureUnit": "TdegC",
-            "flowMethod": "Mass",
-            "flowUnit": "Mass kg",
-            "flowUnitTime": "Hour",
-            "flowingDensity": "12.3",
-            "densityMassUnit": "Kilogram (ISO Standards)",
-            "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
-            "densitySpecial": {
-              "molecularWeight": "18,02",
-              "flowingCompressibilityFactor": "0.95",
-              "baseCompressibilityFactor": "1"
-            },
-            "viscosity": "0.024",
-            "viscosityUnit": "Centipoise cP",
-            "gasType": "Enter Fluid Properties",
-            "fluidProperties": {
-              "name": "High pressure superheated steam"
-            },
-            "heatingTemperature": "15.56",
-            "isentropicExponent": "1.23"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "154.05",
-              "size": {
-                "maxFlow": "11000",
-                "normalFlow": "9000",
-                "differential": "45"
-              }
-            },
-            "method": "size"
-          }
-        },
-        {
-          "tag": "120-FE-1121",
-          "pipe": {
-            "type2": "Flange Taps",
-            "style": "Clamped",
-            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
-            "pipematerial": "304",
-            "primaryelement": "316",
-            "special": {
-              "DrainHole": "off"
-            },
-            "gasUnits": "Gas",
-            "type": "Orifice"
-          },
-          "gas": {
-            "dimensionalUnit": "Millimetre",
-            "pressure": "26.5",
-            "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "72",
-            "temperatureUnit": "TdegC",
-            "flowMethod": "Base",
-            "flowUnit": "Base Cubic Metres: for NCMH, etc.",
+            "flowMethod": "Flowing",
+            "flowUnit": "Flowing m^3",
             "flowUnitTime": "Hour",
             "basePressure": "1.0133",
-            "basePressureUnit": "Bar,abs",
-            "baseTemperature": "0",
-            "baseTemperatureUnit": "TdegC",
-            "flowingDensity": "12.4",
+            "flowingDensity": "949",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
-            "densitySpecial": {
-              "molecularWeight": "13,16",
-              "flowingCompressibilityFactor": "1.01",
-              "baseCompressibilityFactor": "1"
-            },
-            "viscosity": "0.018",
+            "densityMethod": "Density",
+            "viscosity": "0.243",
             "viscosityUnit": "Centipoise cP",
             "gasType": "Enter Fluid Properties",
             "fluidProperties": {
-              "name": "Hydrocarbon streams"
+              "name": "Stripped Process Condensate"
             },
-            "heatingTemperature": "15.56",
-            "isentropicExponent": "1.38"
+            "heatingTemperature": "15.56"
           },
           "calculation": {
             "base": {
-              "pipeDiameter": "885.46",
+              "pipeDiameter": "193,67",
               "size": {
-                "maxFlow": "790000",
-                "normalFlow": "662968",
-                "differential": "48"
+                "maxFlow": "363586,3",
+                "normalFlow": "243044",
+                "differential": "26"
               }
             },
             "method": "size"
           }
         },
         {
-          "tag": "120-FE-1124",
+          "tag": "120-FE-0903",
+          "pipe": {
+            "type2": "Flange Taps",
+            "style": "Clamped",
+            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
+            "pressuretap": "Upstream",
+            "pipematerial": "Carbon Steel",
+            "primaryelement": "316",
+            "special": {
+              "DrainHole": "off"
+            },
+            "gasUnits": "Liquid",
+            "type": "Orifice"
+          },
+          "gas": {
+            "dimensionalUnit": "Millimetre",
+            "pressure": "4",
+            "pressureUnit": "Bar,gage",
+            "differentialUnit": "kPa",
+            "temperature": "28",
+            "temperatureUnit": "TdegC",
+            "flowMethod": "Flowing",
+            "flowUnit": "Flowing m^3",
+            "flowUnitTime": "Hour",
+            "basePressure": "1.0133",
+            "flowingDensity": "996,4",
+            "densityMassUnit": "Kilogram (ISO Standards)",
+            "densityVolumeUnit": "Cubic Metre",
+            "densityMethod": "Density",
+            "viscosity": "0.832",
+            "viscosityUnit": "Centipoise cP",
+            "gasType": "Enter Fluid Properties",
+            "fluidProperties": {
+              "name": "Cooling water supply"
+            },
+            "heatingTemperature": "15.56"
+          },
+          "calculation": {
+            "base": {
+              "pipeDiameter": "307,04",
+              "size": {
+                "maxFlow": "1150000",
+                "normalFlow": "1046220",
+                "differential": "32"
+              }
+            },
+            "method": "size"
+          }
+        },
+        {
+          "tag": "120-FE-1122",
           "pipe": {
             "type2": "Flange Taps",
             "style": "Clamped",
@@ -299,48 +120,38 @@ let parsed = {
             "special": {
               "DrainHole": "off"
             },
-            "gasUnits": "Gas",
+            "gasUnits": "Liquid",
             "type": "Orifice"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "26.5",
+            "pressure": "43,4",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
-            "temperature": "72",
+            "temperature": "71",
             "temperatureUnit": "TdegC",
-            "flowMethod": "Base",
-            "flowUnit": "Base Cubic Metres: for NCMH, etc.",
+            "flowMethod": "Flowing",
+            "flowUnit": "Flowing m^3",
             "flowUnitTime": "Hour",
-            "basePressure": "1.0133",
-            "basePressureUnit": "Bar,abs",
-            "baseTemperature": "0",
-            "baseTemperatureUnit": "TdegC",
-            "flowingDensity": "12.5",
+            "flowingDensity": "978",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "pvT pf, Tf, Zf, Mw (Molecular Weight)",
-            "densitySpecial": {
-              "molecularWeight": "13,16",
-              "flowingCompressibilityFactor": "1.01",
-              "baseCompressibilityFactor": "1"
-            },
-            "viscosity": "0.018",
+            "densityMethod": "Density",
+            "viscosity": "0.398",
             "viscosityUnit": "Centipoise cP",
             "gasType": "Enter Fluid Properties",
             "fluidProperties": {
-              "name": "Hydrocarbon streams"
+              "name": "Process water"
             },
-            "heatingTemperature": "15.56",
-            "isentropicExponent": "1.38"
+            "heatingTemperature": "15.56"
           },
           "calculation": {
             "base": {
-              "pipeDiameter": "154.08",
+              "pipeDiameter": "154,05",
               "size": {
-                "maxFlow": "18181.9",
-                "normalFlow": "15000",
-                "differential": "49"
+                "maxFlow": "167426,6",
+                "normalFlow": "126838",
+                "differential": "46"
               }
             },
             "method": "size"
