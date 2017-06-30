@@ -71,12 +71,12 @@
                     "Base Millilitre (ML Cubic Centimetres)",
                     "Base Barrel 31.5 Gal,wine"
                    ],
-        "Time":["Hour",
+        "Time":["Minute",
+                "Hour",
                 "24 Hour",
                 "Week",
                 "Year",
-                "Second",
-                "Minute"
+                "Second"
                ]
     },
     "Density": {

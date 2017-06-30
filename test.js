@@ -51,8 +51,8 @@ let parsed = {
             "base": {
               "pipeDiameter": "193,67",
               "size": {
-                "maxFlow": "363586,3",
-                "normalFlow": "243044",
+                "maxFlow": "363,5863",
+                "normalFlow": "243,044",
                 "differential": "26"
               }
             },
@@ -103,8 +103,8 @@ let parsed = {
             "base": {
               "pipeDiameter": "307,04",
               "size": {
-                "maxFlow": "1150000",
-                "normalFlow": "1046220",
+                "maxFlow": "1150,000",
+                "normalFlow": "1046,220",
                 "differential": "32"
               }
             },
@@ -154,8 +154,8 @@ let parsed = {
             "base": {
               "pipeDiameter": "154,05",
               "size": {
-                "maxFlow": "167426,6",
-                "normalFlow": "126838",
+                "maxFlow": "167,4266",
+                "normalFlow": "126,838",
                 "differential": "46"
               }
             },
