@@ -57,7 +57,7 @@ let parsed = {
               }
             },
             "method": "size",
-            "ventDrainHole": "0.1250"
+            "ventDrainHole": "none"
           }
         },
         {
@@ -109,7 +109,7 @@ let parsed = {
               }
             },
             "method": "size",
-            "ventDrainHole": "0.1250"
+            "ventDrainHole": "none"
           }
         },
         {
@@ -160,7 +160,7 @@ let parsed = {
               }
             },
             "method": "size",
-            "ventDrainHole": "0.1250"
+            "ventDrainHole": "none"
           }
         }
       ]
