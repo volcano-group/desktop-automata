@@ -56,7 +56,8 @@ let parsed = {
                 "differential": "26"
               }
             },
-            "method": "size"
+            "method": "size",
+            "ventDrainHole": "0.1250"
           }
         },
         {
@@ -107,7 +108,8 @@ let parsed = {
                 "differential": "32"
               }
             },
-            "method": "size"
+            "method": "size",
+            "ventDrainHole": "0.1250"
           }
         },
         {
@@ -157,7 +159,8 @@ let parsed = {
                 "differential": "46"
               }
             },
-            "method": "size"
+            "method": "size",
+            "ventDrainHole": "0.1250"
           }
         }
       ]
@@ -166,8 +169,6 @@ let parsed = {
 }
 
 let request =  parsed.data.generateJson
-
-
 
 let errors = []
 
