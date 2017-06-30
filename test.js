@@ -26,6 +26,7 @@ let parsed = {
           "gas": {
             "dimensionalUnit": "Millimetre",
             "pressure": "38,1",
+            "barPressure": "1.0133",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "115",
@@ -76,6 +77,7 @@ let parsed = {
           "gas": {
             "dimensionalUnit": "Millimetre",
             "pressure": "4",
+            "barPressure": "1.0133",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "28",
@@ -126,6 +128,7 @@ let parsed = {
           "gas": {
             "dimensionalUnit": "Millimetre",
             "pressure": "43,4",
+            "barPressure": "1.0133",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "71",
