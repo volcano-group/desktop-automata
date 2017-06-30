@@ -189,6 +189,10 @@ exports.main = function(object) {
     }
     robot.typeString(object.pressure)   
     robot.keyTap('tab')
+    for(i=0; i<10; i++){
+        robot.keyTap('delete')
+    }
+    robot.typeString(object.barPressure)
     robot.keyTap('tab')
     for(i=0; i<10; i++){
         robot.keyTap('delete')
