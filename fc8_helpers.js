@@ -141,12 +141,12 @@ exports.calculation = function(object) {
         robot.keyTap('enter')
     }
     if(object.checkVentDrainHole!="off"){
+        
+        /*
         robot.keyTap('tab')
         robot.keyTap('tab')
         let ind = orifice.FlangeTaps.VentDrainHole.indexOf(object.ventDrainHole)
         let indStd = orifice.FlangeTaps.VentDrainHole.indexOf('No Vent/Drain Hole')
-        console.log(ind)
-        console.log(indStd)
         if(ind<indStd){
             for (i=0; i<indStd-ind; i++){
                 robot.keyTap('up')
@@ -155,8 +155,22 @@ exports.calculation = function(object) {
             for (i=0; i<ind-indStd; i++){
                 robot.keyTap('down')
             }
+        }*/
+        
+        if(object.ventDrainHole=="FC8"){
+            robot.keyTap('enter')
+        } else if (object.ventDrainHole=="userdefined"){
+            robot.keyTap('tab')
+            robot.keyTap('tab')
+            for(i=0;i<17;i++){
+                robot.keyTap('down')
+            }
+            robot.typeString(object.userDefinedDiameters)
+            robot.keyTap('tab')
+            robot.keyTap('enter')
+            robot.keyTap('tab')
+            robot.keyTap('enter')
         }
-        robot.keyTap('tab')
         for(i=0; i<2; i++){
             robot.keyTap('tab', 'shift')
         }
