@@ -140,7 +140,7 @@ exports.calculation = function(object) {
         
         robot.keyTap('enter')
     }
-    if(object.ventDrainHole!="none"){
+    if(object.checkVentDrainHole!="off"){
         robot.keyTap('tab')
         robot.keyTap('tab')
         let ind = orifice.FlangeTaps.VentDrainHole.indexOf(object.ventDrainHole)
