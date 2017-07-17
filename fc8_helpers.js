@@ -2,6 +2,7 @@ import robot from 'robotjs'
 import sleep from 'sleep'
 import orifice from './fc8_orifice_map.json'
 import cmd from 'node-cmd'
+import ps from 'ps-node'
 var fs = require('fs')
 
 /*//set speed
@@ -216,4 +217,11 @@ exports.existFile = function (fileName, errors) {
 exports.killProcess = function () {
     let process = cmd.get('FC8')
     console.log(process.pid)
+    ps.kill(process.pid, function(err) {
+        if (err) {
+            throw new Error (err)
+        } else {
+            console.log('Process ', process.pid, 'has been killed!')
+        }
+    })
 }
