@@ -203,9 +203,6 @@ exports.printPDF = function(fileName, customer, tag){
 }
 
 exports.existFile = function (fileName, errors) {
-    /*return new Promise((resolve, reject)=>{
-        fs.exists('../Documents/'+fileName) ? resolve("ok") : reject(fileName)
-    })*/
     fs.exists('../Documents/'+fileName, function(exists) {
         if(!exists){
             errors.push(fileName)
@@ -213,27 +210,4 @@ exports.existFile = function (fileName, errors) {
             console.log(errors)
         } 
     });
-}
-
-exports.killProcess = async function () {
-    /*let process = cmd.get('FC8')
-    console.log(process.pid)
-    ps.kill(process.pid, function(err) {
-        if (err) {
-            throw new Error (err)
-        } else {
-            console.log('Process ', process.pid, 'has been killed!')
-        }
-    })*/
-    return new Promise(function(resolve, reject) {
-        let process = cmd.get('babbucce')
-        console.log(process.pid)
-        ps.kill(process.pid, function(err){
-            if (err) {
-                reject(Error(err))
-            } else {
-                resolve("Process Killed")
-            }
-        })
-    })
 }

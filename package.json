@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "fkill": "^5.0.0",
-    "node-cmd": "^3.0.0",
     "node-gyp": "^3.6.1",
-    "ps-node": "^0.1.6",
     "robotjs": "^0.4.7",
     "sleep": "^5.1.1"
   },

@@ -1,7 +1,5 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
-import cmd from 'node-cmd'
-import ps from 'ps-node'
 const fkill = require('fkill')
 var fs = require('fs')
 //set speed
@@ -120,50 +118,7 @@ exports.main = async function(request, customer, errors) {
     
     
     //close fc8
-    
-    /*robot.keyTap('f4', 'alt')
-    robot.keyTap('tab')
-    robot.keyTap('enter')
-    sleep.msleep(1000)*/
-    /*helpers.killProcess().then(function(result){
-        console.log(result)
-    }, function(err){
-        console.log(err)
-    })*/
-    /*let processKilled = new Promise(function(resolve, reject) {
-        let process = cmd.get('FC8')
-        console.log(process.pid)
-        ps.kill(process.pid, function(err){
-            if (err) {
-                reject(Error(err))
-            } else {
-                resolve("Process Killed")
-            }
-        })
-    })
-    processKilled.then(function(result){
-        console.log(result)
-    }, function(err){
-        console.log(err)
-    })*/
     fkill('FC8.exe', {force: true}).then(()=>{
         console.log('Killed process')
     })
-    
-    
-    
-    /*.then(()=>{
-        console.log("file creato")
-    }).catch((file) => {
-        errors.push(file)
-        console.log(file, " presenta errori")
-    })*/
-    
-    /*try {
-        await a
-    } catch(err) {
-        errors.push(fileName)
-        console.log(fileName, "ha presentato errori")
-    }*/
-    
 }
