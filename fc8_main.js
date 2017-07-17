@@ -129,7 +129,7 @@ exports.main = async function(request, customer, errors) {
     })*/
     let processKilled = new Promise(function(resolve, reject) {
         let process = cmd.get('FC8')
-        console.log(process.pid)
+        console.log(process)
         ps.kill(process.pid, function(err){
             if (err) {
                 reject(Error(err))
@@ -138,11 +138,11 @@ exports.main = async function(request, customer, errors) {
             }
         })
     })
-     processKilled.then(function(result){
-         console.log(result)
-     }, function(err){
-         console.log(err)
-     })
+    processKilled.then(function(result){
+        console.log(result)
+    }, function(err){
+        console.log(err)
+    })
     
     
     
