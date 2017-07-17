@@ -1,6 +1,7 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
-import cmd from 'node-cmd'
+//import cmd from 'node-cmd'
+var cmd = require('../cmd.js')
 import ps from 'ps-node'
 var fs = require('fs')
 //set speed
