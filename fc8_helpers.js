@@ -213,7 +213,7 @@ exports.existFile = function (fileName, errors) {
     });
 }
 
-exports.killProcess = () {
+exports.killProcess = function () {
     let process = cmd.get('FC8')
     console.log(process.pid)
 }
