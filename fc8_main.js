@@ -120,7 +120,11 @@ exports.main = async function(request, customer, errors) {
     robot.keyTap('tab')
     robot.keyTap('enter')
     sleep.msleep(1000)*/
-    helpers.killProcess()
+    helpers.killProcess().then(function(result){
+        console.log(result)
+    }, function(err){
+        console.log(err)
+    })
     
     
     

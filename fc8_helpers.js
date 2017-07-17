@@ -215,7 +215,7 @@ exports.existFile = function (fileName, errors) {
 }
 
 exports.killProcess = function () {
-    let process = cmd.get('FC8')
+    /*let process = cmd.get('FC8')
     console.log(process.pid)
     ps.kill(process.pid, function(err) {
         if (err) {
@@ -223,5 +223,16 @@ exports.killProcess = function () {
         } else {
             console.log('Process ', process.pid, 'has been killed!')
         }
+    })*/
+    return new Promise(function(resolve, reject) {
+        let process = cmd.get('FC8')
+        console.log(process.pid)
+        ps.kill(process.pid, function(err){
+            if (err) {
+                reject(Error(err))
+            } else {
+                resolve("Process Killed")
+            }
+        })
     })
 }
