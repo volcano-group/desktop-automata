@@ -1,5 +1,7 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
+import cmd from 'node-cmd'
+import ps from 'ps-node'
 var fs = require('fs')
 //set speed
 robot.setKeyboardDelay(5)
@@ -120,11 +122,27 @@ exports.main = async function(request, customer, errors) {
     robot.keyTap('tab')
     robot.keyTap('enter')
     sleep.msleep(1000)*/
-    helpers.killProcess().then(function(result){
+    /*helpers.killProcess().then(function(result){
         console.log(result)
     }, function(err){
         console.log(err)
+    })*/
+    let processKilled = new Promise(function(resolve, reject) {
+        let process = cmd.get('FC8')
+        console.log(process.pid)
+        ps.kill(process.pid, function(err){
+            if (err) {
+                reject(Error(err))
+            } else {
+                resolve("Process Killed")
+            }
+        })
     })
+     processKilled.then(function(result){
+         console.log(result)
+     }, function(err){
+         console.log(err)
+     })
     
     
     
