@@ -145,7 +145,7 @@ exports.main = async function(request, customer, errors) {
     }, function(err){
         console.log(err)
     })*/
-    fkill('FC8').then(()=>{
+    fkill('FC8.exe').then(()=>{
         console.log('Killed process')
     })
     
