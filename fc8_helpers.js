@@ -214,7 +214,7 @@ exports.existFile = function (fileName, errors) {
     });
 }
 
-exports.killProcess = function () {
+exports.killProcess = async function () {
     /*let process = cmd.get('FC8')
     console.log(process.pid)
     ps.kill(process.pid, function(err) {
