@@ -116,10 +116,11 @@ exports.main = async function(request, customer, errors) {
     helpers.existFile(fileName, errors)
     
     //close fc8
-    robot.keyTap('f4', 'alt')
+    /*robot.keyTap('f4', 'alt')
     robot.keyTap('tab')
     robot.keyTap('enter')
-    sleep.msleep(1000)
+    sleep.msleep(1000)*/
+    helpers.killProcess()
     
     
     

@@ -1,6 +1,7 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
 import orifice from './fc8_orifice_map.json'
+import cmd from 'node-cmd'
 var fs = require('fs')
 
 /*//set speed
@@ -210,4 +211,9 @@ exports.existFile = function (fileName, errors) {
             console.log(errors)
         } 
     });
+}
+
+exports.killProcess = () {
+    let process = cmd.get('FC8')
+    console.log(process.pid)
 }
