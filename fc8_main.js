@@ -3,7 +3,7 @@ import sleep from 'sleep'
 const fkill = require('fkill')
 var fs = require('fs')
 //set speed
-robot.setKeyboardDelay(5)
+robot.setKeyboardDelay(25)
 robot.setMouseDelay(50)
 
 import helpers from './fc8_helpers'
