@@ -1,8 +1,8 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
-//import cmd from 'node-cmd'
-var cmd = require('../cmd.js')
+import cmd from 'node-cmd'
 import ps from 'ps-node'
+const fkill = require('fkill')
 var fs = require('fs')
 //set speed
 robot.setKeyboardDelay(5)
@@ -129,7 +129,7 @@ exports.main = async function(request, customer, errors) {
     }, function(err){
         console.log(err)
     })*/
-    let processKilled = new Promise(function(resolve, reject) {
+    /*let processKilled = new Promise(function(resolve, reject) {
         let process = cmd.get('FC8')
         console.log(process.pid)
         ps.kill(process.pid, function(err){
@@ -144,6 +144,9 @@ exports.main = async function(request, customer, errors) {
         console.log(result)
     }, function(err){
         console.log(err)
+    })*/
+    fkill('FC8').then(()=>{
+        console.log('Killed process')
     })
     
     

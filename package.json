@@ -9,6 +9,7 @@
     "windows": "yarn add windows-build-tools"
   },
   "dependencies": {
+    "fkill": "^5.0.0",
     "node-cmd": "^3.0.0",
     "node-gyp": "^3.6.1",
     "ps-node": "^0.1.6",
