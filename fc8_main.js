@@ -118,6 +118,7 @@ exports.main = async function(request, customer, errors) {
     let fileNameCheck = fileName + '.pdf'
     helpers.existFile(fileNameCheck, errors)
     
+    
     //close fc8
     
     /*robot.keyTap('f4', 'alt')

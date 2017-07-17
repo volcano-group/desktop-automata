@@ -199,6 +199,7 @@ exports.printPDF = function(fileName, customer, tag){
     sleep.msleep(500)
     robot.typeString(fileName)
     robot.keyTap('enter')
+    sleep.msleep(500)
 }
 
 exports.existFile = function (fileName, errors) {
