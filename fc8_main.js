@@ -118,6 +118,7 @@ exports.main = async function(request, customer, errors) {
     helpers.existFile(fileNameCheck, errors)
     
     //close fc8
+    
     /*robot.keyTap('f4', 'alt')
     robot.keyTap('tab')
     robot.keyTap('enter')
@@ -129,7 +130,7 @@ exports.main = async function(request, customer, errors) {
     })*/
     let processKilled = new Promise(function(resolve, reject) {
         let process = cmd.get('FC8')
-        console.log(process)
+        console.log(process.pid)
         ps.kill(process.pid, function(err){
             if (err) {
                 reject(Error(err))

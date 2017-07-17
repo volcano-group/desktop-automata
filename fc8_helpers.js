@@ -225,7 +225,7 @@ exports.killProcess = async function () {
         }
     })*/
     return new Promise(function(resolve, reject) {
-        let process = cmd.get('FC8')
+        let process = cmd.get('FC8.exe')
         console.log(process.pid)
         ps.kill(process.pid, function(err){
             if (err) {
