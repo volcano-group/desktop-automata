@@ -1,8 +1,6 @@
 import robot from 'robotjs'
 import sleep from 'sleep'
 import orifice from './fc8_orifice_map.json'
-import cmd from 'node-cmd'
-import ps from 'ps-node'
 var fs = require('fs')
 
 /*//set speed
