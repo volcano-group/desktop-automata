@@ -118,6 +118,10 @@ exports.main = async function(request, customer, errors) {
     
     
     //close fc8
+    robot.keyTap('f4', 'alt')
+    robot.keyTap('tab')
+    robot.keyTap('enter')
+    
     fkill('FC8.exe', {force: true}).then(()=>{
         console.log('Killed process')
     })
