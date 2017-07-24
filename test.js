@@ -26,7 +26,6 @@ let parsed = {
           "gas": {
             "dimensionalUnit": "Millimetre",
             "pressure": "38,1",
-            "barPressure": "1,0133",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "115",
@@ -40,7 +39,8 @@ let parsed = {
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "Density",
             "densitySpecial": {
-                "vaporPressure": "0.2"
+                "vaporPressure": "0.2",
+                "barPressure": "1,0133"
             },
             "viscosity": "0.243",
             "viscosityUnit": "Centipoise cP",
@@ -81,7 +81,6 @@ let parsed = {
           "gas": {
             "dimensionalUnit": "Millimetre",
             "pressure": "4",
-            "barPressure": "1.0133",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "28",
@@ -95,7 +94,8 @@ let parsed = {
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "Density",
             "densitySpecial": {
-                "vaporPressure": "0.2"
+                "vaporPressure": "0.2",
+                "barPressure": "1.0133"
             },
             "viscosity": "0.832",
             "viscosityUnit": "Centipoise cP",
@@ -136,7 +136,6 @@ let parsed = {
           "gas": {
             "dimensionalUnit": "Millimetre",
             "pressure": "43,4",
-            "barPressure": "1.0133",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "71",
@@ -149,7 +148,8 @@ let parsed = {
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "Density",
             "densitySpecial": {
-                "vaporPressure": "0.2"
+                "vaporPressure": "0.2",
+                "barPressure": "1.0133"
             },
             "viscosity": "0.398",
             "viscosityUnit": "Centipoise cP",
@@ -190,7 +190,6 @@ let parsed = {
           "gas": {
             "dimensionalUnit": "Millimetre",
             "pressure": "38,1",
-            "barPressure": "1,0133",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "115",
@@ -204,7 +203,8 @@ let parsed = {
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "Density",
             "densitySpecial": {
-                "vaporPressure": "0.2"
+                "vaporPressure": "0.2",
+                "barPressure": "1,0133"
             },
             "viscosity": "0.243",
             "viscosityUnit": "Centipoise cP",
@@ -245,7 +245,6 @@ let parsed = {
           "gas": {
             "dimensionalUnit": "Millimetre",
             "pressure": "4",
-            "barPressure": "1.0133",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "28",
@@ -259,7 +258,8 @@ let parsed = {
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "Density",
             "densitySpecial": {
-                "vaporPressure": "0.2"
+                "vaporPressure": "0.2",
+                "barPressure": "1.0133"
             },
             "viscosity": "0.832",
             "viscosityUnit": "Centipoise cP",
@@ -300,7 +300,6 @@ let parsed = {
           "gas": {
             "dimensionalUnit": "Millimetre",
             "pressure": "43,4",
-            "barPressure": "1.0133",
             "pressureUnit": "Bar,gage",
             "differentialUnit": "kPa",
             "temperature": "71",
@@ -313,7 +312,8 @@ let parsed = {
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "Density",
             "densitySpecial": {
-                "vaporPressure": "0.2"
+                "vaporPressure": "0.2",
+                "barPressure": "1.0133"
             },
             "viscosity": "0.398",
             "viscosityUnit": "Centipoise cP",
