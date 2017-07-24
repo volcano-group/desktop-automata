@@ -5,335 +5,169 @@ let parsed = {
   "data": {
     "generateJson": {
       "state": "new",
-      "createdAt": 1498818503719,
+      "createdAt": 1500917250975,
       "customer": "Volcano Group",
       "items": [
         {
-          "tag": "120-FE-0051",
           "pipe": {
+            "type": "Type",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
-            "pipematerial": "304",
-            "primaryelement": "316",
-            "special": {
-              "DrainHole": "off"
-            },
-            "gasUnits": "Liquid",
-            "type": "Orifice"
-          },
-          "gas": {
-            "dimensionalUnit": "Millimetre",
-            "pressure": "38,1",
-            "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "115",
-            "temperatureUnit": "TdegC",
-            "flowMethod": "Flowing",
-            "flowUnit": "Flowing m^3",
-            "flowUnitTime": "Hour",
-            "basePressure": "1.0133",
-            "flowingDensity": "949",
-            "densityMassUnit": "Kilogram (ISO Standards)",
-            "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "Density",
-            "densitySpecial": {
-                "vaporPressure": "0.2",
-                "barPressure": "1,0133"
-            },
-            "viscosity": "0.243",
-            "viscosityUnit": "Centipoise cP",
-            "gasType": "Enter Fluid Properties",
-            "fluidProperties": {
-              "name": "Stripped Process Condensate"
-            },
-            "heatingTemperature": "15.56"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "193,67",
-              "size": {
-                "maxFlow": "363,5863",
-                "normalFlow": "243,044",
-                "differential": "26"
-              }
-            },
-            "method": "size",
-            "ventDrainHole": "none"
-          }
-        },
-        {
-          "tag": "120-FE-0903",
-          "pipe": {
-            "type2": "Flange Taps",
-            "style": "Clamped",
-            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
+            "pressuretap": "Downstream",
             "pipematerial": "Carbon Steel",
             "primaryelement": "316",
             "special": {
               "DrainHole": "off"
             },
-            "gasUnits": "Liquid",
-            "type": "Orifice"
+            "gasUnits": "Liquid"
+          },
+          "tag": "14FE912",
+          "calculation": {
+            "checkVentDrainHole": "off",
+            "base": {
+              "pipeDiameter": "206.37",
+              "size": {
+                "maxFlow": "252000",
+                "normalFlow": "210000",
+                "differential": "2500"
+              }
+            },
+            "method": "size"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "4",
+            "pressure": "5.3955",
             "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "28",
+            "differentialUnit": "mm of Water @ 20 degC",
+            "temperature": "35",
             "temperatureUnit": "TdegC",
-            "flowMethod": "Flowing",
-            "flowUnit": "Flowing m^3",
+            "flowMethod": "Mass",
+            "flowUnit": "Mass kg",
             "flowUnitTime": "Hour",
-            "basePressure": "1.0133",
-            "flowingDensity": "996,4",
+            "flowingDensity": "7800",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "Density",
             "densitySpecial": {
-                "vaporPressure": "0.2",
-                "barPressure": "1.0133"
+              "barPressure": "1.0133",
+              "vaporPressure": "0.0000005886"
             },
-            "viscosity": "0.832",
+            "viscosity": "1.38",
             "viscosityUnit": "Centipoise cP",
             "gasType": "Enter Fluid Properties",
             "fluidProperties": {
-              "name": "Cooling water supply"
+              "name": "Kerosene"
             },
             "heatingTemperature": "15.56"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "307,04",
-              "size": {
-                "maxFlow": "1150,000",
-                "normalFlow": "1046,220",
-                "differential": "32"
-              }
-            },
-            "method": "size",
-            "ventDrainHole": "none"
           }
         },
         {
-          "tag": "120-FE-1122",
           "pipe": {
+            "type": "Type",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
-            "pipematerial": "304",
-            "primaryelement": "316",
-            "special": {
-              "DrainHole": "off"
-            },
-            "gasUnits": "Liquid",
-            "type": "Orifice"
-          },
-          "gas": {
-            "dimensionalUnit": "Millimetre",
-            "pressure": "43,4",
-            "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "71",
-            "temperatureUnit": "TdegC",
-            "flowMethod": "Flowing",
-            "flowUnit": "Flowing m^3",
-            "flowUnitTime": "Hour",
-            "flowingDensity": "978",
-            "densityMassUnit": "Kilogram (ISO Standards)",
-            "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "Density",
-            "densitySpecial": {
-                "vaporPressure": "0.2",
-                "barPressure": "1.0133"
-            },
-            "viscosity": "0.398",
-            "viscosityUnit": "Centipoise cP",
-            "gasType": "Enter Fluid Properties",
-            "fluidProperties": {
-              "name": "Process water"
-            },
-            "heatingTemperature": "15.56"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "154,05",
-              "size": {
-                "maxFlow": "167,4266",
-                "normalFlow": "126,838",
-                "differential": "46"
-              }
-            },
-            "method": "size",
-            "ventDrainHole": "none"
-          }
-        },
-          {
-          "tag": "120-FE-0051",
-          "pipe": {
-            "type2": "Flange Taps",
-            "style": "Clamped",
-            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
-            "pipematerial": "304",
-            "primaryelement": "316",
-            "special": {
-              "DrainHole": "off"
-            },
-            "gasUnits": "Liquid",
-            "type": "Orifice"
-          },
-          "gas": {
-            "dimensionalUnit": "Millimetre",
-            "pressure": "38,1",
-            "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "115",
-            "temperatureUnit": "TdegC",
-            "flowMethod": "Flowing",
-            "flowUnit": "Flowing m^3",
-            "flowUnitTime": "Hour",
-            "basePressure": "1.0133",
-            "flowingDensity": "949",
-            "densityMassUnit": "Kilogram (ISO Standards)",
-            "densityVolumeUnit": "Cubic Metre",
-            "densityMethod": "Density",
-            "densitySpecial": {
-                "vaporPressure": "0.2",
-                "barPressure": "1,0133"
-            },
-            "viscosity": "0.243",
-            "viscosityUnit": "Centipoise cP",
-            "gasType": "Enter Fluid Properties",
-            "fluidProperties": {
-              "name": "Stripped Process Condensate"
-            },
-            "heatingTemperature": "15.56"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "193,67",
-              "size": {
-                "maxFlow": "363,5863",
-                "normalFlow": "243,044",
-                "differential": "26"
-              }
-            },
-            "method": "size",
-            "ventDrainHole": "none"
-          }
-        },
-        {
-          "tag": "120-FE-0903",
-          "pipe": {
-            "type2": "Flange Taps",
-            "style": "Clamped",
-            "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
+            "pressuretap": "Downstream",
             "pipematerial": "Carbon Steel",
             "primaryelement": "316",
             "special": {
               "DrainHole": "off"
             },
-            "gasUnits": "Liquid",
-            "type": "Orifice"
+            "gasUnits": "Liquid"
+          },
+          "tag": "14FE03N",
+          "calculation": {
+            "checkVentDrainHole": "off",
+            "base": {
+              "pipeDiameter": "154.05",
+              "size": {
+                "maxFlow": "139650",
+                "normalFlow": "105000",
+                "differential": "5000"
+              }
+            },
+            "method": "size"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "4",
+            "pressure": "10.791",
             "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "28",
+            "differentialUnit": "mm of Water @ 20 degC",
+            "temperature": "42.4",
             "temperatureUnit": "TdegC",
-            "flowMethod": "Flowing",
-            "flowUnit": "Flowing m^3",
+            "flowMethod": "Mass",
+            "flowUnit": "Mass kg",
             "flowUnitTime": "Hour",
-            "basePressure": "1.0133",
-            "flowingDensity": "996,4",
+            "flowingDensity": "7800",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "Density",
             "densitySpecial": {
-                "vaporPressure": "0.2",
-                "barPressure": "1.0133"
+              "barPressure": "1.0133",
+              "vaporPressure": "0.0000006867"
             },
-            "viscosity": "0.832",
+            "viscosity": "1.23",
             "viscosityUnit": "Centipoise cP",
             "gasType": "Enter Fluid Properties",
             "fluidProperties": {
-              "name": "Cooling water supply"
+              "name": "Kerosene"
             },
             "heatingTemperature": "15.56"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "307,04",
-              "size": {
-                "maxFlow": "1150,000",
-                "normalFlow": "1046,220",
-                "differential": "32"
-              }
-            },
-            "method": "size",
-            "ventDrainHole": "none"
           }
         },
         {
-          "tag": "120-FE-1122",
           "pipe": {
+            "type": "Type",
             "type2": "Flange Taps",
             "style": "Clamped",
             "standard": "ISO-5167 (2003-), ASME 3M (2004-)",
-            "pressuretap": "Upstream",
-            "pipematerial": "304",
+            "pressuretap": "Downstream",
+            "pipematerial": "Carbon Steel",
             "primaryelement": "316",
             "special": {
               "DrainHole": "off"
             },
-            "gasUnits": "Liquid",
-            "type": "Orifice"
+            "gasUnits": "Liquid"
+          },
+          "tag": "14FE04N",
+          "calculation": {
+            "checkVentDrainHole": "off",
+            "base": {
+              "pipeDiameter": "154.05",
+              "size": {
+                "maxFlow": "139650",
+                "normalFlow": "105000",
+                "differential": "5000"
+              }
+            },
+            "method": "size"
           },
           "gas": {
             "dimensionalUnit": "Millimetre",
-            "pressure": "43,4",
+            "pressure": "10.791",
             "pressureUnit": "Bar,gage",
-            "differentialUnit": "kPa",
-            "temperature": "71",
+            "differentialUnit": "mm of Water @ 20 degC",
+            "temperature": "42.4",
             "temperatureUnit": "TdegC",
-            "flowMethod": "Flowing",
-            "flowUnit": "Flowing m^3",
+            "flowMethod": "Mass",
+            "flowUnit": "Mass kg",
             "flowUnitTime": "Hour",
-            "flowingDensity": "978",
+            "flowingDensity": "7800",
             "densityMassUnit": "Kilogram (ISO Standards)",
             "densityVolumeUnit": "Cubic Metre",
             "densityMethod": "Density",
             "densitySpecial": {
-                "vaporPressure": "0.2",
-                "barPressure": "1.0133"
+              "barPressure": "1.0133",
+              "vaporPressure": "0.0000006867"
             },
-            "viscosity": "0.398",
+            "viscosity": "1.23",
             "viscosityUnit": "Centipoise cP",
             "gasType": "Enter Fluid Properties",
             "fluidProperties": {
-              "name": "Process water"
+              "name": "Kerosene"
             },
             "heatingTemperature": "15.56"
-          },
-          "calculation": {
-            "base": {
-              "pipeDiameter": "154,05",
-              "size": {
-                "maxFlow": "167,4266",
-                "normalFlow": "126,838",
-                "differential": "46"
-              }
-            },
-            "method": "size",
-            "ventDrainHole": "none"
           }
         }
       ]
