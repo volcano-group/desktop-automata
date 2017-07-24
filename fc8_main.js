@@ -106,6 +106,7 @@ exports.main = async function(request, customer, errors) {
     
     //input calculation
     helpers.calculation(reqCalculation)
+    sleep.msleep(500)
     
     //print pdf
     let fileName = Date.now() + '-' + request.tag + '-' + reqPipe.type2
@@ -125,4 +126,5 @@ exports.main = async function(request, customer, errors) {
     fkill('FC8.exe', {force: true}).then(()=>{
         console.log('Killed process')
     })
+    
 }
