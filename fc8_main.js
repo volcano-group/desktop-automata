@@ -126,5 +126,6 @@ exports.main = async function(request, customer, errors) {
     fkill('FC8.exe', {force: true}).then(()=>{
         console.log('Killed process')
     })
+    sleep.msleep(1000)
     
 }
