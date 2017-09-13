@@ -407,10 +407,12 @@ exports.main = function(object) {
         for(i=0; i<7; i++){
             robot.keyTap('tab')
         }
-        for(i=0; i<gas.BaseTemperatureUnit.indexOf(object.baseTemperatureUnit); i++){
+        /*for(i=0; i<gas.BaseTemperatureUnit.indexOf(object.baseTemperatureUnit); i++){
+            robot.keyTap('up')
+        }*/
+        for(i=0; i<((gas.BaseTemperatureUnit.indexOf(object.baseTemperatureUnit)-gas.Temperature.indexOf(object.temperatureUnit))% 4); i++){
             robot.keyTap('up')
         }
-
         //enter heating temperature
         for(i=0; i<13; i++){
             robot.keyTap('tab')
