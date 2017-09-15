@@ -238,5 +238,8 @@ exports.main = function(object) {
         robot.keyTap('delete')
     }
     robot.typeString(object.densitySpecial.vaporPressure)
+    if(object.densitySpecial.vaporPressure===0){
+        robot.keytap(‘enter’)
+    }
     robot.keyTap('tab')
 }
